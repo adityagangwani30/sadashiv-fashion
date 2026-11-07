@@ -19,8 +19,18 @@ const inter = Inter({
   display: 'swap',
 });
 
+const basePath =
+  process.env.NEXT_PUBLIC_BASE_PATH ||
+  (process.env.NODE_ENV === 'production' ? '/sadashiv-fashions' : '');
+
+const siteUrl =
+  process.env.NEXT_PUBLIC_SITE_URL ||
+  (process.env.NODE_ENV === 'production'
+    ? 'https://adityagangwani30.github.io/sadashiv-fashions'
+    : 'http://localhost:3000');
+
 export const metadata: Metadata = {
-  metadataBase: new URL('https://sadashivfashions.in'),
+  metadataBase: new URL(siteUrl),
   title: {
     default: 'Sadashiv Fashions Jaipur | Ethnic Wear, Suits, Kurtis & Fabrics',
     template: '%s | Sadashiv Fashions',
@@ -37,8 +47,8 @@ export const metadata: Metadata = {
     'wholesale fabric Jaipur',
   ],
   icons: {
-    icon: '/brand/variants/logo-trishul.png',
-    apple: '/brand/variants/logo-trishul.png',
+    icon: `${basePath}/brand/variants/logo-trishul.png`,
+    apple: `${basePath}/brand/variants/logo-trishul.png`,
   },
   openGraph: {
     type: 'website',
