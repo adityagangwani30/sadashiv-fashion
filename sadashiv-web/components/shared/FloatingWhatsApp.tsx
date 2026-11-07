@@ -13,10 +13,10 @@ export default function FloatingWhatsApp() {
   const [expanded, setExpanded] = useState(false);
 
   return (
-    <div className="fixed bottom-6 right-5 z-40 select-none">
+    <div className="fixed bottom-[calc(1.25rem+env(safe-area-inset-bottom,0px))] right-4 sm:right-6 z-40 select-none">
       {/* Expanded Boutique Concierge Popover */}
       {expanded && (
-        <div className="mb-3 w-80 bg-[#FAF6F0] rounded-2xl shadow-2xl border border-[#E6D8C8] p-5 animate-in fade-in slide-in-from-bottom-2 duration-200">
+        <div className="mb-3 w-80 max-w-[calc(100vw-2rem)] bg-[#FAF6F0] rounded-2xl shadow-2xl border border-[#E6D8C8] p-5 animate-in fade-in slide-in-from-bottom-2 duration-200">
           <div className="flex items-center justify-between pb-3 border-b border-[#E6D8C8]">
             <div className="flex items-center gap-2">
               <span className="w-2.5 h-2.5 rounded-full bg-[#25D366] animate-pulse" />
@@ -24,7 +24,7 @@ export default function FloatingWhatsApp() {
             </div>
             <button
               onClick={() => setExpanded(false)}
-              className="text-[#7A6358] hover:text-[#1A1817] p-1 text-sm rounded-md transition-colors"
+              className="w-9 h-9 flex items-center justify-center text-[#7A6358] hover:text-[#1A1817] hover:bg-[#E6D8C8]/50 rounded-full transition-colors"
               aria-label="Close Concierge popover"
             >
               ✕
@@ -86,10 +86,10 @@ export default function FloatingWhatsApp() {
         </div>
       )}
 
-      {/* Main Floating Trigger Pill */}
+      {/* Main Floating Trigger Pill — Accessible Min 44px Height */}
       <button
         onClick={() => setExpanded(!expanded)}
-        className="group flex items-center gap-2.5 bg-[#1A1817] hover:bg-[#D4197D] text-white rounded-full pl-3.5 pr-4 py-2.5 shadow-xl border border-[#C5A059]/40 transition-all duration-300 active:scale-95"
+        className="group min-h-[44px] flex items-center gap-2.5 bg-[#1A1817] hover:bg-[#D4197D] text-white rounded-full pl-4 pr-5 py-3 shadow-xl border border-[#C5A059]/40 transition-all duration-300 active:scale-95"
         aria-label="Open Sadashiv WhatsApp & Showroom Concierge"
         aria-expanded={expanded}
       >

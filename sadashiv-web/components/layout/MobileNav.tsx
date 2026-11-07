@@ -56,19 +56,19 @@ export default function MobileNav({
 
       {/* Drawer */}
       <div
-        className={`fixed top-0 right-0 h-full w-84 max-w-[90vw] z-50 bg-[#FAF6F0] shadow-2xl transform transition-transform duration-400 ease-[cubic-bezier(0.32,0.72,0,1)] lg:hidden flex flex-col justify-between border-l border-[#E6D8C8] overflow-y-auto ${
+        className={`fixed top-0 right-0 h-dvh w-84 max-w-[88vw] z-50 bg-[#FAF6F0] shadow-2xl transform transition-transform duration-400 ease-[cubic-bezier(0.32,0.72,0,1)] lg:hidden flex flex-col justify-between border-l border-[#E6D8C8] ${
           isOpen ? 'translate-x-0' : 'translate-x-full'
         }`}
         role="dialog"
         aria-modal="true"
         aria-label="Navigation Menu"
       >
-        {/* Top Header */}
-        <div className="p-6 border-b border-[#E6D8C8] flex items-center justify-between">
+        {/* Top Header with Safe Area Inset for Notch / Dynamic Island */}
+        <div className="pt-[calc(1rem+env(safe-area-inset-top,0px))] pb-4 px-6 border-b border-[#E6D8C8] flex items-center justify-between flex-shrink-0">
           <Logo variant="compact" theme="magenta" size="sm" />
           <button
             onClick={onClose}
-            className="p-2 rounded-full text-[#1A1817] hover:bg-[#E6D8C8]/50 transition-colors"
+            className="w-11 h-11 flex items-center justify-center rounded-full text-[#1A1817] hover:bg-[#E6D8C8]/50 active:scale-95 transition-colors"
             aria-label="Close Menu"
           >
             <svg width="22" height="22" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24">
@@ -77,8 +77,8 @@ export default function MobileNav({
           </button>
         </div>
 
-        {/* Navigation Links */}
-        <nav className="p-6 flex-1 flex flex-col gap-1.5" aria-label="Mobile Navigation">
+        {/* Navigation Links — Scrollable middle zone */}
+        <nav className="p-6 flex-1 min-h-0 overflow-y-auto flex flex-col gap-1.5" aria-label="Mobile Navigation">
           <p className="text-[10px] uppercase tracking-[0.28em] text-[#9E4736] font-semibold mb-3">
             Atelier Directory
           </p>
@@ -92,7 +92,7 @@ export default function MobileNav({
                 key={link.href}
                 href={link.href}
                 onClick={onClose}
-                className={`py-3 px-3.5 rounded-xl text-base tracking-wide flex items-center justify-between transition-colors ${
+                className={`py-3.5 px-4 rounded-xl text-base tracking-wide flex items-center justify-between min-h-[48px] transition-colors active:scale-98 ${
                   isActive
                     ? 'bg-[#F3ECE2] text-[#D4197D] font-semibold'
                     : 'text-[#292522] hover:bg-[#F3ECE2]/50 hover:text-[#D4197D]'
@@ -105,8 +105,8 @@ export default function MobileNav({
           })}
         </nav>
 
-        {/* Bottom Actions: WhatsApp, Call, Directions */}
-        <div className="p-6 bg-[#F3ECE2]/80 border-t border-[#E6D8C8] space-y-3">
+        {/* Bottom Actions: Safe Area Inset for Home Indicator Bar */}
+        <div className="p-6 pb-[calc(1.5rem+env(safe-area-inset-bottom,0px))] bg-[#F3ECE2]/80 border-t border-[#E6D8C8] space-y-3 flex-shrink-0">
           <p className="text-[10px] uppercase tracking-[0.24em] text-[#9E4736] font-semibold mb-2">
             Direct Boutique Actions
           </p>
@@ -116,7 +116,7 @@ export default function MobileNav({
             target="_blank"
             rel="noopener noreferrer"
             onClick={onClose}
-            className="w-full flex items-center justify-center gap-2.5 py-3 bg-[#D4197D] text-white rounded-full text-xs uppercase tracking-[0.16em] font-semibold hover:bg-[#B31468] transition-colors shadow-sm"
+            className="w-full min-h-[44px] flex items-center justify-center gap-2.5 py-3 bg-[#D4197D] text-white rounded-full text-xs uppercase tracking-[0.16em] font-semibold hover:bg-[#B31468] active:scale-98 transition-all shadow-sm"
           >
             <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor">
               <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />
@@ -128,7 +128,7 @@ export default function MobileNav({
           <div className="grid grid-cols-2 gap-2">
             <a
               href={telLink}
-              className="flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-full border border-[#1A1817]/25 text-[#1A1817] text-[11px] uppercase tracking-[0.14em] font-medium hover:bg-[#1A1817] hover:text-[#FAF6F0] transition-colors"
+              className="min-h-[44px] flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-full border border-[#1A1817]/25 text-[#1A1817] text-[11px] uppercase tracking-[0.14em] font-medium hover:bg-[#1A1817] hover:text-[#FAF6F0] active:scale-98 transition-all"
             >
               <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor">
                 <path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
@@ -141,7 +141,7 @@ export default function MobileNav({
               target="_blank"
               rel="noopener noreferrer"
               onClick={onClose}
-              className="flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-full border border-[#1A1817]/25 text-[#1A1817] text-[11px] uppercase tracking-[0.14em] font-medium hover:bg-[#1A1817] hover:text-[#FAF6F0] transition-colors"
+              className="min-h-[44px] flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-full border border-[#1A1817]/25 text-[#1A1817] text-[11px] uppercase tracking-[0.14em] font-medium hover:bg-[#1A1817] hover:text-[#FAF6F0] active:scale-98 transition-all"
             >
               <span>Directions ↗</span>
             </a>

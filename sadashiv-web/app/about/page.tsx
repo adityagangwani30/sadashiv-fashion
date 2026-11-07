@@ -87,26 +87,26 @@ export default function AboutPage() {
               className="bg-[#F3ECE2]/80 rounded-3xl p-3 sm:p-4 border border-[#E6D8C8] shadow-sm flex flex-col justify-between"
             >
               {/* Inner Double-Bezel Plate */}
-              <div className="bg-[#FAF6F0] rounded-2xl p-6 sm:p-8 flex flex-col justify-between h-full">
+              <div className="bg-[#FAF6F0] rounded-2xl p-4 sm:p-8 flex flex-col justify-between h-full">
                 <div>
                   {/* Portrait Plate with Architectural Jaipur Arch & Monogram */}
-                  <div className="relative aspect-[4/5] rounded-xl overflow-hidden bg-[#F3ECE2] border border-[#C5A059]/30 flex flex-col items-center justify-center p-6 text-center mb-6 shadow-inner">
+                  <div className="relative aspect-[4/5] rounded-xl overflow-hidden bg-[#F3ECE2] border border-[#C5A059]/30 flex flex-col items-center justify-center p-5 sm:p-6 text-center mb-6 shadow-inner">
                     {/* Arch Motif Header */}
                     <div className="w-12 h-6 border-t-2 border-x-2 border-[#C5A059]/40 rounded-t-full mb-3" />
 
                     {/* Monogram Medallion */}
-                    <div className="w-20 h-20 rounded-full border border-[#C5A059] bg-[#FAF6F0] flex items-center justify-center shadow-xs mb-4">
-                      <span className="font-display text-3xl text-[#D4197D] font-light">
+                    <div className="w-18 h-18 sm:w-20 sm:h-20 rounded-full border border-[#C5A059] bg-[#FAF6F0] flex items-center justify-center shadow-xs mb-4">
+                      <span className="font-display text-2xl sm:text-3xl text-[#D4197D] font-light">
                         {owner.initials}
                       </span>
                     </div>
 
-                    <p className="font-display text-xl text-[#1A1817] mb-1">{owner.name}</p>
+                    <p className="font-display text-lg sm:text-xl text-[#1A1817] mb-1">{owner.name}</p>
                     <p className="text-[10px] uppercase tracking-[0.24em] text-[#9E4736] font-semibold">
                       Sadashiv Fashions · Jaipur
                     </p>
 
-                    <p className="text-xs text-[#7A6358] mt-4 max-w-xs leading-relaxed italic font-serif">
+                    <p className="text-xs text-[#7A6358] mt-3 sm:mt-4 max-w-xs leading-relaxed italic font-serif">
                       Owner portrait to be added. Please supply an approved photograph.
                     </p>
 
@@ -136,13 +136,13 @@ export default function AboutPage() {
                   </div>
                 </div>
 
-                <div className="pt-4 border-t border-[#E6D8C8]/60 flex items-center justify-between">
+                <div className="pt-4 border-t border-[#E6D8C8]/60 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2">
                   <span className="text-xs font-serif italic text-[#C5A059]">Malviya Nagar Showroom</span>
                   <a
                     href={WA_GENERAL}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-xs uppercase tracking-[0.16em] font-semibold text-[#D4197D] hover:text-[#9E4736] transition-colors"
+                    className="text-xs uppercase tracking-[0.16em] font-semibold text-[#D4197D] hover:text-[#9E4736] transition-colors py-1 inline-block"
                   >
                     Enquire on WhatsApp →
                   </a>
@@ -173,39 +173,41 @@ export default function AboutPage() {
             <p className="text-sm text-[#5A4A42] leading-relaxed mb-8 font-sans">
               We welcome walk-in visitors to inspect our fabrics, suit sets, and kurtis in person. For local customers, delivery is available across Jaipur and nearby areas, with details confirmed over WhatsApp.
             </p>
-            <div className="flex flex-wrap items-center gap-3">
+            <div className="flex flex-col sm:flex-row flex-wrap items-stretch sm:items-center gap-3">
               <a
                 href={WA_GENERAL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 bg-[#D4197D] hover:bg-[#B31468] text-white text-xs font-semibold uppercase tracking-[0.16em] px-6 py-3.5 rounded-full transition-colors shadow-sm"
+                className="min-h-[44px] inline-flex items-center justify-center gap-2 bg-[#D4197D] hover:bg-[#B31468] text-white text-xs font-semibold uppercase tracking-[0.16em] px-6 py-3.5 rounded-full transition-colors shadow-sm active:scale-98"
               >
                 <span>WhatsApp Enquiry</span>
                 <span>↗</span>
               </a>
 
-              <a
-                href="tel:+916376648869"
-                className="inline-flex items-center gap-2 bg-[#1A1817] hover:bg-[#292522] text-[#FAF6F0] text-xs font-semibold uppercase tracking-[0.16em] px-5 py-3.5 rounded-full transition-colors"
-              >
-                <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
-                </svg>
-                <span>Call Us</span>
-              </a>
+              <div className="grid grid-cols-2 gap-2.5 sm:flex sm:items-center">
+                <a
+                  href="tel:+916376648869"
+                  className="min-h-[44px] inline-flex items-center justify-center gap-2 bg-[#1A1817] hover:bg-[#292522] text-[#FAF6F0] text-xs font-semibold uppercase tracking-[0.16em] px-4 sm:px-5 py-3.5 rounded-full transition-colors"
+                >
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
+                  </svg>
+                  <span>Call Us</span>
+                </a>
 
-              <a
-                href="https://maps.google.com/?q=Sadashiv+Fashions+Malviya+Nagar+Jaipur"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-1.5 border border-[#1A1817]/25 hover:border-[#1A1817] text-[#1A1817] text-xs font-semibold uppercase tracking-[0.16em] px-5 py-3.5 rounded-full transition-colors"
-              >
-                <span>Get Directions ↗</span>
-              </a>
+                <a
+                  href="https://maps.google.com/?q=Sadashiv+Fashions+Malviya+Nagar+Jaipur"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="min-h-[44px] inline-flex items-center justify-center gap-1.5 border border-[#1A1817]/25 hover:border-[#1A1817] text-[#1A1817] text-xs font-semibold uppercase tracking-[0.16em] px-4 sm:px-5 py-3.5 rounded-full transition-colors"
+                >
+                  <span>Directions ↗</span>
+                </a>
+              </div>
 
               <Link
                 href="/collections"
-                className="inline-flex items-center gap-2 border border-[#1A1817]/25 hover:border-[#1A1817] text-[#1A1817] text-xs font-semibold uppercase tracking-[0.16em] px-5 py-3.5 rounded-full transition-colors"
+                className="min-h-[44px] inline-flex items-center justify-center gap-2 border border-[#1A1817]/25 hover:border-[#1A1817] text-[#1A1817] text-xs font-semibold uppercase tracking-[0.16em] px-5 py-3.5 rounded-full transition-colors"
               >
                 <span>Explore Collections</span>
               </Link>

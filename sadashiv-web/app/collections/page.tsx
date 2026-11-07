@@ -38,9 +38,9 @@ export default function CollectionsPage() {
       {/* ── Page Header ─────────────────────────────────────────────── */}
       <section className="pt-16 pb-12 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-b border-[#E6D8C8]">
         <div className="max-w-3xl">
-          <div className="inline-flex items-center gap-2 text-[10px] uppercase tracking-[0.26em] text-[#9E4736] font-semibold mb-4">
-            <span className="w-1.5 h-1.5 rounded-full bg-[#D4197D]" />
-            <span>— Showroom Collections · Malviya Nagar, Jaipur —</span>
+          <div className="inline-flex max-w-full items-center gap-2 text-[9px] sm:text-[10px] uppercase tracking-[0.16em] sm:tracking-[0.26em] text-[#9E4736] font-semibold mb-4 overflow-hidden truncate">
+            <span className="w-1.5 h-1.5 rounded-full bg-[#D4197D] flex-shrink-0" />
+            <span className="truncate">— Showroom Collections · Malviya Nagar, Jaipur —</span>
           </div>
           <h1 className="font-display font-light text-4xl sm:text-6xl text-[#1A1817] leading-tight mb-4">
             The Curated Collections
@@ -49,16 +49,16 @@ export default function CollectionsPage() {
             Sadashiv Fashions presents four core textile traditions of the Pink City. From impeccably tailored women&apos;s suit sets and breathable cotton kurtis to unstitched dress materials and hand-finished dupattas, each piece is selected for timeless grace and authentic craft.
           </p>
 
-          {/* Quick Jump Navigation */}
-          <div className="flex flex-wrap items-center gap-2.5 mt-8">
-            <span className="text-[10px] uppercase tracking-[0.24em] text-[#7A6358] font-semibold mr-1">
+          {/* Quick Jump Navigation — Scroll-friendly & accessible touch targets */}
+          <div className="flex flex-wrap items-center gap-2 sm:gap-2.5 mt-8">
+            <span className="text-[10px] uppercase tracking-[0.24em] text-[#7A6358] font-semibold mr-1 w-full sm:w-auto mb-1 sm:mb-0">
               Explore:
             </span>
             {sections.map((sec) => (
               <a
                 key={sec.id}
                 href={`#${sec.id}`}
-                className="inline-flex items-center gap-1.5 bg-[#F3ECE2] hover:bg-[#1A1817] text-[#1A1817] hover:text-[#FAF6F0] text-xs uppercase tracking-[0.16em] px-4 py-2 rounded-full font-medium transition-all duration-200 border border-[#E6D8C8]"
+                className="min-h-[40px] inline-flex items-center gap-1.5 bg-[#F3ECE2] hover:bg-[#1A1817] text-[#1A1817] hover:text-[#FAF6F0] text-xs uppercase tracking-[0.16em] px-4 py-2.5 rounded-full font-medium transition-all duration-200 border border-[#E6D8C8] active:scale-98"
               >
                 <span className="font-serif italic text-xs text-[#856020]">{sec.num}</span>
                 <span>{sec.label}</span>
@@ -90,7 +90,7 @@ export default function CollectionsPage() {
             )}`}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.16em] font-semibold text-[#D4197D] hover:text-[#1A1817] transition-colors"
+            className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.16em] font-semibold text-[#D4197D] hover:text-[#1A1817] transition-colors min-h-[40px] py-1.5"
           >
             <span>Enquire on WhatsApp</span>
             <span>↗</span>
@@ -126,7 +126,7 @@ export default function CollectionsPage() {
             )}`}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.16em] font-semibold text-[#D4197D] hover:text-[#1A1817] transition-colors"
+            className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.16em] font-semibold text-[#D4197D] hover:text-[#1A1817] transition-colors min-h-[40px] py-1.5"
           >
             <span>Enquire on WhatsApp</span>
             <span>↗</span>
@@ -162,7 +162,7 @@ export default function CollectionsPage() {
             )}`}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.16em] font-semibold text-[#D4197D] hover:text-[#1A1817] transition-colors"
+            className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.16em] font-semibold text-[#D4197D] hover:text-[#1A1817] transition-colors min-h-[40px] py-1.5"
           >
             <span>Wholesale &amp; Retail Enquiry</span>
             <span>↗</span>
@@ -198,7 +198,7 @@ export default function CollectionsPage() {
             )}`}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.16em] font-semibold text-[#D4197D] hover:text-[#1A1817] transition-colors"
+            className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.16em] font-semibold text-[#D4197D] hover:text-[#1A1817] transition-colors min-h-[40px] py-1.5"
           >
             <span>Enquire on WhatsApp</span>
             <span>↗</span>
@@ -213,8 +213,8 @@ export default function CollectionsPage() {
       </section>
 
       {/* ── Showroom Invitation & Primary Actions Plate ──────────────── */}
-      <section className="bg-[#FCFAF6] py-20 px-4 sm:px-6 lg:px-8 border-t border-[#E6D8C8]">
-        <div className="max-w-4xl mx-auto text-center bg-[#FAF6F0] p-8 sm:p-14 rounded-3xl border border-[#E6D8C8] shadow-xs">
+      <section className="bg-[#FCFAF6] py-16 sm:py-20 px-4 sm:px-6 lg:px-8 border-t border-[#E6D8C8]">
+        <div className="max-w-4xl mx-auto text-center bg-[#FAF6F0] p-5 sm:p-10 lg:p-14 rounded-3xl border border-[#E6D8C8] shadow-xs">
           <span className="text-[10px] uppercase tracking-[0.28em] text-[#9E4736] font-semibold mb-3 block">
             Visit Our Physical Showroom
           </span>
@@ -225,42 +225,43 @@ export default function CollectionsPage() {
             Every textile has a drape, texture, and sheen that photograph cannot fully capture. We warmly welcome you to our Malviya Nagar boutique in Jaipur to explore hundreds of unstitched cuts, tailored suits, and bespoke fabrics.
           </p>
 
-          <div className="flex flex-wrap items-center justify-center gap-3">
+          <div className="flex flex-col sm:flex-row flex-wrap items-stretch sm:items-center justify-center gap-3">
             <a
               href={`${WA_BASE}?text=${encodeURIComponent(
                 'Hello Sadashiv Fashions, I am interested in visiting your Malviya Nagar showroom or enquiring about your collection.'
               )}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2.5 bg-[#D4197D] hover:bg-[#B31468] text-white py-3.5 px-6 rounded-full text-xs uppercase tracking-[0.16em] font-semibold transition-colors shadow-sm"
+              className="min-h-[44px] inline-flex items-center justify-center gap-2.5 bg-[#D4197D] hover:bg-[#B31468] text-white py-3.5 px-6 rounded-full text-xs uppercase tracking-[0.16em] font-semibold transition-colors shadow-sm active:scale-98"
             >
               <span className="w-2 h-2 rounded-full bg-[#25D366]" />
               <span>WhatsApp Enquiry</span>
             </a>
 
-            <a
-              href={TEL_LINK}
-              className="inline-flex items-center gap-2 bg-[#1A1817] hover:bg-[#292522] text-[#FAF6F0] py-3.5 px-6 rounded-full text-xs uppercase tracking-[0.16em] font-medium transition-colors"
-            >
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
-              </svg>
-              <span>Call: +91 63766 48869</span>
-            </a>
+            <div className="grid grid-cols-2 gap-2.5 sm:flex sm:items-center">
+              <a
+                href={TEL_LINK}
+                className="min-h-[44px] inline-flex items-center justify-center gap-2 bg-[#1A1817] hover:bg-[#292522] text-[#FAF6F0] py-3.5 px-5 sm:px-6 rounded-full text-xs uppercase tracking-[0.16em] font-medium transition-colors"
+              >
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
+                </svg>
+                <span>Call Us</span>
+              </a>
 
-            <a
-              href={MAPS_LINK}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 border border-[#1A1817]/25 hover:border-[#1A1817] text-[#1A1817] py-3.5 px-6 rounded-full text-xs uppercase tracking-[0.16em] font-medium transition-colors"
-            >
-              <span>Get Directions</span>
-              <span>↗</span>
-            </a>
+              <a
+                href={MAPS_LINK}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="min-h-[44px] inline-flex items-center justify-center gap-1.5 border border-[#1A1817]/25 hover:border-[#1A1817] text-[#1A1817] py-3.5 px-5 sm:px-6 rounded-full text-xs uppercase tracking-[0.16em] font-medium transition-colors"
+              >
+                <span>Directions ↗</span>
+              </a>
+            </div>
 
             <Link
               href="/gallery"
-              className="inline-flex items-center gap-2 border border-[#1A1817]/25 hover:border-[#1A1817] text-[#1A1817] py-3.5 px-6 rounded-full text-xs uppercase tracking-[0.16em] font-medium transition-colors"
+              className="min-h-[44px] inline-flex items-center justify-center gap-2 border border-[#1A1817]/25 hover:border-[#1A1817] text-[#1A1817] py-3.5 px-6 rounded-full text-xs uppercase tracking-[0.16em] font-medium transition-colors"
             >
               <span>Visual Journal</span>
             </Link>

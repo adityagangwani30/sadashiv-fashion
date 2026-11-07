@@ -46,7 +46,7 @@ export default function VisitPage() {
           {/* Left: Contact & Location Cards (7 cols) */}
           <div className="lg:col-span-7 space-y-8">
             {/* Showroom Address Card */}
-            <div className="bg-[#FAF6F0] p-8 rounded-3xl border border-[#E6D8C8] shadow-xs">
+            <div className="bg-[#FAF6F0] p-5 sm:p-8 rounded-3xl border border-[#E6D8C8] shadow-xs">
               <span className="text-[10px] uppercase tracking-[0.26em] text-[#9E4736] font-bold block mb-3">
                 Showroom Address
               </span>
@@ -56,33 +56,39 @@ export default function VisitPage() {
                 Malviya Nagar, Jaipur — 302017,<br />
                 Rajasthan, India
               </address>
-              <div className="flex flex-wrap items-center gap-3">
+
+              {/* Action Buttons: Clean 2-tier layout on mobile, inline on sm+ */}
+              <div className="flex flex-col sm:flex-row flex-wrap items-stretch sm:items-center gap-3">
                 <a
                   href={MAPS_URL}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 bg-[#1A1817] hover:bg-[#D4197D] text-white text-xs uppercase tracking-[0.16em] font-semibold px-5 py-3.5 rounded-full transition-colors shadow-sm"
+                  className="min-h-[44px] inline-flex items-center justify-center gap-2 bg-[#1A1817] hover:bg-[#D4197D] text-white text-xs uppercase tracking-[0.16em] font-semibold px-6 py-3.5 rounded-full transition-colors shadow-sm active:scale-98"
                 >
                   <span>Get Directions on Google Maps</span>
                   <span>↗</span>
                 </a>
-                <a
-                  href="tel:+916376648869"
-                  className="inline-flex items-center gap-2 bg-[#FAF6F0] hover:bg-[#E6D8C8] text-[#1A1817] border border-[#1A1817]/25 text-xs uppercase tracking-[0.16em] font-semibold px-5 py-3.5 rounded-full transition-colors"
-                >
-                  <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
-                  </svg>
-                  <span>Call: +91 63766 48869</span>
-                </a>
-                <a
-                  href={WA_DIRECTIONS}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 border border-[#1A1817]/30 text-[#1A1817] text-xs uppercase tracking-[0.16em] font-semibold px-5 py-3.5 rounded-full hover:bg-[#1A1817] hover:text-white transition-colors"
-                >
-                  <span>WhatsApp Directions</span>
-                </a>
+
+                <div className="grid grid-cols-2 gap-2.5 sm:flex sm:items-center">
+                  <a
+                    href="tel:+916376648869"
+                    className="min-h-[44px] inline-flex items-center justify-center gap-2 bg-[#FAF6F0] hover:bg-[#E6D8C8] text-[#1A1817] border border-[#1A1817]/25 text-xs uppercase tracking-[0.16em] font-semibold px-4 sm:px-5 py-3.5 rounded-full transition-colors"
+                  >
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
+                    </svg>
+                    <span>Call Us</span>
+                  </a>
+
+                  <a
+                    href={WA_DIRECTIONS}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="min-h-[44px] inline-flex items-center justify-center gap-1.5 border border-[#1A1817]/30 text-[#1A1817] text-xs uppercase tracking-[0.16em] font-semibold px-4 sm:px-5 py-3.5 rounded-full hover:bg-[#1A1817] hover:text-white transition-colors"
+                  >
+                    <span>WhatsApp</span>
+                  </a>
+                </div>
               </div>
               <p className="mt-4 text-[11px] text-[#7A6358]">
                 * Exact Google Maps destination to be confirmed by the owners.
@@ -92,7 +98,7 @@ export default function VisitPage() {
             {/* Timings & Delivery */}
             <div className="grid sm:grid-cols-2 gap-6">
               {/* Timings */}
-              <div className="bg-[#F3ECE2]/80 p-6 rounded-2xl border border-[#E6D8C8]">
+              <div className="bg-[#F3ECE2]/80 p-5 sm:p-6 rounded-2xl border border-[#E6D8C8]">
                 <span className="text-[10px] uppercase tracking-[0.24em] text-[#9E4736] font-bold block mb-2">
                   Operating Hours
                 </span>
@@ -106,14 +112,14 @@ export default function VisitPage() {
                   href={WA_DIRECTIONS}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-xs font-semibold text-[#D4197D] hover:underline"
+                  className="text-xs font-semibold text-[#D4197D] hover:underline py-1 inline-block min-h-[36px]"
                 >
                   Check Today&apos;s Hours →
                 </a>
               </div>
 
               {/* Local Delivery */}
-              <div className="bg-[#F3ECE2]/80 p-6 rounded-2xl border border-[#E6D8C8]">
+              <div className="bg-[#F3ECE2]/80 p-5 sm:p-6 rounded-2xl border border-[#E6D8C8]">
                 <span className="text-[10px] uppercase tracking-[0.24em] text-[#9E4736] font-bold block mb-2">
                   Local Jaipur Delivery
                 </span>
@@ -159,7 +165,7 @@ export default function VisitPage() {
 
           {/* Right: Concierge Action Card (5 cols) */}
           <div className="lg:col-span-5">
-            <div className="bg-[#1A1817] text-[#FAF6F0] p-8 sm:p-10 rounded-3xl border border-[#C5A059]/40 shadow-xl h-full flex flex-col justify-between relative overflow-hidden">
+            <div className="bg-[#1A1817] text-[#FAF6F0] p-5 sm:p-8 lg:p-10 rounded-3xl border border-[#C5A059]/40 shadow-xl h-full flex flex-col justify-between relative overflow-hidden">
               <div className="absolute top-0 right-0 w-64 h-64 bg-[#D4197D]/10 rounded-full blur-2xl pointer-events-none" />
 
               <div className="relative z-10">
@@ -170,7 +176,7 @@ export default function VisitPage() {
                   <span className="w-2 h-2 rounded-full bg-[#25D366] animate-pulse" />
                 </div>
 
-                <h3 className="font-display text-3xl sm:text-4xl text-[#FAF6F0] mb-4 leading-tight">
+                <h3 className="font-display text-2xl sm:text-4xl text-[#FAF6F0] mb-4 leading-tight">
                   Connect Directly on WhatsApp
                 </h3>
 
@@ -183,7 +189,7 @@ export default function VisitPage() {
                     href={WA_GENERAL}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-full flex items-center justify-between bg-[#D4197D] hover:bg-[#B31468] text-white py-3.5 px-6 rounded-full text-xs uppercase tracking-[0.16em] font-semibold transition-colors shadow-sm"
+                    className="w-full min-h-[44px] flex items-center justify-between bg-[#D4197D] hover:bg-[#B31468] text-white py-3.5 px-6 rounded-full text-xs uppercase tracking-[0.16em] font-semibold transition-all shadow-sm active:scale-98"
                   >
                     <span>Retail Enquiry</span>
                     <span>↗</span>
@@ -193,7 +199,7 @@ export default function VisitPage() {
                     href={WA_WHOLESALE}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-full flex items-center justify-between border border-white/20 hover:border-white text-white py-3.5 px-6 rounded-full text-xs uppercase tracking-[0.16em] font-semibold transition-colors"
+                    className="w-full min-h-[44px] flex items-center justify-between border border-white/20 hover:border-white text-white py-3.5 px-6 rounded-full text-xs uppercase tracking-[0.16em] font-semibold transition-all active:scale-98"
                   >
                     <span>Wholesale &amp; Bulk Enquiries</span>
                     <span>✦</span>

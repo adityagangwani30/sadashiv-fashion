@@ -110,13 +110,13 @@ export default function GalleryPage() {
             A photographic journal of our Malviya Nagar boutique, window displays, and handcrafted textile weaves. Click any image to examine in high resolution.
           </p>
 
-          {/* Filter Pills */}
+          {/* Filter Pills — Accessible 40px+ Touch Targets */}
           <div className="flex flex-wrap gap-2 mt-6">
             <button
               onClick={() => setFilter('all')}
-              className={`text-xs uppercase tracking-[0.16em] px-4 py-2 rounded-full font-medium transition-colors ${
+              className={`min-h-[40px] text-xs uppercase tracking-[0.16em] px-4 py-2.5 rounded-full font-medium transition-all active:scale-98 ${
                 filter === 'all'
-                  ? 'bg-[#1A1817] text-white'
+                  ? 'bg-[#1A1817] text-white shadow-xs'
                   : 'bg-[#F3ECE2] text-[#1A1817] hover:bg-[#E6D8C8]'
               }`}
             >
@@ -124,9 +124,9 @@ export default function GalleryPage() {
             </button>
             <button
               onClick={() => setFilter('display')}
-              className={`text-xs uppercase tracking-[0.16em] px-4 py-2 rounded-full font-medium transition-colors ${
+              className={`min-h-[40px] text-xs uppercase tracking-[0.16em] px-4 py-2.5 rounded-full font-medium transition-all active:scale-98 ${
                 filter === 'display'
-                  ? 'bg-[#1A1817] text-white'
+                  ? 'bg-[#1A1817] text-white shadow-xs'
                   : 'bg-[#F3ECE2] text-[#1A1817] hover:bg-[#E6D8C8]'
               }`}
             >
@@ -134,9 +134,9 @@ export default function GalleryPage() {
             </button>
             <button
               onClick={() => setFilter('textile')}
-              className={`text-xs uppercase tracking-[0.16em] px-4 py-2 rounded-full font-medium transition-colors ${
+              className={`min-h-[40px] text-xs uppercase tracking-[0.16em] px-4 py-2.5 rounded-full font-medium transition-all active:scale-98 ${
                 filter === 'textile'
-                  ? 'bg-[#1A1817] text-white'
+                  ? 'bg-[#1A1817] text-white shadow-xs'
                   : 'bg-[#F3ECE2] text-[#1A1817] hover:bg-[#E6D8C8]'
               }`}
             >
@@ -144,9 +144,9 @@ export default function GalleryPage() {
             </button>
             <button
               onClick={() => setFilter('store')}
-              className={`text-xs uppercase tracking-[0.16em] px-4 py-2 rounded-full font-medium transition-colors ${
+              className={`min-h-[40px] text-xs uppercase tracking-[0.16em] px-4 py-2.5 rounded-full font-medium transition-all active:scale-98 ${
                 filter === 'store'
-                  ? 'bg-[#1A1817] text-white'
+                  ? 'bg-[#1A1817] text-white shadow-xs'
                   : 'bg-[#F3ECE2] text-[#1A1817] hover:bg-[#E6D8C8]'
               }`}
             >
@@ -209,37 +209,38 @@ export default function GalleryPage() {
           role="dialog"
           aria-modal="true"
           aria-label="Gallery Image Lightbox"
-          className="fixed inset-0 z-50 bg-[#1A1817]/90 backdrop-blur-md flex items-center justify-center p-4 sm:p-8"
+          className="fixed inset-0 z-50 bg-[#1A1817]/90 backdrop-blur-md flex items-center justify-center p-3 sm:p-6 lg:p-8"
           onClick={() => setActiveLightbox(null)}
         >
           <div
-            className="relative max-w-4xl w-full max-h-[90vh] bg-[#FAF6F0] rounded-2xl overflow-hidden shadow-2xl flex flex-col"
+            className="relative max-w-4xl w-full max-h-[92dvh] bg-[#FAF6F0] rounded-2xl overflow-hidden shadow-2xl flex flex-col"
             onClick={(e) => e.stopPropagation()}
           >
             <button
               onClick={() => setActiveLightbox(null)}
-              className="absolute top-4 right-4 z-20 w-10 h-10 rounded-full bg-white/80 hover:bg-white text-[#1A1817] flex items-center justify-center shadow-md transition-colors"
+              className="absolute top-3 right-3 sm:top-4 sm:right-4 z-20 w-11 h-11 rounded-full bg-white/90 hover:bg-white text-[#1A1817] flex items-center justify-center shadow-md active:scale-95 transition-all"
               aria-label="Close Lightbox"
             >
               ✕
             </button>
 
-            <div className="relative aspect-[16/10] sm:aspect-[16/9] w-full bg-[#1A1817]">
+            {/* Responsive aspect ratio: portrait 4:5 on mobile, 16:10 on sm+ */}
+            <div className="relative aspect-[4/5] sm:aspect-[16/10] w-full max-h-[60dvh] bg-[#1A1817]">
               <Image
                 src={activeLightbox.src}
                 alt={activeLightbox.alt}
                 fill
                 className="object-contain"
-                sizes="100vw"
+                sizes="(max-width: 640px) 100vw, 85vw"
               />
             </div>
 
-            <div className="p-6 bg-[#FAF6F0] flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 border-t border-[#E6D8C8]">
+            <div className="p-4 sm:p-6 bg-[#FAF6F0] flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 sm:gap-4 border-t border-[#E6D8C8]">
               <div>
                 <span className="text-[10px] uppercase tracking-[0.22em] text-[#9E4736] font-semibold">
                   {activeLightbox.categoryLabel}
                 </span>
-                <h3 className="font-display text-xl text-[#1A1817] mt-0.5">
+                <h3 className="font-display text-lg sm:text-xl text-[#1A1817] mt-0.5 line-clamp-1">
                   {activeLightbox.caption}
                 </h3>
               </div>
@@ -247,7 +248,7 @@ export default function GalleryPage() {
                 href="https://wa.me/916376648869?text=Hello%20Sadashiv%20Fashions%2C%20I%20am%20enquiring%20about%20a%20piece%20featured%20in%20your%20Visual%20Journal."
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 bg-[#D4197D] text-white text-xs uppercase tracking-[0.16em] font-semibold px-5 py-2.5 rounded-full hover:bg-[#B31468] transition-colors whitespace-nowrap"
+                className="w-full sm:w-auto min-h-[44px] inline-flex items-center justify-center gap-2 bg-[#D4197D] text-white text-xs uppercase tracking-[0.16em] font-semibold px-5 py-3 rounded-full hover:bg-[#B31468] active:scale-98 transition-all whitespace-nowrap shadow-xs"
               >
                 Enquire on WhatsApp ↗
               </a>
