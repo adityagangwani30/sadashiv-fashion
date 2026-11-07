@@ -56,23 +56,32 @@ export default function VisitPage() {
                 Malviya Nagar, Jaipur — 302017,<br />
                 Rajasthan, India
               </address>
-              <div className="flex flex-wrap items-center gap-4">
+              <div className="flex flex-wrap items-center gap-3">
                 <a
                   href={MAPS_URL}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 bg-[#1A1817] hover:bg-[#D4197D] text-white text-xs uppercase tracking-[0.16em] font-semibold px-5 py-3 rounded-full transition-colors"
+                  className="inline-flex items-center gap-2 bg-[#1A1817] hover:bg-[#D4197D] text-white text-xs uppercase tracking-[0.16em] font-semibold px-5 py-3.5 rounded-full transition-colors shadow-sm"
                 >
-                  <span>Google Maps Directions</span>
+                  <span>Get Directions on Google Maps</span>
                   <span>↗</span>
+                </a>
+                <a
+                  href="tel:+916376648869"
+                  className="inline-flex items-center gap-2 bg-[#FAF6F0] hover:bg-[#E6D8C8] text-[#1A1817] border border-[#1A1817]/25 text-xs uppercase tracking-[0.16em] font-semibold px-5 py-3.5 rounded-full transition-colors"
+                >
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
+                  </svg>
+                  <span>Call: +91 63766 48869</span>
                 </a>
                 <a
                   href={WA_DIRECTIONS}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 border border-[#1A1817]/30 text-[#1A1817] text-xs uppercase tracking-[0.16em] font-semibold px-5 py-3 rounded-full hover:bg-[#1A1817] hover:text-white transition-colors"
+                  className="inline-flex items-center gap-2 border border-[#1A1817]/30 text-[#1A1817] text-xs uppercase tracking-[0.16em] font-semibold px-5 py-3.5 rounded-full hover:bg-[#1A1817] hover:text-white transition-colors"
                 >
-                  <span>Ask Directions on WhatsApp</span>
+                  <span>WhatsApp Directions</span>
                 </a>
               </div>
               <p className="mt-4 text-[11px] text-[#7A6358]">

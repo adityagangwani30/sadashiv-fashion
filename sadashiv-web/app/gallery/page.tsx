@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Image from 'next/image';
 
 interface GalleryItem {
@@ -81,6 +81,19 @@ export default function GalleryPage() {
       ? galleryItems
       : galleryItems.filter((item) => item.tag === filter);
 
+  useEffect(() => {
+    if (!activeLightbox) return;
+    document.body.style.overflow = 'hidden';
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') setActiveLightbox(null);
+    };
+    window.addEventListener('keydown', handleKeyDown);
+    return () => {
+      document.body.style.overflow = '';
+      window.removeEventListener('keydown', handleKeyDown);
+    };
+  }, [activeLightbox]);
+
   return (
     <div className="bg-[#FAF6F0] min-h-screen">
       {/* ── Page Header ─────────────────────────────────────────────── */}
@@ -149,8 +162,17 @@ export default function GalleryPage() {
           {filteredItems.map((item, idx) => (
             <div
               key={idx}
+              role="button"
+              tabIndex={0}
+              aria-label={`Open view for ${item.caption}`}
               onClick={() => setActiveLightbox(item)}
-              className="group cursor-pointer bg-[#F3ECE2]/80 p-2.5 rounded-2xl border border-[#E6D8C8] shadow-xs hover:shadow-md transition-all duration-300"
+              onKeyDown={(e) => {
+                if (e.key === 'Enter' || e.key === ' ') {
+                  e.preventDefault();
+                  setActiveLightbox(item);
+                }
+              }}
+              className="group cursor-pointer bg-[#F3ECE2]/80 p-2.5 rounded-2xl border border-[#E6D8C8] shadow-xs hover:shadow-md transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-[#D4197D]"
             >
               <div className="relative aspect-[4/5] rounded-xl overflow-hidden bg-[#E6D8C8]">
                 <Image
@@ -186,6 +208,7 @@ export default function GalleryPage() {
         <div
           role="dialog"
           aria-modal="true"
+          aria-label="Gallery Image Lightbox"
           className="fixed inset-0 z-50 bg-[#1A1817]/90 backdrop-blur-md flex items-center justify-center p-4 sm:p-8"
           onClick={() => setActiveLightbox(null)}
         >

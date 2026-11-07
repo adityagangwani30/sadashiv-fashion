@@ -1,6 +1,6 @@
 {
   "version": "0.9",
-  "generatedAt": "2026-11-07T13:08:36.265Z",
+  "generatedAt": "2026-11-07T14:27:10.283Z",
   "techStack": {
     "languages": [],
     "frameworks": [],
@@ -12,7 +12,7 @@
     "cloudSdks": [],
     "payments": [],
     "other": [],
-    "packageManager": "npm",
+    "packageManager": null,
     "summary": "(unknown)"
   },
   "clusters": [
@@ -20,17 +20,14 @@
       "name": "Frontend",
       "files": [
         "sadashiv-web/app/about/page.tsx",
-        "sadashiv-web/app/collections/dupattas/page.tsx",
-        "sadashiv-web/app/collections/fabrics/page.tsx",
-        "sadashiv-web/app/collections/kurtis/page.tsx",
         "sadashiv-web/app/collections/page.tsx",
-        "sadashiv-web/app/collections/suits/page.tsx",
         "sadashiv-web/app/gallery/page.tsx",
         "sadashiv-web/app/layout.tsx",
         "sadashiv-web/app/page.tsx",
         "sadashiv-web/app/visit/page.tsx",
         "sadashiv-web/components/layout/Footer.tsx",
-        "sadashiv-web/components/shared/FloatingWhatsApp.tsx"
+        "sadashiv-web/components/shared/FloatingWhatsApp.tsx",
+        "sadashiv-web/components/shared/Logo.tsx"
       ],
       "risk": "MEDIUM",
       "centralFile": "sadashiv-web/app/about/page.tsx",
@@ -46,17 +43,6 @@
       ],
       "risk": "MEDIUM",
       "centralFile": "sadashiv-web/app/robots.ts",
-      "dependsOn": [],
-      "usedBy": []
-    },
-    {
-      "name": "Layout (MobileNav)",
-      "files": [
-        "sadashiv-web/components/layout/Header.tsx",
-        "sadashiv-web/components/layout/MobileNav.tsx"
-      ],
-      "risk": "MEDIUM",
-      "centralFile": "sadashiv-web/components/layout/MobileNav.tsx",
       "dependsOn": [],
       "usedBy": []
     },
@@ -82,6 +68,17 @@
       "centralFile": "sadashiv-web/eslint.config.mjs",
       "dependsOn": [],
       "usedBy": []
+    },
+    {
+      "name": "Layout (MobileNav)",
+      "files": [
+        "sadashiv-web/components/layout/Header.tsx",
+        "sadashiv-web/components/layout/MobileNav.tsx"
+      ],
+      "risk": "LOW",
+      "centralFile": "sadashiv-web/components/layout/MobileNav.tsx",
+      "dependsOn": [],
+      "usedBy": []
     }
   ],
   "criticalFiles": [
@@ -101,12 +98,12 @@
       "level": "MEDIUM",
       "files": [
         "sadashiv-web/app/about/page.tsx",
-        "sadashiv-web/app/collections/dupattas/page.tsx",
-        "sadashiv-web/app/collections/fabrics/page.tsx",
-        "sadashiv-web/app/collections/kurtis/page.tsx",
-        "sadashiv-web/app/collections/page.tsx"
+        "sadashiv-web/app/collections/page.tsx",
+        "sadashiv-web/app/gallery/page.tsx",
+        "sadashiv-web/app/layout.tsx",
+        "sadashiv-web/app/page.tsx"
       ],
-      "reason": "Frontend contains 12 modules with elevated risk."
+      "reason": "Frontend contains 9 modules with elevated risk."
     },
     {
       "cluster": "Unclassified: sadashiv-web/app",
@@ -118,15 +115,6 @@
       "reason": "Unclassified: sadashiv-web/app contains 2 modules with elevated risk."
     },
     {
-      "cluster": "Layout (MobileNav)",
-      "level": "MEDIUM",
-      "files": [
-        "sadashiv-web/components/layout/Header.tsx",
-        "sadashiv-web/components/layout/MobileNav.tsx"
-      ],
-      "reason": "Layout (MobileNav) contains 2 modules with elevated risk. Most-connected file: MobileNav.tsx (1 importers)."
-    },
-    {
       "cluster": "Shared (WhatsAppButton)",
       "level": "MEDIUM",
       "files": [
@@ -134,14 +122,6 @@
         "sadashiv-web/components/shared/WhatsAppButton.tsx"
       ],
       "reason": "Shared (WhatsAppButton) contains 2 modules with elevated risk. Most-connected file: WhatsAppButton.tsx (1 importers)."
-    },
-    {
-      "cluster": "Unclassified: sadashiv-web/data",
-      "level": "MEDIUM",
-      "files": [
-        "sadashiv-web/data/products.ts"
-      ],
-      "reason": "Unclassified: sadashiv-web/data contains 1 modules with elevated risk."
     },
     {
       "cluster": "Config",
@@ -156,34 +136,19 @@
   ],
   "reviewGroups": [],
   "recentChanges": {
-    "branch": "unknown",
-    "filesChanged": 49,
-    "riskLevel": "HIGH",
+    "branch": "main",
+    "filesChanged": 33,
+    "riskLevel": "CRITICAL",
     "featuresAdded": [
-      "Documentation: 01 Business Content Brief.Md",
-      "Documentation: Sadashiv Web",
-      "Configuration: Package Lock",
-      "Configuration",
-      "Application Logic",
-      "Application Logic: .Gitignore",
-      "Application Logic: Products",
-      "Application Logic",
-      "Application Logic",
-      "Application Logic",
-      "Application Logic",
-      "Frontend Layer: Page",
-      "Frontend Layer: Page",
-      "Frontend Layer: Page",
-      "Frontend Layer: Page",
-      "Frontend Layer: Page",
-      "Frontend Layer: Page",
-      "Frontend Layer",
-      "Frontend Layer: Page",
-      "Frontend Layer: Page",
-      "Frontend Layer",
-      "Frontend Layer"
+      "Application Logic: .Gitignore"
     ],
-    "featuresModified": []
+    "featuresModified": [
+      "Frontend Layer: Page",
+      "Frontend Layer: App",
+      "Frontend Layer",
+      "Configuration: Next.Config",
+      "Application Logic"
+    ]
   },
   "rules": [
     "UI components live in components/ — keep them presentational",

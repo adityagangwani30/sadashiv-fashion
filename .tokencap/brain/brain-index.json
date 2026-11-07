@@ -1,26 +1,19 @@
 {
   "frontend": [
     "sadashiv-web/app/about/page.tsx",
-    "sadashiv-web/app/collections/dupattas/page.tsx",
-    "sadashiv-web/app/collections/fabrics/page.tsx",
-    "sadashiv-web/app/collections/kurtis/page.tsx",
     "sadashiv-web/app/collections/page.tsx",
-    "sadashiv-web/app/collections/suits/page.tsx",
     "sadashiv-web/app/gallery/page.tsx",
     "sadashiv-web/app/layout.tsx",
     "sadashiv-web/app/page.tsx",
     "sadashiv-web/app/visit/page.tsx",
     "sadashiv-web/components/layout/Footer.tsx",
-    "sadashiv-web/components/shared/FloatingWhatsApp.tsx"
+    "sadashiv-web/components/shared/FloatingWhatsApp.tsx",
+    "sadashiv-web/components/shared/Logo.tsx"
   ],
   "other": [
     "sadashiv-web/app/robots.ts",
     "sadashiv-web/app/sitemap.ts",
     "sadashiv-web/data/products.ts"
-  ],
-  "layout (mobilenav)": [
-    "sadashiv-web/components/layout/Header.tsx",
-    "sadashiv-web/components/layout/MobileNav.tsx"
   ],
   "shared (whatsappbutton)": [
     "sadashiv-web/components/shared/ProductCard.tsx",
@@ -30,5 +23,9 @@
     "sadashiv-web/eslint.config.mjs",
     "sadashiv-web/next-env.d.ts",
     "sadashiv-web/next.config.ts"
+  ],
+  "layout (mobilenav)": [
+    "sadashiv-web/components/layout/Header.tsx",
+    "sadashiv-web/components/layout/MobileNav.tsx"
   ]
 }

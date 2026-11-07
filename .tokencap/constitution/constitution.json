@@ -1,6 +1,6 @@
 {
   "version": "1.2",
-  "generatedAt": "2026-11-07T13:08:34.455Z",
+  "generatedAt": "2026-11-07T14:27:09.429Z",
   "rules": [
     {
       "id": "CONST-ARCH-BD3B55",
@@ -81,15 +81,52 @@
       "derivedFrom": [],
       "relationships": [],
       "manual": false
+    },
+    {
+      "id": "CONST-SEC-E58E40",
+      "category": "Security",
+      "severity": "CRITICAL",
+      "confidence": 0.95,
+      "source": "heuristic",
+      "description": "Encryption implementation must remain algorithm-compatible.",
+      "reason": "Changing the encryption algorithm or key derivation method makes all existing encrypted data unreadable.",
+      "whatBreaks": "Encrypted data (tokens, at-rest fields, backups) cannot be decrypted.",
+      "examples": [
+        "Found in: sadashiv-web/data/products.ts"
+      ],
+      "derivedFrom": [
+        "sadashiv-web/data/products.ts"
+      ],
+      "relationships": [],
+      "manual": false
+    },
+    {
+      "id": "CONST-COMP-1A246E",
+      "category": "Compliance",
+      "severity": "CRITICAL",
+      "confidence": 0.9,
+      "source": "heuristic",
+      "description": "Payment processing (PCI-DSS) — all Stripe/payment code requires compliance review.",
+      "reason": "PCI-DSS requires that all payment card data handling meets security standards. Any change to payment flows must be reviewed.",
+      "whatBreaks": "PCI compliance violation. Payment processor account suspension. Legal liability.",
+      "examples": [
+        "Always review PCI-related code before merging.",
+        "Found in: sadashiv-web/data/products.ts"
+      ],
+      "derivedFrom": [
+        "sadashiv-web/data/products.ts"
+      ],
+      "relationships": [],
+      "manual": false
     }
   ],
   "score": {
-    "total": 91,
+    "total": 92,
     "architecture": 100,
     "apiStability": 90,
     "schemaIntegrity": 90,
     "security": 85,
-    "compliance": 95
+    "compliance": 100
   },
   "filesWritten": []
 }

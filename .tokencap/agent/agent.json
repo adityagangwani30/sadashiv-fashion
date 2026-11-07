@@ -1,7 +1,7 @@
 {
   "version": "0.8",
   "projectName": "Sadashiv Fashions",
-  "generatedAt": "2026-11-07T13:08:34.185Z",
+  "generatedAt": "2026-11-07T14:27:09.327Z",
   "projectType": "Unknown",
   "techStack": {
     "languages": [],
@@ -22,7 +22,7 @@
     "clusters": [
       {
         "name": "Frontend",
-        "size": 12,
+        "size": 9,
         "risk": "MEDIUM",
         "centralFile": "page.tsx"
       },
@@ -41,7 +41,7 @@
       {
         "name": "Layout (MobileNav)",
         "size": 2,
-        "risk": "MEDIUM",
+        "risk": "LOW",
         "centralFile": "MobileNav.tsx"
       },
       {
@@ -64,12 +64,12 @@
       "level": "MEDIUM",
       "files": [
         "sadashiv-web/app/about/page.tsx",
-        "sadashiv-web/app/collections/dupattas/page.tsx",
-        "sadashiv-web/app/collections/fabrics/page.tsx",
-        "sadashiv-web/app/collections/kurtis/page.tsx",
-        "sadashiv-web/app/collections/page.tsx"
+        "sadashiv-web/app/collections/page.tsx",
+        "sadashiv-web/app/gallery/page.tsx",
+        "sadashiv-web/app/layout.tsx",
+        "sadashiv-web/app/page.tsx"
       ],
-      "reason": "Frontend contains 12 modules with elevated risk."
+      "reason": "Frontend contains 9 modules with elevated risk."
     },
     {
       "cluster": "Unclassified: sadashiv-web/app",
@@ -81,15 +81,6 @@
       "reason": "Unclassified: sadashiv-web/app contains 2 modules with elevated risk."
     },
     {
-      "cluster": "Layout (MobileNav)",
-      "level": "MEDIUM",
-      "files": [
-        "sadashiv-web/components/layout/Header.tsx",
-        "sadashiv-web/components/layout/MobileNav.tsx"
-      ],
-      "reason": "Layout (MobileNav) contains 2 modules with elevated risk. Most-connected file: MobileNav.tsx (1 importers)."
-    },
-    {
       "cluster": "Shared (WhatsAppButton)",
       "level": "MEDIUM",
       "files": [
@@ -97,14 +88,6 @@
         "sadashiv-web/components/shared/WhatsAppButton.tsx"
       ],
       "reason": "Shared (WhatsAppButton) contains 2 modules with elevated risk. Most-connected file: WhatsAppButton.tsx (1 importers)."
-    },
-    {
-      "cluster": "Unclassified: sadashiv-web/data",
-      "level": "MEDIUM",
-      "files": [
-        "sadashiv-web/data/products.ts"
-      ],
-      "reason": "Unclassified: sadashiv-web/data contains 1 modules with elevated risk."
     },
     {
       "cluster": "Config",

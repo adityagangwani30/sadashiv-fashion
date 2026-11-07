@@ -32,7 +32,7 @@ const ASSET_MAP: Record<LogoVariant, Record<LogoTheme, string>> = {
     magenta: '/brand/variants/logo-compact.png',
     white: '/brand/variants/logo-compact-white.png',
     gold: '/brand/variants/logo-compact-gold.png',
-    charcoal: '/brand/variants/logo-full-charcoal.png',
+    charcoal: '/brand/variants/logo-compact-charcoal.png',
   },
   trishul: {
     magenta: '/brand/variants/logo-trishul.png',
@@ -44,9 +44,9 @@ const ASSET_MAP: Record<LogoVariant, Record<LogoTheme, string>> = {
 
 // Intrinsic aspect ratios of the cropped variants
 const ASPECT_RATIOS: Record<LogoVariant, number> = {
-  full: 1572 / 945,    // ~1.66
-  compact: 1475 / 430, // ~3.43
-  trishul: 370 / 945,  // ~0.39
+  full: 1589 / 963,    // ~1.650
+  compact: 1589 / 500, // ~3.178
+  trishul: 381 / 963,  // ~0.395
 };
 
 const HEIGHT_PRESETS: Record<LogoVariant, Record<Exclude<LogoSize, 'custom'>, number>> = {

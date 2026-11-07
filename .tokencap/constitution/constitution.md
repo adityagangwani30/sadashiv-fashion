@@ -9,16 +9,56 @@
 
 | Category | Score |
 |---|---|
-| **Overall** | **91 / 100** |
+| **Overall** | **92 / 100** |
 | Architecture | 100 |
 | API Stability | 90 |
 | Schema Integrity | 90 |
 | Security | 85 |
-| Compliance | 95 |
+| Compliance | 100 |
 
 ---
 
-## Rules (5 total)
+## Rules (7 total)
+
+### Security (1)
+
+#### 🔴 CONST-SEC-E58E40
+
+**Encryption implementation must remain algorithm-compatible.**
+
+| Field | Value |
+|---|---|
+| Severity | `CRITICAL` |
+| Category | Security |
+| Source | heuristic |
+| Confidence | ██████████ 95% |
+| Manual | No |
+
+**Why:** Changing the encryption algorithm or key derivation method makes all existing encrypted data unreadable.
+
+**What breaks:** Encrypted data (tokens, at-rest fields, backups) cannot be decrypted.
+
+**Derived from:** `sadashiv-web/data/products.ts`
+
+### Compliance (1)
+
+#### 🔴 CONST-COMP-1A246E
+
+**Payment processing (PCI-DSS) — all Stripe/payment code requires compliance review.**
+
+| Field | Value |
+|---|---|
+| Severity | `CRITICAL` |
+| Category | Compliance |
+| Source | heuristic |
+| Confidence | █████████░ 90% |
+| Manual | No |
+
+**Why:** PCI-DSS requires that all payment card data handling meets security standards. Any change to payment flows must be reviewed.
+
+**What breaks:** PCI compliance violation. Payment processor account suspension. Legal liability.
+
+**Derived from:** `sadashiv-web/data/products.ts`
 
 ### Architecture (5)
 

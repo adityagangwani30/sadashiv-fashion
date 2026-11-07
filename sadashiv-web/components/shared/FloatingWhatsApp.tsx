@@ -2,8 +2,10 @@
 
 import React, { useState } from 'react';
 
+const TEL_LINK = 'tel:+916376648869';
+const MAPS_LINK = 'https://maps.google.com/?q=Sadashiv+Fashions+Malviya+Nagar+Jaipur';
 const WA_GENERAL =
-  'https://wa.me/916376648869?text=Hello%20Sadashiv%20Fashions%2C%20I%20am%20interested%20in%20your%20collection.%20Please%20share%20details.';
+  'https://wa.me/916376648869?text=Hello%20Sadashiv%20Fashions%2C%20I%20am%20interested%20in%20your%20boutique%20collection.%20Please%20guide%20me.';
 const WA_WHOLESALE =
   'https://wa.me/916376648869?text=Hello%20Sadashiv%20Fashions%2C%20I%20am%20enquiring%20about%20a%20wholesale%20purchase.%20Please%20share%20your%20catalogue%2C%20pricing%20and%20terms.';
 
@@ -12,17 +14,17 @@ export default function FloatingWhatsApp() {
 
   return (
     <div className="fixed bottom-6 right-5 z-40 select-none">
-      {/* Expanded Quick Concierge Popover */}
+      {/* Expanded Boutique Concierge Popover */}
       {expanded && (
-        <div className="mb-3 w-72 bg-[#FAF6F0] rounded-2xl shadow-2xl border border-[#E6D8C8] p-4 animate-in fade-in slide-in-from-bottom-2 duration-200">
+        <div className="mb-3 w-80 bg-[#FAF6F0] rounded-2xl shadow-2xl border border-[#E6D8C8] p-5 animate-in fade-in slide-in-from-bottom-2 duration-200">
           <div className="flex items-center justify-between pb-3 border-b border-[#E6D8C8]">
             <div className="flex items-center gap-2">
               <span className="w-2.5 h-2.5 rounded-full bg-[#25D366] animate-pulse" />
-              <p className="font-display text-sm font-semibold text-[#1A1817]">Sadashiv Concierge</p>
+              <p className="font-display text-base font-semibold text-[#1A1817]">Sadashiv Concierge</p>
             </div>
             <button
               onClick={() => setExpanded(false)}
-              className="text-[#7A6358] hover:text-[#1A1817] p-1 text-sm"
+              className="text-[#7A6358] hover:text-[#1A1817] p-1 text-sm rounded-md transition-colors"
               aria-label="Close Concierge popover"
             >
               ✕
@@ -30,7 +32,7 @@ export default function FloatingWhatsApp() {
           </div>
 
           <p className="text-xs text-[#5A4A42] my-3 leading-relaxed">
-            Welcome to Sadashiv Fashions. How may we assist your textile journey today?
+            Welcome to Sadashiv Fashions in Malviya Nagar, Jaipur. How may we assist you today?
           </p>
 
           <div className="space-y-2">
@@ -38,25 +40,48 @@ export default function FloatingWhatsApp() {
               href={WA_GENERAL}
               target="_blank"
               rel="noopener noreferrer"
+              className="w-full flex items-center justify-between p-2.5 bg-[#D4197D] text-white rounded-xl text-xs font-semibold uppercase tracking-[0.12em] hover:bg-[#B31468] transition-colors shadow-xs"
+            >
+              <span>WhatsApp Consultation</span>
+              <span>↗</span>
+            </a>
+
+            <a
+              href={TEL_LINK}
               className="w-full flex items-center justify-between p-2.5 bg-[#FAF6F0] hover:bg-[#F3ECE2] border border-[#E6D8C8] rounded-xl text-xs text-[#1A1817] font-medium transition-colors"
             >
-              <span>Retail Collection Enquiry</span>
-              <span className="text-[#D4197D]">↗</span>
+              <div className="flex items-center gap-2">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
+                </svg>
+                <span>Call: +91 63766 48869</span>
+              </div>
+              <span className="text-[#856020]">Immediate</span>
+            </a>
+
+            <a
+              href={MAPS_LINK}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full flex items-center justify-between p-2.5 bg-[#FAF6F0] hover:bg-[#F3ECE2] border border-[#E6D8C8] rounded-xl text-xs text-[#1A1817] font-medium transition-colors"
+            >
+              <span>Get Showroom Directions</span>
+              <span className="text-[#856020]">Maps ↗</span>
             </a>
 
             <a
               href={WA_WHOLESALE}
               target="_blank"
               rel="noopener noreferrer"
-              className="w-full flex items-center justify-between p-2.5 bg-[#1A1817] hover:bg-[#D4197D] text-[#FAF6F0] rounded-xl text-xs font-medium transition-colors"
+              className="w-full flex items-center justify-between p-2.5 bg-[#1A1817] hover:bg-[#292522] text-[#FAF6F0] rounded-xl text-xs font-medium transition-colors"
             >
-              <span>Wholesale &amp; Bulk Orders</span>
-              <span className="text-white">↗</span>
+              <span>Wholesale &amp; Bulk Enquiries</span>
+              <span className="text-white">✦</span>
             </a>
           </div>
 
-          <p className="mt-3 text-[10px] text-center text-[#7A6358]">
-            Malviya Nagar, Jaipur · Instant WhatsApp Response
+          <p className="mt-3 text-[10px] text-center text-[#7A6358] pt-2 border-t border-[#E6D8C8]">
+            Malviya Nagar, Jaipur · Prompt Response
           </p>
         </div>
       )}
@@ -65,7 +90,8 @@ export default function FloatingWhatsApp() {
       <button
         onClick={() => setExpanded(!expanded)}
         className="group flex items-center gap-2.5 bg-[#1A1817] hover:bg-[#D4197D] text-white rounded-full pl-3.5 pr-4 py-2.5 shadow-xl border border-[#C5A059]/40 transition-all duration-300 active:scale-95"
-        aria-label="Open Sadashiv WhatsApp Concierge"
+        aria-label="Open Sadashiv WhatsApp & Showroom Concierge"
+        aria-expanded={expanded}
       >
         <span className="relative flex h-3 w-3">
           <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#25D366] opacity-75" />

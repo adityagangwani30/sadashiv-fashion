@@ -4,7 +4,7 @@
 > Paste this entire file into ChatGPT, Claude, Gemini, Cursor, Windsurf, Cline, Roo Code, or OpenHands
 > to give the AI agent full project intelligence before it touches any code.
 
-**Generated:** 2026-11-07T13:08:34.179Z
+**Generated:** 2026-11-07T14:27:09.326Z
 **Project:** Sadashiv Fashions
 **Type:** Unknown
 
@@ -41,11 +41,9 @@ No end-to-end layered dependency chain was verified from the import graph; treat
 
 ## 5. High-Risk Areas
 
-- [MEDIUM] **Frontend** - MEDIUM: Frontend contains 12 modules with elevated risk.
+- [MEDIUM] **Frontend** - MEDIUM: Frontend contains 9 modules with elevated risk.
 - [MEDIUM] **Unclassified: sadashiv-web/app** - MEDIUM: Unclassified: sadashiv-web/app contains 2 modules with elevated risk.
-- [MEDIUM] **Layout (MobileNav)** - MEDIUM: Layout (MobileNav) contains 2 modules with elevated risk. Most-connected file: MobileNav.tsx (1 importers).
 - [MEDIUM] **Shared (WhatsAppButton)** - MEDIUM: Shared (WhatsAppButton) contains 2 modules with elevated risk. Most-connected file: WhatsAppButton.tsx (1 importers).
-- [MEDIUM] **Unclassified: sadashiv-web/data** - MEDIUM: Unclassified: sadashiv-web/data contains 1 modules with elevated risk.
 - [MEDIUM] **Config** - MEDIUM: Configuration controls runtime behavior. Misconfiguration causes outages.
 
 ---

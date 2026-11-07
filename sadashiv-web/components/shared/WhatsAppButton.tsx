@@ -43,8 +43,8 @@ function WhatsAppIcon() {
 }
 
 // Helper to build WhatsApp enquiry links
-export function buildProductWaLink(productName: string, category: string, url: string): string {
-  const msg = `Hello Sadashiv Fashions,\n\nI am interested in this product:\nProduct: ${productName}\nCategory: ${category}\nProduct link: ${url}\n\nPlease share the price, availability and other details.`;
+export function buildProductWaLink(productName: string, category: string, url?: string): string {
+  const msg = `Hello Sadashiv Fashions,\n\nI am interested in this design from your boutique collection:\nPiece: ${productName}\nCategory: ${category}\n\nPlease share details and availability at your Malviya Nagar showroom.`;
   return `https://wa.me/916376648869?text=${encodeURIComponent(msg)}`;
 }
 

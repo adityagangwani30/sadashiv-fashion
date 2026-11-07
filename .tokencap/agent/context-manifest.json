@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "generatedAt": "2026-11-07T13:08:36.273Z",
+  "generatedAt": "2026-11-07T14:27:10.288Z",
   "entry": "START_HERE.md",
   "project": {
     "name": "Sadashiv Fashions",
@@ -10,9 +10,9 @@
   "clusters": [
     "frontend",
     "other",
-    "layout-mobilenav",
     "shared-whatsappbutton",
-    "config"
+    "config",
+    "layout-mobilenav"
   ],
   "criticalFiles": [
     "sadashiv-web/eslint.config.mjs",
@@ -24,20 +24,20 @@
     "frontend": [
       "sadashiv-web/app/**",
       "sadashiv-web/components/layout/Footer*",
-      "sadashiv-web/components/shared/FloatingWhatsApp*"
+      "sadashiv-web/components/shared/**"
     ],
     "other": [
       "sadashiv-web/app/**",
       "sadashiv-web/data/products*"
-    ],
-    "layout-mobilenav": [
-      "sadashiv-web/components/layout/**"
     ],
     "shared-whatsappbutton": [
       "sadashiv-web/components/shared/**"
     ],
     "config": [
       "sadashiv-web/**"
+    ],
+    "layout-mobilenav": [
+      "sadashiv-web/components/layout/**"
     ]
   },
   "recommendedReads": {
@@ -49,15 +49,7 @@
       "architecture.md",
       "rules.md"
     ],
-    "layout-mobilenav": [
-      "architecture.md",
-      "rules.md"
-    ],
     "shared-whatsappbutton": [
-      "architecture.md",
-      "rules.md"
-    ],
-    "unclassified-sadashiv-webdata": [
       "architecture.md",
       "rules.md"
     ],

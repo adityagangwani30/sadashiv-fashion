@@ -2,19 +2,19 @@
   "frontend": [
     "sadashiv-web/app/**",
     "sadashiv-web/components/layout/Footer*",
-    "sadashiv-web/components/shared/FloatingWhatsApp*"
+    "sadashiv-web/components/shared/**"
   ],
   "other": [
     "sadashiv-web/app/**",
     "sadashiv-web/data/products*"
-  ],
-  "layout-mobilenav": [
-    "sadashiv-web/components/layout/**"
   ],
   "shared-whatsappbutton": [
     "sadashiv-web/components/shared/**"
   ],
   "config": [
     "sadashiv-web/**"
+  ],
+  "layout-mobilenav": [
+    "sadashiv-web/components/layout/**"
   ]
 }

@@ -1,21 +1,51 @@
 # TokenCap Constitution Engine
-# Generated: 2026-11-07T13:08:34.455Z
+# Generated: 2026-11-07T14:27:09.429Z
 # Version: 1.2
 
 constitution:
   version: "1.2"
-  generated_at: "2026-11-07T13:08:34.455Z"
-  rule_count: 5
+  generated_at: "2026-11-07T14:27:09.429Z"
+  rule_count: 7
 
   score:
-    total:            91
+    total:            92
     architecture:     100
     api_stability:    90
     schema_integrity: 90
     security:         85
-    compliance:       95
+    compliance:       100
 
   rules:
+    - id: "CONST-SEC-E58E40"
+      category: "Security"
+      severity: "CRITICAL"
+      confidence: 0.95
+      source: "heuristic"
+      manual: false
+      description: |-
+        Encryption implementation must remain algorithm-compatible.
+      reason: |-
+        Changing the encryption algorithm or key derivation method makes all existing encrypted data unreadable.
+      what_breaks: |-
+        Encrypted data (tokens, at-rest fields, backups) cannot be decrypted.
+      derived_from:
+        - "sadashiv-web/data/products.ts"
+
+    - id: "CONST-COMP-1A246E"
+      category: "Compliance"
+      severity: "CRITICAL"
+      confidence: 0.90
+      source: "heuristic"
+      manual: false
+      description: |-
+        Payment processing (PCI-DSS) — all Stripe/payment code requires compliance review.
+      reason: |-
+        PCI-DSS requires that all payment card data handling meets security standards. Any change to payment flows must be reviewed.
+      what_breaks: |-
+        PCI compliance violation. Payment processor account suspension. Legal liability.
+      derived_from:
+        - "sadashiv-web/data/products.ts"
+
     - id: "CONST-ARCH-BD3B55"
       category: "Architecture"
       severity: "HIGH"

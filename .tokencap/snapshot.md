@@ -1,4 +1,4 @@
-<!-- TokenCap v1.6 Savings: baseline 33,616 tok → actual 27,925 tok (16.9% saved) -->
+<!-- TokenCap v1.6 Savings: baseline 46,264 tok → actual 34,870 tok (24.6% saved) -->
 # AI ENTRY POINT
 
 This repository has been indexed by TokenCap.
@@ -21,12 +21,12 @@ Do not rediscover the repository from scratch.
 
 | Field | Value |
 | --- | --- |
-| Generated | 2026-11-07T13:08:29.103Z |
+| Generated | 2026-11-07T14:27:04.414Z |
 | Workspace | d:\Project\Sadashiv Fashions |
 | Profile | balanced |
-| Selected files | 29 |
-| Source bytes | 121996 |
-| Estimated source tokens | 33616 |
+| Selected files | 27 |
+| Source bytes | 177314 |
+| Estimated source tokens | 47016 |
 
 ## Read First
 
@@ -41,13 +41,13 @@ This file is a compressed coding-session handoff. Read it before editing, then i
 
 | Field | Value |
 | --- | --- |
-| Read order | sadashiv-web/README.md > sadashiv-web/package.json > sadashiv-web/tsconfig.json > sadashiv-web/AGENTS.md > sadashiv-web/app/about/page.tsx |
-| Primary anchors | sadashiv-web/README.md, sadashiv-web/package.json, sadashiv-web/tsconfig.json |
-| Changed files | 49 |
-| TODO notes | 2 |
-| File budget used | 32% |
-| Source budget used | 55% |
-| Token estimate | 33616 |
+| Read order | sadashiv-web/app/sitemap.ts > sadashiv-web/components/shared/FloatingWhatsApp.tsx > sadashiv-web/components/shared/Logo.tsx > sadashiv-web/components/shared/ProductCard.tsx > sadashiv-web/components/shared/WhatsAppButton.tsx |
+| Primary anchors | sadashiv-web/app/sitemap.ts, sadashiv-web/components/shared/FloatingWhatsApp.tsx, sadashiv-web/components/shared/Logo.tsx |
+| Changed files | 33 |
+| TODO notes | 1 |
+| File budget used | 30% |
+| Source budget used | 81% |
+| Token estimate | 47016 |
 | Contents mode | enabled |
 
 ## Handoff Guidelines
@@ -61,65 +61,50 @@ This file is a compressed coding-session handoff. Read it before editing, then i
 
 | Field | Value |
 | --- | --- |
-| Branch | unavailable |
+| Branch | main |
 | Git root | D:/Project/Sadashiv Fashions |
 
 Recent commits:
 ```text
-unavailable
+88754cb First commit
+ba9d359 first commit
 ```
 
 Status:
 ```text
-?? 01-business-content-brief.md
-?? 02-design-direction.md
-?? package-lock.json
-?? public/downloaded/1.jpg
-?? public/downloaded/2.webp
-?? public/downloaded/3.webp
-?? sadashiv-web/.gitignore
-?? sadashiv-web/AGENTS.md
-?? sadashiv-web/README.md
-?? sadashiv-web/app/about/page.tsx
-?? sadashiv-web/app/collections/dupattas/page.tsx
-?? sadashiv-web/app/collections/fabrics/page.tsx
-?? sadashiv-web/app/collections/kurtis/page.tsx
-?? sadashiv-web/app/collections/page.tsx
-?? sadashiv-web/app/collections/suits/page.tsx
-?? sadashiv-web/app/favicon.ico
-?? sadashiv-web/app/gallery/page.tsx
-?? sadashiv-web/app/globals.css
-?? sadashiv-web/app/layout.tsx
-?? sadashiv-web/app/page.tsx
-?? sadashiv-web/app/robots.ts
-?? sadashiv-web/app/sitemap.ts
-?? sadashiv-web/app/visit/page.tsx
-?? sadashiv-web/components/layout/Footer.tsx
-?? sadashiv-web/components/layout/Header.tsx
-?? sadashiv-web/components/layout/MobileNav.tsx
-?? sadashiv-web/components/shared/FloatingWhatsApp.tsx
-?? sadashiv-web/components/shared/ProductCard.tsx
-?? sadashiv-web/components/shared/WhatsAppButton.tsx
-?? sadashiv-web/data/products.ts
-?? sadashiv-web/eslint.config.mjs
-?? sadashiv-web/next.config.ts
-?? sadashiv-web/package-lock.json
-?? sadashiv-web/package.json
-?? sadashiv-web/public/brand/logo-black.png
-?? sadashiv-web/public/brand/logo-transparent.png
-?? sadashiv-web/public/brand/logo-white.png
-?? sadashiv-web/public/file.svg
-?? sadashiv-web/public/globe.svg
-?? sadashiv-web/public/images/store/store-exterior.jpg
-?? sadashiv-web/public/images/store/store-signage.webp
-?? sadashiv-web/public/images/store/store-window.webp
-?? sadashiv-web/public/next.svg
-?? sadashiv-web/public/vercel.svg
-?? sadashiv-web/public/window.svg
-?? sadashiv-web/tsconfig.json
-?? sadashiv_logo_black_background.png
-?? sadashiv_logo_transparent.png
-?? sadashiv_logo_white_background.png
+ D sadashiv-web/app/collections/dupattas/page.tsx
+ D sadashiv-web/app/collections/fabrics/page.tsx
+ D sadashiv-web/app/collections/kurtis/page.tsx
+ D sadashiv-web/app/collections/suits/page.tsx
+ M sadashiv-web/app/gallery/page.tsx
+ M sadashiv-web/app/page.tsx
+ M sadashiv-web/app/sitemap.ts
+ M sadashiv-web/components/shared/FloatingWhatsApp.tsx
+ M sadashiv-web/components/shared/Logo.tsx
+ M sadashiv-web/components/shared/ProductCard.tsx
+ D sadashiv-web/components/shared/QuickViewModal.tsx
+ M sadashiv-web/components/shared/WhatsAppButton.tsx
+ M sadashiv-web/next.config.ts
+ M sadashiv-web/public/brand/variants/logo-compact-gold.png
+ M sadashiv-web/public/brand/variants/logo-compact-white.png
+ M sadashiv-web/public/brand/variants/logo-compact.png
+ M sadashiv-web/public/brand/variants/logo-full-charcoal.png
+ M sadashiv-web/public/brand/variants/logo-full-gold.png
+ M sadashiv-web/public/brand/variants/logo-full-white.png
+ M sadashiv-web/public/brand/variants/logo-full.png
+ M sadashiv-web/public/brand/variants/logo-text-gold.png
+ M sadashiv-web/public/brand/variants/logo-text-only.png
+ M sadashiv-web/public/brand/variants/logo-text-white.png
+ M sadashiv-web/public/brand/variants/logo-trishul-charcoal.png
+ M sadashiv-web/public/brand/variants/logo-trishul-gold.png
+ M sadashiv-web/public/brand/variants/logo-trishul-white.png
+ M sadashiv-web/public/brand/variants/logo-trishul.png
+?? .gitignore
+?? sadashiv-web/public/brand/variants/logo-compact-charcoal.png
+?? sadashiv-web/public/brand/variants/logo-text-charcoal.png
+?? sadashiv-web/public/brand/variants/logo-text.png
+?? sadashiv-web/public/brand/variants/test-text.png
+?? sadashiv-web/public/brand/variants/test-trishul.png
 ```
 
 ## Project Map
@@ -129,10 +114,6 @@ sadashiv-web/
 sadashiv-web/app/
 sadashiv-web/app/about/
 sadashiv-web/app/collections/
-sadashiv-web/app/collections/dupattas/
-sadashiv-web/app/collections/fabrics/
-sadashiv-web/app/collections/kurtis/
-sadashiv-web/app/collections/suits/
 sadashiv-web/app/gallery/
 sadashiv-web/app/visit/
 sadashiv-web/components/
@@ -142,14 +123,11 @@ sadashiv-web/data/
 01-business-content-brief.md
 02-design-direction.md
 AGENTS.md
+README.md
 sadashiv-web/AGENTS.md
 sadashiv-web/README.md
 sadashiv-web/app/about/page.tsx
-sadashiv-web/app/collections/dupattas/page.tsx
-sadashiv-web/app/collections/fabrics/page.tsx
-sadashiv-web/app/collections/kurtis/page.tsx
 sadashiv-web/app/collections/page.tsx
-sadashiv-web/app/collections/suits/page.tsx
 sadashiv-web/app/gallery/page.tsx
 sadashiv-web/app/globals.css
 sadashiv-web/app/layout.tsx
@@ -161,6 +139,7 @@ sadashiv-web/components/layout/Footer.tsx
 sadashiv-web/components/layout/Header.tsx
 sadashiv-web/components/layout/MobileNav.tsx
 sadashiv-web/components/shared/FloatingWhatsApp.tsx
+sadashiv-web/components/shared/Logo.tsx
 sadashiv-web/components/shared/ProductCard.tsx
 sadashiv-web/components/shared/WhatsAppButton.tsx
 sadashiv-web/data/products.ts
@@ -174,1049 +153,159 @@ sadashiv-web/tsconfig.json
 
 | File | Bytes | Score | Why |
 | --- | ---: | ---: | --- |
-| sadashiv-web/README.md | 1450 | 225 | changed, project-metadata, high-signal-doc |
-| sadashiv-web/package.json | 537 | 190 | changed, project-metadata |
-| sadashiv-web/tsconfig.json | 666 | 190 | changed, project-metadata |
-| sadashiv-web/AGENTS.md | 679 | 120 | changed |
-| sadashiv-web/app/about/page.tsx | 5723 | 120 | changed |
-| sadashiv-web/app/collections/dupattas/page.tsx | 1936 | 120 | changed |
-| sadashiv-web/app/collections/fabrics/page.tsx | 2201 | 120 | changed |
-| sadashiv-web/app/collections/kurtis/page.tsx | 1928 | 120 | changed |
-| sadashiv-web/app/collections/page.tsx | 3372 | 120 | changed |
-| sadashiv-web/app/collections/suits/page.tsx | 2007 | 120 | changed |
-| sadashiv-web/app/gallery/page.tsx | 5336 | 120 | changed |
-| sadashiv-web/app/globals.css | 1708 | 120 | changed |
-| sadashiv-web/app/layout.tsx | 1257 | 120 | changed |
-| sadashiv-web/app/robots.ts | 236 | 120 | changed |
-| sadashiv-web/app/sitemap.ts | 1393 | 120 | changed |
-| sadashiv-web/app/visit/page.tsx | 9565 | 120 | changed |
-| sadashiv-web/components/layout/Footer.tsx | 6081 | 120 | changed |
-| sadashiv-web/components/layout/Header.tsx | 5433 | 120 | changed |
-| sadashiv-web/components/layout/MobileNav.tsx | 4120 | 120 | changed |
-| sadashiv-web/components/shared/FloatingWhatsApp.tsx | 1724 | 120 | changed |
-| sadashiv-web/components/shared/ProductCard.tsx | 3053 | 120 | changed |
-| sadashiv-web/components/shared/WhatsAppButton.tsx | 2510 | 120 | changed |
-| sadashiv-web/data/products.ts | 6453 | 120 | changed |
-| sadashiv-web/eslint.config.mjs | 465 | 120 | changed |
-| sadashiv-web/next.config.ts | 318 | 120 | changed |
-| 01-business-content-brief.md | 17762 | 119 | changed |
-| 02-design-direction.md | 19180 | 119 | changed |
-| sadashiv-web/app/page.tsx | 14522 | 119 | changed |
+| sadashiv-web/app/sitemap.ts | 823 | 120 | changed |
+| sadashiv-web/components/shared/FloatingWhatsApp.tsx | 4700 | 120 | changed |
+| sadashiv-web/components/shared/Logo.tsx | 5248 | 120 | changed |
+| sadashiv-web/components/shared/ProductCard.tsx | 5930 | 120 | changed |
+| sadashiv-web/components/shared/WhatsAppButton.tsx | 2499 | 120 | changed |
+| sadashiv-web/next.config.ts | 1091 | 120 | changed |
+| sadashiv-web/app/gallery/page.tsx | 13210 | 119 | changed |
+| sadashiv-web/app/page.tsx | 26244 | 118 | changed |
+| README.md | 932 | 105 | project-metadata, high-signal-doc |
+| sadashiv-web/README.md | 5384 | 105 | project-metadata, high-signal-doc |
+| sadashiv-web/package.json | 593 | 70 | project-metadata |
+| sadashiv-web/tsconfig.json | 666 | 70 | project-metadata |
 | AGENTS.md | 381 | 0 | context |
+| sadashiv-web/AGENTS.md | 679 | 0 | context |
+| sadashiv-web/app/about/page.tsx | 10460 | 0 | context |
+| sadashiv-web/app/collections/page.tsx | 6907 | 0 | context |
+| sadashiv-web/app/globals.css | 3087 | 0 | context |
+| sadashiv-web/app/layout.tsx | 1937 | 0 | context |
+| sadashiv-web/app/robots.ts | 236 | 0 | context |
+| sadashiv-web/app/visit/page.tsx | 11074 | 0 | context |
+| sadashiv-web/components/layout/Footer.tsx | 7386 | 0 | context |
+| sadashiv-web/components/layout/Header.tsx | 9521 | 0 | context |
+| sadashiv-web/components/layout/MobileNav.tsx | 5359 | 0 | context |
+| sadashiv-web/eslint.config.mjs | 465 | 0 | context |
+| 01-business-content-brief.md | 17762 | -1 | context |
+| 02-design-direction.md | 19180 | -1 | context |
+| sadashiv-web/data/products.ts | 15560 | -1 | context |
 
 ## Changed Files
 
-- ?? 01-business-content-brief.md
-- ?? 02-design-direction.md
-- ?? package-lock.json
-- ?? public/downloaded/1.jpg
-- ?? public/downloaded/2.webp
-- ?? public/downloaded/3.webp
-- ?? sadashiv-web/.gitignore
-- ?? sadashiv-web/AGENTS.md
-- ?? sadashiv-web/README.md
-- ?? sadashiv-web/app/about/page.tsx
-- ?? sadashiv-web/app/collections/dupattas/page.tsx
-- ?? sadashiv-web/app/collections/fabrics/page.tsx
-- ?? sadashiv-web/app/collections/kurtis/page.tsx
-- ?? sadashiv-web/app/collections/page.tsx
-- ?? sadashiv-web/app/collections/suits/page.tsx
-- ?? sadashiv-web/app/favicon.ico
-- ?? sadashiv-web/app/gallery/page.tsx
-- ?? sadashiv-web/app/globals.css
-- ?? sadashiv-web/app/layout.tsx
-- ?? sadashiv-web/app/page.tsx
-- ?? sadashiv-web/app/robots.ts
-- ?? sadashiv-web/app/sitemap.ts
-- ?? sadashiv-web/app/visit/page.tsx
-- ?? sadashiv-web/components/layout/Footer.tsx
-- ?? sadashiv-web/components/layout/Header.tsx
-- ?? sadashiv-web/components/layout/MobileNav.tsx
-- ?? sadashiv-web/components/shared/FloatingWhatsApp.tsx
-- ?? sadashiv-web/components/shared/ProductCard.tsx
-- ?? sadashiv-web/components/shared/WhatsAppButton.tsx
-- ?? sadashiv-web/data/products.ts
-- ?? sadashiv-web/eslint.config.mjs
-- ?? sadashiv-web/next.config.ts
-- ?? sadashiv-web/package-lock.json
-- ?? sadashiv-web/package.json
-- ?? sadashiv-web/public/brand/logo-black.png
-- ?? sadashiv-web/public/brand/logo-transparent.png
-- ?? sadashiv-web/public/brand/logo-white.png
-- ?? sadashiv-web/public/file.svg
-- ?? sadashiv-web/public/globe.svg
-- ?? sadashiv-web/public/images/store/store-exterior.jpg
-- ?? sadashiv-web/public/images/store/store-signage.webp
-- ?? sadashiv-web/public/images/store/store-window.webp
-- ?? sadashiv-web/public/next.svg
-- ?? sadashiv-web/public/vercel.svg
-- ?? sadashiv-web/public/window.svg
-- ?? sadashiv-web/tsconfig.json
-- ?? sadashiv_logo_black_background.png
-- ?? sadashiv_logo_transparent.png
-- ?? sadashiv_logo_white_background.png
+-  D sadashiv-web/app/collections/dupattas/page.tsx
+-  D sadashiv-web/app/collections/fabrics/page.tsx
+-  D sadashiv-web/app/collections/kurtis/page.tsx
+-  D sadashiv-web/app/collections/suits/page.tsx
+-  M sadashiv-web/app/gallery/page.tsx
+-  M sadashiv-web/app/page.tsx
+-  M sadashiv-web/app/sitemap.ts
+-  M sadashiv-web/components/shared/FloatingWhatsApp.tsx
+-  M sadashiv-web/components/shared/Logo.tsx
+-  M sadashiv-web/components/shared/ProductCard.tsx
+-  D sadashiv-web/components/shared/QuickViewModal.tsx
+-  M sadashiv-web/components/shared/WhatsAppButton.tsx
+-  M sadashiv-web/next.config.ts
+-  M sadashiv-web/public/brand/variants/logo-compact-gold.png
+-  M sadashiv-web/public/brand/variants/logo-compact-white.png
+-  M sadashiv-web/public/brand/variants/logo-compact.png
+-  M sadashiv-web/public/brand/variants/logo-full-charcoal.png
+-  M sadashiv-web/public/brand/variants/logo-full-gold.png
+-  M sadashiv-web/public/brand/variants/logo-full-white.png
+-  M sadashiv-web/public/brand/variants/logo-full.png
+-  M sadashiv-web/public/brand/variants/logo-text-gold.png
+-  M sadashiv-web/public/brand/variants/logo-text-only.png
+-  M sadashiv-web/public/brand/variants/logo-text-white.png
+-  M sadashiv-web/public/brand/variants/logo-trishul-charcoal.png
+-  M sadashiv-web/public/brand/variants/logo-trishul-gold.png
+-  M sadashiv-web/public/brand/variants/logo-trishul-white.png
+-  M sadashiv-web/public/brand/variants/logo-trishul.png
+- ?? .gitignore
+- ?? sadashiv-web/public/brand/variants/logo-compact-charcoal.png
+- ?? sadashiv-web/public/brand/variants/logo-text-charcoal.png
+- ?? sadashiv-web/public/brand/variants/logo-text.png
+- ?? sadashiv-web/public/brand/variants/test-text.png
+- ?? sadashiv-web/public/brand/variants/test-trishul.png
 
 ## Git Diff Snippets
 
-No diff available, or Git is unavailable.
+### Unstaged Changes Diff
+
+```diff
+// … lines 1–35
+diff --git a/.tokencap/agent/START_HERE.md b/.tokencap/agent/START_HERE.md
+index 2f0e8f0..f080be7 100644
+--- a/.tokencap/agent/START_HERE.md
++++ b/.tokencap/agent/START_HERE.md
+@@ -1,6 +1,6 @@
+ # START HERE - Sadashiv Fashions
+ 
+-> Generated by TokenCap - 2026-11-07T13:08:36.270Z
++> Generated by TokenCap - 2026-11-07T14:09:45.048Z
+ 
+ Project type: Unknown
+ Architecture: Modular
+diff --git a/.tokencap/agent/agent-pack.md b/.tokencap/agent/agent-pack.md
+index d8e8aa4..3ad0dd5 100644
+--- a/.tokencap/agent/agent-pack.md
++++ b/.tokencap/agent/agent-pack.md
+@@ -4,7 +4,7 @@
+ > Paste this entire file into ChatGPT, Claude, Gemini, Cursor, Windsurf, Cline, Roo Code, or OpenHands
+ > to give the AI agent full project intelligence before it touches any code.
+ 
+-**Generated:** 2026-11-07T13:08:34.179Z
++**Generated:** 2026-11-07T14:09:43.930Z
+ **Project:** Sadashiv Fashions
+ **Type:** Unknown
+ 
+@@ -21,7 +21,7 @@
+ Modular
+ ```
+ 
+-No end-to-end layered dependency chain was verified from the import graph; treat this repository as modular until a concrete flow is established. **Frontend** is the largest detected subsystem by file count. Detected subsystems: Frontend, Unclassified, Config, Layout (MobileNav), Shared (WhatsAppButton).
++No end-to-end layered dependency chain was verified from the import graph; treat this repository as modular until a concrete flow is established. **Frontend** is the largest detected subsystem by file count. Detected subsystems: Frontend, Unclassified, Shared (WhatsAppButton), Config, Layout (MobileNav).
+ 
+ ---
+ 
+@@ -41,20 +41,15 @@ No end-to-end layered dependency chain was verified from the import graph; treat
+// … lines 1957–1962
+ 
+ export default function AboutPage() {
+   return (
+-    <div>
+-      {/* Page header */}
+-      <section className="pt-12 pb-14 px-6 max-w-7xl mx-auto">
+// … lines 2186–2191
+               className="object-cover"
+@@ -568,56 +729,103 @@ export default function AboutPage() {
+ 
+ | Field | Value |
+ | --- | --- |
+-| Bytes | 1936 |
+// … lines 2222–2227
+ 
+ export default function DupattasPage() {
+   const products = getProductsByCategory('dupattas');
++  const meta = categoryMeta.dupattas;
+ 
+   return (
+// … lines 2315–2320
+   );
+@@ -628,59 +836,106 @@ export default function DupattasPage() {
+ 
+ | Field | Value |
+ | --- | --- |
+-| Bytes | 2201 |
+// … lines 2350–2355
+ 
+ export default function FabricsPage() {
+   const products = getProductsByCategory('fabrics');
++  const meta = categoryMeta.fabrics;
+ 
+   return (
+```
 
 ## TODO / FIXME / HACK Notes
 
-- sadashiv-web/app/about/page.tsx:68 {/* TODO: Replace with owner-approved portrait photograph */}
 - 02-design-direction.md:422 If a required asset or fact is missing, create a clear TODO in the
 
 ## Selected File Context
-
-### sadashiv-web/README.md
-
-| Field | Value |
-| --- | --- |
-| Bytes | 1450 |
-| Score | 225 |
-| Why | changed, project-metadata, high-signal-doc |
-| Status | Full content |
-
-
-```markdown
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
-
-## Getting Started
-
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-```
-
-### sadashiv-web/package.json
-
-| Field | Value |
-| --- | --- |
-| Bytes | 537 |
-| Score | 190 |
-| Why | changed, project-metadata |
-| Status | Full content |
-
-
-```json
-{
-  "name": "sadashiv-web",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "eslint"
-  },
-  "dependencies": {
-    "next": "16.4.5",
-    "react": "19.3.0",
-    "react-dom": "19.3.0"
-  },
-  "devDependencies": {
-    "@tailwindcss/turbopack": "^4",
-    "@types/node": "^20",
-    "@types/react": "^19",
-    "@types/react-dom": "^19",
-    "eslint": "^9",
-    "eslint-config-next": "16.4.5",
-    "tailwindcss": "^4",
-    "typescript": "^5"
-  }
-}
-```
-
-### sadashiv-web/tsconfig.json
-
-| Field | Value |
-| --- | --- |
-| Bytes | 666 |
-| Score | 190 |
-| Why | changed, project-metadata |
-| Status | Full content |
-
-
-```json
-{
-  "compilerOptions": {
-    "target": "ES2017",
-    "lib": ["dom", "dom.iterable", "esnext"],
-    "allowJs": true,
-    "skipLibCheck": true,
-    "strict": true,
-    "noEmit": true,
-    "esModuleInterop": true,
-    "module": "esnext",
-    "moduleResolution": "bundler",
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "jsx": "react-jsx",
-    "incremental": true,
-    "plugins": [
-      {
-        "name": "next"
-      }
-    ],
-    "paths": {
-      "@/*": ["./*"]
-    }
-  },
-  "include": [
-    "next-env.d.ts",
-    "**/*.ts",
-    "**/*.tsx",
-    ".next/types/**/*.ts",
-    ".next/dev/types/**/*.ts",
-    "**/*.mts"
-  ],
-  "exclude": ["node_modules"]
-}
-```
-
-### sadashiv-web/AGENTS.md
-
-| Field | Value |
-| --- | --- |
-| Bytes | 679 |
-| Score | 120 |
-| Why | changed |
-| Status | Full content |
-
-
-```markdown
-<!-- BEGIN:nextjs-agent-rules -->
-
-## This is NOT the Next.js you know
-
-This version has breaking changes — APIs, conventions, and file structure may all differ from your training data. Read the relevant guide in `node_modules/next/dist/docs/` (resolved from this file's directory; in monorepos the `next` package may not be visible from the repo root) before writing any code. Heed deprecation notices.
-
-This block is written and re-added by `next dev` — verify at `node_modules/next/dist/server/lib/generate-agent-files.js`. Removing it from a diff only re-creates the uncommitted change; committing it with your work keeps the tree clean.
-
-<!-- END:nextjs-agent-rules -->
-```
-
-### sadashiv-web/app/about/page.tsx
-
-| Field | Value |
-| --- | --- |
-| Bytes | 5723 |
-| Score | 120 |
-| Why | changed |
-| Status | Full content |
-
-
-```tsx
-import type { Metadata } from 'next';
-import Image from 'next/image';
-import WhatsAppButton from '@/components/shared/WhatsAppButton';
-
-export const metadata: Metadata = {
-  title: 'About — The People Behind Sadashiv Fashions',
-  description:
-    'Meet the people behind Sadashiv Fashions — a Jaipur-based fashion and textile store in Malviya Nagar.',
-  openGraph: {
-    title: 'About | Sadashiv Fashions',
-    description: 'Meet the people behind Sadashiv Fashions, Jaipur.',
-    images: [{ url: '/images/store/store-exterior.jpg' }],
-  },
-};
-
-const WA_GENERAL =
-  'https://wa.me/916376648869?text=Hello%20Sadashiv%20Fashions%2C%20I%20am%20interested%20in%20your%20collection.%20Please%20share%20details.';
-
-const owners = [
-  { name: 'Suresh Gangwani', initials: 'SG' },
-  { name: 'Kashish Gangwani', initials: 'KG' },
-];
-
-export default function AboutPage() {
-  return (
-    <div>
-      {/* Page header */}
-      <section className="pt-12 pb-14 px-6 max-w-7xl mx-auto">
-        <p className="text-xs uppercase tracking-widest text-[#A85F50] mb-4">About</p>
-        <h1 className="font-display text-4xl sm:text-5xl md:text-6xl text-[#292522] leading-tight max-w-2xl">
-          The people behind Sadashiv Fashions
-        </h1>
-      </section>
-
-      {/* Store image strip */}
-      <section className="relative h-56 md:h-80 overflow-hidden bg-[#E6D8C8]">
-        <Image
-          src="/images/store/store-exterior.jpg"
-          alt="Sadashiv Fashions store in Malviya Nagar, Jaipur"
-          fill
-          className="object-cover object-center"
-          sizes="100vw"
-        />
-        <div className="absolute inset-0 bg-[#1a0e0b]/20" />
-      </section>
-
-      {/* Intro */}
-      <section className="py-14 px-6 max-w-7xl mx-auto">
-        <div className="max-w-2xl">
-          <p className="text-lg sm:text-xl font-display text-[#292522] leading-relaxed">
-            Sadashiv Fashions is a Jaipur-based fashion and textile store, bringing together a considered selection of women&apos;s ethnic wear and fabrics. Meet the people behind the store and discover the collections.
-          </p>
-          <p className="mt-5 text-sm text-[#5A4A42] leading-relaxed">
-            The business welcomes both individual customers and wholesale enquiries. Visit us at Malviya Nagar, Jaipur, or browse the collection online and get in touch on WhatsApp.
-          </p>
-        </div>
-      </section>
-
-      {/* Owner profiles */}
-      <section className="bg-[#FCFAF6] py-14 md:py-20 px-6">
-        <div className="max-w-7xl mx-auto">
-          <p className="text-xs uppercase tracking-widest text-[#A85F50] mb-10">The Team</p>
-          <div className="grid md:grid-cols-2 gap-12 md:gap-16">
-            {owners.map((owner) => (
-              <article key={owner.name} className="flex flex-col gap-6 md:flex-row md:items-start md:gap-8">
-                {/* Portrait — placeholder until owner photos provided */}
-                <div className="flex-shrink-0 relative w-full max-w-[260px] md:w-56 aspect-[3/4] bg-[#E6D8C8] overflow-hidden">
-                  {/* TODO: Replace with owner-approved portrait photograph */}
-                  <div className="absolute inset-0 flex flex-col items-center justify-center gap-3">
-                    <span className="font-display text-5xl text-[#C98780]">{owner.initials}</span>
-                    <p className="text-xs text-center text-[#A85F50] px-4 leading-relaxed">
-                      Owner portrait to be added.<br />Please supply a photograph.
-                    </p>
-                  </div>
-                </div>
-
-                {/* Info */}
-                <div className="flex-1">
-                  <h2 className="font-display text-2xl sm:text-3xl text-[#292522] mb-1">{owner.name}</h2>
-                  <p className="text-xs uppercase tracking-widest text-[#A85F50] mb-4">
-                    [Role to be confirmed]
-                  </p>
-                  <div className="border-t border-[#E6D8C8] pt-4">
-                    <p className="text-sm text-[#7A6358] leading-relaxed italic">
-                      Biography to be provided and approved by the owner.
-                    </p>
-                  </div>
-                </div>
-              </article>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Store section */}
-      <section className="py-14 md:py-20 px-6 max-w-7xl mx-auto">
-        <div className="grid md:grid-cols-2 gap-10 md:gap-16 items-center">
-          <div>
-            <p className="text-xs uppercase tracking-widest text-[#A85F50] mb-4">Our Store</p>
-            <h2 className="font-display text-2xl sm:text-3xl text-[#292522] leading-snug mb-5">
-              Visit us in Malviya Nagar, Jaipur
-            </h2>
-            <address className="not-italic text-sm text-[#5A4A42] leading-relaxed mb-6">
-              2/72, Krishna Nand Marg,<br />
-              near Govt. Girls Sr. Sec. School,<br />
-              Malviya Nagar, Jaipur — 302017,<br />
-              Rajasthan
-            </address>
-            <p className="text-sm text-[#5A4A42] mb-8">
-              Local delivery available in Jaipur and nearby areas. Contact us on WhatsApp for delivery details.
-            </p>
-            <WhatsAppButton href={WA_GENERAL} label="Get in Touch" variant="outline" />
-          </div>
-          <div className="relative aspect-[4/3] overflow-hidden bg-[#E6D8C8]">
-            <Image
-              src="/images/store/store-signage.webp"
-              alt="Sadashiv Fashions store signage, Jaipur"
-              fill
-              sizes="(max-width: 768px) 100vw, 50vw"
-              className="object-cover"
-            />
-          </div>
-        </div>
-      </section>
-    </div>
-  );
-}
-```
-
-### sadashiv-web/app/collections/dupattas/page.tsx
-
-| Field | Value |
-| --- | --- |
-| Bytes | 1936 |
-| Score | 120 |
-| Why | changed |
-| Status | Full content |
-
-
-```tsx
-import type { Metadata } from 'next';
-import { getProductsByCategory } from '@/data/products';
-import ProductCard from '@/components/shared/ProductCard';
-import Link from 'next/link';
-
-export const metadata: Metadata = {
-  title: 'Dupattas',
-  description:
-    'Browse dupattas at Sadashiv Fashions in Malviya Nagar, Jaipur. Enquire on WhatsApp for fabric, design and availability.',
-  openGraph: {
-    title: 'Dupattas | Sadashiv Fashions',
-    description: 'Dupattas — Sadashiv Fashions, Jaipur.',
-    images: [{ url: '/images/store/store-exterior.jpg' }],
-  },
-};
-
-export default function DupattasPage() {
-  const products = getProductsByCategory('dupattas');
-
-  return (
-    <div>
-      <section className="pt-12 pb-10 px-6 max-w-7xl mx-auto border-b border-[#E6D8C8]">
-        <nav className="text-xs text-[#A85F50] mb-4" aria-label="Breadcrumb">
-          <Link href="/collections" className="hover:text-[#4A2927]">Collections</Link>
-          <span className="mx-2 text-[#C8B8A2]">/</span>
-          <span className="text-[#292522]">Dupattas</span>
-        </nav>
-        <p className="text-xs uppercase tracking-widest text-[#A85F50] mb-3">Category</p>
-        <h1 className="font-display text-4xl sm:text-5xl text-[#292522]">Dupattas</h1>
-        <p className="mt-3 text-sm text-[#5A4A42] max-w-md">
-          Hand-finished dupattas to complete any ethnic look. Contact us for fabric, design, dimensions and availability.
-        </p>
-      </section>
-
-      <section className="py-14 px-6 max-w-7xl mx-auto">
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-8">
-          {products.map((product) => (
-            <ProductCard key={product.id} product={product} />
-          ))}
-        </div>
-        <p className="mt-10 text-xs text-[#7A6358]">
-          Contact us on WhatsApp to confirm current availability, design options and pricing.
-        </p>
-      </section>
-    </div>
-  );
-}
-```
-
-### sadashiv-web/app/collections/fabrics/page.tsx
-
-| Field | Value |
-| --- | --- |
-| Bytes | 2201 |
-| Score | 120 |
-| Why | changed |
-| Status | Full content |
-
-
-```tsx
-import type { Metadata } from 'next';
-import { getProductsByCategory } from '@/data/products';
-import ProductCard from '@/components/shared/ProductCard';
-import Link from 'next/link';
-
-export const metadata: Metadata = {
-  title: 'Fabrics & Dress Materials',
-  description:
-    'Browse fabrics and dress materials at Sadashiv Fashions in Malviya Nagar, Jaipur. Wholesale and retail enquiries welcome.',
-  openGraph: {
-    title: 'Fabrics | Sadashiv Fashions',
-    description: 'Dress materials and fabrics — Sadashiv Fashions, Jaipur.',
-    images: [{ url: '/images/store/store-window.webp' }],
-  },
-};
-
-export default function FabricsPage() {
-  const products = getProductsByCategory('fabrics');
-
-  return (
-    <div>
-      <section className="pt-12 pb-10 px-6 max-w-7xl mx-auto border-b border-[#E6D8C8]">
-        <nav className="text-xs text-[#A85F50] mb-4" aria-label="Breadcrumb">
-          <Link href="/collections" className="hover:text-[#4A2927]">Collections</Link>
-          <span className="mx-2 text-[#C8B8A2]">/</span>
-          <span className="text-[#292522]">Fabrics</span>
-        </nav>
-        <p className="text-xs uppercase tracking-widest text-[#A85F50] mb-3">Category</p>
-        <h1 className="font-display text-4xl sm:text-5xl text-[#292522]">Fabrics</h1>
-        <p className="mt-3 text-sm text-[#5A4A42] max-w-md">
-          Dress materials and fabrics for retail and wholesale buyers. Contact us to confirm current stock, widths, composition and pricing.
-        </p>
-        <p className="mt-2 text-xs text-[#A85F50]">
-          Note: Fabric names are for reference. Please enquire on WhatsApp to confirm current availability and specifications.
-        </p>
-      </section>
-
-      <section className="py-14 px-6 max-w-7xl mx-auto">
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-8">
-          {products.map((product) => (
-            <ProductCard key={product.id} product={product} />
-          ))}
-        </div>
-        <p className="mt-10 text-xs text-[#7A6358]">
-          Wholesale enquiries welcome. Contact us on WhatsApp for minimum quantities, pricing and dispatch details.
-        </p>
-      </section>
-    </div>
-  );
-}
-```
-
-### sadashiv-web/app/collections/kurtis/page.tsx
-
-| Field | Value |
-| --- | --- |
-| Bytes | 1928 |
-| Score | 120 |
-| Why | changed |
-| Status | Full content |
-
-
-```tsx
-import type { Metadata } from 'next';
-import { getProductsByCategory } from '@/data/products';
-import ProductCard from '@/components/shared/ProductCard';
-import Link from 'next/link';
-
-export const metadata: Metadata = {
-  title: 'Kurtis — Women\'s Kurtis',
-  description:
-    'Browse women\'s kurtis at Sadashiv Fashions in Malviya Nagar, Jaipur. Retail and wholesale enquiries on WhatsApp.',
-  openGraph: {
-    title: 'Kurtis | Sadashiv Fashions',
-    description: 'Women\'s kurtis — Sadashiv Fashions, Jaipur.',
-    images: [{ url: '/images/store/store-exterior.jpg' }],
-  },
-};
-
-export default function KurtisPage() {
-  const products = getProductsByCategory('kurtis');
-
-  return (
-    <div>
-      <section className="pt-12 pb-10 px-6 max-w-7xl mx-auto border-b border-[#E6D8C8]">
-        <nav className="text-xs text-[#A85F50] mb-4" aria-label="Breadcrumb">
-          <Link href="/collections" className="hover:text-[#4A2927]">Collections</Link>
-          <span className="mx-2 text-[#C8B8A2]">/</span>
-          <span className="text-[#292522]">Kurtis</span>
-        </nav>
-        <p className="text-xs uppercase tracking-widest text-[#A85F50] mb-3">Category</p>
-        <h1 className="font-display text-4xl sm:text-5xl text-[#292522]">Kurtis</h1>
-        <p className="mt-3 text-sm text-[#5A4A42] max-w-md">
-          A range of kurtis in varied styles and fabrics. Enquire on WhatsApp for size, colour and availability.
-        </p>
-      </section>
-
-      <section className="py-14 px-6 max-w-7xl mx-auto">
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-8">
-          {products.map((product) => (
-            <ProductCard key={product.id} product={product} />
-          ))}
-        </div>
-        <p className="mt-10 text-xs text-[#7A6358]">
-          Contact us on WhatsApp to confirm current availability, sizing and pricing.
-        </p>
-      </section>
-    </div>
-  );
-}
-```
-
-### sadashiv-web/app/collections/page.tsx
-
-| Field | Value |
-| --- | --- |
-| Bytes | 3372 |
-| Score | 120 |
-| Why | changed |
-| Status | Full content |
-
-
-```tsx
-import type { Metadata } from 'next';
-import Image from 'next/image';
-import Link from 'next/link';
-import { products, categoryMeta } from '@/data/products';
-import ProductCard from '@/components/shared/ProductCard';
-
-export const metadata: Metadata = {
-  title: 'Collections — Suits, Kurtis, Fabrics & Dupattas',
-  description:
-    'Browse all collections at Sadashiv Fashions — women\'s suits, kurtis, fabrics and dupattas. Retail and wholesale enquiries welcome.',
-  openGraph: {
-    title: 'Collections | Sadashiv Fashions',
-    description: 'Browse women\'s ethnic wear and fabrics at Sadashiv Fashions, Malviya Nagar, Jaipur.',
-    images: [{ url: '/images/store/store-window.webp' }],
-  },
-};
-
-const categories = Object.entries(categoryMeta) as [
-  keyof typeof categoryMeta,
-  (typeof categoryMeta)[keyof typeof categoryMeta]
-][];
-
-export default function CollectionsPage() {
-  const featured = products.filter((p) => p.featured);
-
-  return (
-    <div>
-      {/* Page header */}
-      <section className="pt-12 pb-10 px-6 max-w-7xl mx-auto border-b border-[#E6D8C8]">
-        <p className="text-xs uppercase tracking-widest text-[#A85F50] mb-3">Catalogue</p>
-        <h1 className="font-display text-4xl sm:text-5xl text-[#292522]">Collections</h1>
-        <p className="mt-3 text-sm text-[#5A4A42] max-w-md">
-          Women&apos;s ethnic wear and fabrics — available for retail and wholesale enquiry.
-        </p>
-      </section>
-
-      {/* Category tiles */}
-      <section className="py-14 px-6 max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
-          {categories.map(([key, cat]) => (
-            <Link
-              key={key}
-              href={`/collections/${key}`}
-              className="group relative overflow-hidden aspect-[16/9] bg-[#E6D8C8]"
-            >
-              <Image
-                src={cat.image}
-                alt={cat.label}
-                fill
-                sizes="(max-width: 640px) 100vw, 50vw"
-                className="object-cover transition-transform duration-500 group-hover:scale-104"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#1a0e0b]/65 via-[#1a0e0b]/10 to-transparent" />
-              <div className="absolute bottom-0 left-0 p-6">
-                <h2 className="font-display text-2xl sm:text-3xl text-white mb-1">{cat.label}</h2>
-                <p className="text-xs text-[#D4C4B8]">{cat.description}</p>
-              </div>
-              <div className="absolute top-4 right-4">
-                <span className="text-xs uppercase tracking-widest text-white/80 border border-white/40 px-3 py-1 opacity-0 group-hover:opacity-100 transition-opacity">
-                  View →
-                </span>
-              </div>
-            </Link>
-          ))}
-        </div>
-      </section>
-
-      {/* Featured from all categories */}
-      <section className="bg-[#FCFAF6] py-14 px-6">
-        <div className="max-w-7xl mx-auto">
-          <h2 className="font-display text-2xl sm:text-3xl text-[#292522] mb-10">
-            From the Collection
-          </h2>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
-            {featured.map((product) => (
-              <ProductCard key={product.id} product={product} />
-            ))}
-          </div>
-        </div>
-      </section>
-    </div>
-  );
-}
-```
-
-### sadashiv-web/app/collections/suits/page.tsx
-
-| Field | Value |
-| --- | --- |
-| Bytes | 2007 |
-| Score | 120 |
-| Why | changed |
-| Status | Full content |
-
-
-```tsx
-import type { Metadata } from 'next';
-import { getProductsByCategory } from '@/data/products';
-import ProductCard from '@/components/shared/ProductCard';
-import Link from 'next/link';
-
-export const metadata: Metadata = {
-  title: 'Suits — Women\'s Suit Sets',
-  description:
-    'Browse women\'s suit sets at Sadashiv Fashions in Malviya Nagar, Jaipur. Enquire on WhatsApp for price, availability and details.',
-  openGraph: {
-    title: 'Suits | Sadashiv Fashions',
-    description: 'Women\'s suit sets — Sadashiv Fashions, Jaipur.',
-    images: [{ url: '/images/store/store-window.webp' }],
-  },
-};
-
-export default function SuitsPage() {
-  const products = getProductsByCategory('suits');
-
-  return (
-    <div>
-      {/* Header */}
-      <section className="pt-12 pb-10 px-6 max-w-7xl mx-auto border-b border-[#E6D8C8]">
-        <nav className="text-xs text-[#A85F50] mb-4" aria-label="Breadcrumb">
-          <Link href="/collections" className="hover:text-[#4A2927]">Collections</Link>
-          <span className="mx-2 text-[#C8B8A2]">/</span>
-          <span className="text-[#292522]">Suits</span>
-        </nav>
-        <p className="text-xs uppercase tracking-widest text-[#A85F50] mb-3">Category</p>
-        <h1 className="font-display text-4xl sm:text-5xl text-[#292522]">Suits</h1>
-        <p className="mt-3 text-sm text-[#5A4A42] max-w-md">
-          Women&apos;s suit sets and ethnic wear. Enquire on WhatsApp for size, fabric, colour and availability.
-        </p>
-      </section>
-
-      {/* Product grid */}
-      <section className="py-14 px-6 max-w-7xl mx-auto">
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-8">
-          {products.map((product) => (
-            <ProductCard key={product.id} product={product} />
-          ))}
-        </div>
-        <p className="mt-10 text-xs text-[#7A6358]">
-          Contact us on WhatsApp to confirm current availability, sizing, fabric details and pricing.
-        </p>
-      </section>
-    </div>
-  );
-}
-```
-
-### sadashiv-web/app/gallery/page.tsx
-
-| Field | Value |
-| --- | --- |
-| Bytes | 5336 |
-| Score | 120 |
-| Why | changed |
-| Status | Full content |
-
-
-```tsx
-import type { Metadata } from 'next';
-import Image from 'next/image';
-
-export const metadata: Metadata = {
-  title: 'Gallery — Store & Collection',
-  description:
-    'A visual look at Sadashiv Fashions — store photographs and collection highlights from our Malviya Nagar boutique in Jaipur.',
-  openGraph: {
-    title: 'Gallery | Sadashiv Fashions',
-    description: 'Store and collection photographs — Sadashiv Fashions, Jaipur.',
-    images: [{ url: '/images/store/store-window.webp' }],
-  },
-};
-
-const INSTAGRAM = 'https://www.instagram.com/sadashivfashionsjaipur/';
-
-const galleryImages = [
-  {
-    src: '/images/store/store-window.webp',
-    alt: 'Women\'s ethnic wear displayed in the Sadashiv Fashions store window — pink gown, suit and kurti',
-    caption: 'Store Window Display',
-  },
-  {
-    src: '/images/store/store-exterior.jpg',
-    alt: 'Sadashiv Fashions store exterior in Malviya Nagar, Jaipur — daytime',
-    caption: 'Store Exterior',
-  },
-  {
-    src: '/images/store/store-signage.webp',
-    alt: 'Illuminated Sadashiv Fashions Hindi signage — An Exclusive Store of Suits & Kurtis',
-    caption: 'Store Signage',
-  },
-];
-
-export default function GalleryPage() {
-  return (
-    <div>
-      {/* Page header */}
-      <section className="pt-12 pb-10 px-6 max-w-7xl mx-auto border-b border-[#E6D8C8]">
-        <p className="text-xs uppercase tracking-widest text-[#A85F50] mb-3">Visual Journal</p>
-        <h1 className="font-display text-4xl sm:text-5xl text-[#292522]">Gallery</h1>
-        <p className="mt-3 text-sm text-[#5A4A42] max-w-md">
-          A look inside the store and our collections. More photographs available on our Instagram.
-        </p>
-      </section>
-
-      {/* Gallery grid — editorial asymmetric */}
-      <section className="py-14 px-6 max-w-7xl mx-auto">
-        {/* Large featured image */}
-        <div className="relative w-full aspect-[16/9] md:aspect-[21/9] overflow-hidden bg-[#E6D8C8] mb-4">
-          <Image
-            src={galleryImages[0].src}
-            alt={galleryImages[0].alt}
-            fill
-            priority
-            sizes="100vw"
-            className="object-cover"
-          />
-          <div className="absolute bottom-0 left-0 p-4 bg-gradient-to-t from-[#1a0e0b]/50 to-transparent w-full">
-            <p className="text-xs uppercase tracking-widest text-[#E6D8C8]">{galleryImages[0].caption}</p>
-          </div>
-        </div>
-
-        {/* Two-column secondary images */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          {galleryImages.slice(1).map((img) => (
-            <div key={img.src} className="relative aspect-[4/3] overflow-hidden bg-[#E6D8C8]">
-              <Image
-                src={img.src}
-                alt={img.alt}
-                fill
-                sizes="(max-width: 640px) 100vw, 50vw"
-                className="object-cover"
-              />
-              <div className="absolute bottom-0 left-0 p-4 bg-gradient-to-t from-[#1a0e0b]/40 to-transparent w-full">
-                <p className="text-xs uppercase tracking-widest text-[#E6D8C8]">{img.caption}</p>
-              </div>
-            </div>
-          ))}
-        </div>
-
-        {/* Placeholder notice for more images */}
-        <div className="mt-8 p-6 border border-dashed border-[#E6D8C8] text-center">
-          <p className="text-sm text-[#7A6358]">
-            Additional product and store photographs will be added here as they are supplied by the owners.
-          </p>
-        </div>
-      </section>
-
-      {/* Instagram CTA */}
-      <section className="bg-[#292522] py-14 px-6 text-center">
-        <p className="text-xs uppercase tracking-widest text-[#A85F50] mb-4">Follow Us</p>
-        <h2 className="font-display text-2xl sm:text-3xl text-[#E6D8C8] mb-4">
-          More on Instagram
-        </h2>
-        <p className="text-sm text-[#A8907A] mb-7 max-w-sm mx-auto">
-          Follow us on Instagram for new arrivals, collection updates and store news.
-        </p>
-        <a
-          href={INSTAGRAM}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center gap-2 bg-[#F7F3EC] text-[#292522] text-sm font-medium px-6 py-3 hover:bg-white transition-colors duration-200"
-        >
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
-          </svg>
-          @sadashivfashionsjaipur
-        </a>
-      </section>
-    </div>
-  );
-}
-```
-
-### sadashiv-web/app/globals.css
-
-| Field | Value |
-| --- | --- |
-| Bytes | 1708 |
-| Score | 120 |
-| Why | changed |
-| Status | Full content |
-
-
-```css
-@import "tailwindcss";
-
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap');
-
-@theme inline {
-  /* Brand colours */
-  --color-brand-magenta: #D4197D;
-  --color-warm-ivory: #F7F3EC;
-  --color-soft-chalk: #FCFAF6;
-  --color-jaipur-rose: #C98780;
-  --color-dusty-terracotta: #A85F50;
-  --color-deep-maroon: #4A2927;
-  --color-warm-charcoal: #292522;
-  --color-sandstone-beige: #E6D8C8;
-
-  /* Typography */
-  --font-display: 'Cormorant Garamond', Georgia, serif;
-  --font-body: 'Inter', system-ui, sans-serif;
-}
-
-:root {
-  --background: #F7F3EC;
-  --foreground: #292522;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  background-color: var(--background);
-  color: var(--foreground);
-  font-family: var(--font-body);
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-/* Reduced motion */
-@media (prefers-reduced-motion: reduce) {
-  *,
-  *::before,
-  *::after {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
-  }
-}
-
-/* Display font utility */
-.font-display {
-  font-family: var(--font-display);
-}
-
-/* Subtle link underline animation */
-.link-underline {
-  position: relative;
-  text-decoration: none;
-}
-.link-underline::after {
-  content: '';
-  position: absolute;
-  bottom: -1px;
-  left: 0;
-  width: 0;
-  height: 1px;
-  background-color: currentColor;
-  transition: width 0.3s ease;
-}
-.link-underline:hover::after {
-  width: 100%;
-}
-
-/* Image fade-in on load */
-img {
-  transition: opacity 0.3s ease;
-}
-```
-
-### sadashiv-web/app/layout.tsx
-
-| Field | Value |
-| --- | --- |
-| Bytes | 1257 |
-| Score | 120 |
-| Why | changed |
-| Status | Full content |
-
-
-```tsx
-import type { Metadata } from 'next';
-import './globals.css';
-import Header from '@/components/layout/Header';
-import Footer from '@/components/layout/Footer';
-import FloatingWhatsApp from '@/components/shared/FloatingWhatsApp';
-
-export const metadata: Metadata = {
-  metadataBase: new URL('https://sadashivfashions.in'),
-  title: {
-    default: 'Sadashiv Fashions Jaipur | Ethnic Wear, Suits, Kurtis & Fabrics',
-    template: '%s | Sadashiv Fashions',
-  },
-  description:
-    'Explore suits, kurtis, fabrics and dupattas at Sadashiv Fashions in Malviya Nagar, Jaipur. Browse the collection and enquire directly on WhatsApp.',
-  keywords: [
-    'Sadashiv Fashions Jaipur',
-    'ethnic wear Jaipur',
-    'women suits Jaipur',
-    'kurtis Jaipur',
-    'fabrics Malviya Nagar',
-    'dupatta store Jaipur',
-    'wholesale fabric Jaipur',
-  ],
-  openGraph: {
-    type: 'website',
-    locale: 'en_IN',
-    siteName: 'Sadashiv Fashions',
-  },
-  robots: {
-    index: true,
-    follow: true,
-  },
-};
-
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
-  return (
-    <html lang="en">
-      <body>
-        <Header />
-        <main>{children}</main>
-        <Footer />
-        <FloatingWhatsApp />
-      </body>
-    </html>
-  );
-}
-```
-
-### sadashiv-web/app/robots.ts
-
-| Field | Value |
-| --- | --- |
-| Bytes | 236 |
-| Score | 120 |
-| Why | changed |
-| Status | Full content |
-
-
-```ts
-import type { MetadataRoute } from 'next';
-
-export default function robots(): MetadataRoute.Robots {
-  return {
-    rules: {
-      userAgent: '*',
-      allow: '/',
-    },
-    sitemap: 'https://sadashivfashions.in/sitemap.xml',
-  };
-}
-```
 
 ### sadashiv-web/app/sitemap.ts
 
 | Field | Value |
 | --- | --- |
-| Bytes | 1393 |
+| Bytes | 823 |
 | Score | 120 |
 | Why | changed |
 | Status | Full content |
@@ -1228,614 +317,40 @@ import type { MetadataRoute } from 'next';
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://sadashivfashions.in';
 
+  const now = new Date('2026-11-07');
+
   return [
     {
       url: baseUrl,
-      lastModified: new Date(),
+      lastModified: now,
       changeFrequency: 'weekly',
       priority: 1,
     },
     {
       url: `${baseUrl}/collections`,
-      lastModified: new Date(),
+      lastModified: now,
       changeFrequency: 'weekly',
       priority: 0.9,
     },
     {
-      url: `${baseUrl}/collections/suits`,
-      lastModified: new Date(),
-      changeFrequency: 'weekly',
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/collections/kurtis`,
-      lastModified: new Date(),
-      changeFrequency: 'weekly',
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/collections/fabrics`,
-      lastModified: new Date(),
-      changeFrequency: 'weekly',
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/collections/dupattas`,
-      lastModified: new Date(),
-      changeFrequency: 'weekly',
-      priority: 0.8,
-    },
-    {
       url: `${baseUrl}/about`,
-      lastModified: new Date(),
+      lastModified: now,
       changeFrequency: 'monthly',
-      priority: 0.7,
+      priority: 0.8,
     },
     {
       url: `${baseUrl}/gallery`,
-      lastModified: new Date(),
+      lastModified: now,
       changeFrequency: 'weekly',
-      priority: 0.7,
+      priority: 0.8,
     },
     {
       url: `${baseUrl}/visit`,
-      lastModified: new Date(),
+      lastModified: now,
       changeFrequency: 'monthly',
-      priority: 0.8,
+      priority: 0.9,
     },
   ];
-}
-```
-
-### sadashiv-web/app/visit/page.tsx
-
-| Field | Value |
-| --- | --- |
-| Bytes | 9565 |
-| Score | 120 |
-| Why | changed |
-| Status | Full content |
-
-
-```tsx
-import type { Metadata } from 'next';
-import WhatsAppButton from '@/components/shared/WhatsAppButton';
-
-export const metadata: Metadata = {
-  title: 'Visit Us — Contact & Location',
-  description:
-    'Visit Sadashiv Fashions at Malviya Nagar, Jaipur. Enquire on WhatsApp for directions, opening hours and local delivery details.',
-  openGraph: {
-    title: 'Visit Us | Sadashiv Fashions',
-    description: 'Contact and visit Sadashiv Fashions in Malviya Nagar, Jaipur.',
-    images: [{ url: '/images/store/store-exterior.jpg' }],
-  },
-};
-
-const WA_GENERAL =
-  'https://wa.me/916376648869?text=Hello%20Sadashiv%20Fashions%2C%20I%20am%20interested%20in%20your%20collection.%20Please%20share%20details.';
-const WA_DIRECTIONS =
-  'https://wa.me/916376648869?text=Hello%20Sadashiv%20Fashions%2C%20I%20would%20like%20to%20visit%20the%20store.%20Could%20you%20share%20the%20location%20and%20current%20opening%20hours%3F';
-const INSTAGRAM = 'https://www.instagram.com/sadashivfashionsjaipur/';
-const MAPS_PLACEHOLDER = 'https://maps.google.com/?q=Sadashiv+Fashions+Malviya+Nagar+Jaipur';
-
-export default function VisitPage() {
-  return (
-    <div>
-      {/* Page header */}
-      <section className="pt-12 pb-10 px-6 max-w-7xl mx-auto border-b border-[#E6D8C8]">
-        <p className="text-xs uppercase tracking-widest text-[#A85F50] mb-3">Find Us</p>
-        <h1 className="font-display text-4xl sm:text-5xl text-[#292522]">Visit Us</h1>
-        <p className="mt-3 text-sm text-[#5A4A42] max-w-md">
-          We&apos;re located in Malviya Nagar, Jaipur. Come browse the collection in person or send us a WhatsApp message.
-        </p>
-      </section>
-
-      {/* Main content */}
-      <section className="py-14 px-6 max-w-7xl mx-auto">
-        <div className="grid md:grid-cols-2 gap-12 md:gap-16">
-
-          {/* Contact info */}
-          <div>
-            <h2 className="font-display text-2xl sm:text-3xl text-[#292522] mb-8">Store Details</h2>
-
-            {/* Address */}
-            <div className="mb-8">
-              <p className="text-xs uppercase tracking-widest text-[#A85F50] mb-3">Address</p>
-              <address className="not-italic text-sm text-[#292522] leading-relaxed">
-                2/72, Krishna Nand Marg,<br />
-                near Government Girls Senior Secondary School,<br />
-                Malviya Nagar,<br />
-                Jaipur — 302017,<br />
-                Rajasthan
-              </address>
-              <a
-                href={MAPS_PLACEHOLDER}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block mt-3 text-sm text-[#A85F50] hover:text-[#4A2927] transition-colors link-underline"
-              >
-                Get Directions on Google Maps ↗
-              </a>
-              <p className="mt-1 text-xs text-[#7A6358]">
-                * Maps link to be confirmed by owners
-              </p>
-            </div>
-
-            {/* Hours */}
-            <div className="mb-8">
-              <p className="text-xs uppercase tracking-widest text-[#A85F50] mb-3">Opening Hours</p>
-              <p className="text-sm text-[#5A4A42]">
-                Please contact us on WhatsApp for current opening hours.
-              </p>
-              <a
-                href={WA_DIRECTIONS}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block mt-2 text-sm text-[#A85F50] hover:text-[#4A2927] transition-colors link-underline"
-              >
-                Ask us on WhatsApp →
-              </a>
-            </div>
-
-            {/* Delivery */}
-            <div className="mb-8">
-              <p className="text-xs uppercase tracking-widest text-[#A85F50] mb-3">Local Delivery</p>
-              <p className="text-sm text-[#5A4A42] leading-relaxed">
-                Local delivery is available in Jaipur and nearby areas. Contact us on WhatsApp to confirm availability, charges and terms for your location.
-              </p>
-            </div>
-
-            {/* Channels */}
-            <div>
-              <p className="text-xs uppercase tracking-widest text-[#A85F50] mb-3">Get in Touch</p>
-              <div className="flex flex-col gap-3">
-                <a
-                  href={WA_GENERAL}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 text-sm text-[#292522] hover:text-[#A85F50] transition-colors"
-                >
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />
-                    <path d="M12 0C5.373 0 0 5.373 0 12c0 2.136.564 4.14 1.546 5.877L.057 23.5l5.773-1.516A11.954 11.954 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.044-1.394l-.361-.214-3.735.979 1-3.639-.235-.374A9.818 9.818 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z" />
-                  </svg>
-                  WhatsApp: +91 63766 48869
-                </a>
-                <a
-                  href={INSTAGRAM}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 text-sm text-[#292522] hover:text-[#A85F50] transition-colors"
-                >
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
-                  </svg>
-                  Instagram: @sadashivfashionsjaipur
-                </a>
-              </div>
-            </div>
-          </div>
-
-          {/* WhatsApp CTA card */}
-          <div>
-            <div className="bg-[#292522] p-8 md:p-10 h-full flex flex-col justify-between min-h-[320px]">
-              <div>
-                <p className="text-xs uppercase tracking-widest text-[#A85F50] mb-5">Enquire Now</p>
-                <h2 className="font-display text-2xl sm:text-3xl text-[#E6D8C8] leading-snug mb-5">
-                  Send us a message on WhatsApp
-                </h2>
-                <p className="text-sm text-[#A8907A] leading-relaxed mb-8">
-                  Ask about our current collection, pricing, availability, delivery options or plan a store visit. We respond on WhatsApp.
-                </p>
-              </div>
-              <div className="flex flex-col gap-4">
-                <a
-                  href={WA_GENERAL}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 bg-[#F7F3EC] text-[#292522] text-sm font-medium px-5 py-3 hover:bg-white transition-colors"
-                >
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />
-                    <path d="M12 0C5.373 0 0 5.373 0 12c0 2.136.564 4.14 1.546 5.877L.057 23.5l5.773-1.516A11.954 11.954 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.044-1.394l-.361-.214-3.735.979 1-3.639-.235-.374A9.818 9.818 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z" />
-                  </svg>
-                  Chat on WhatsApp
-                </a>
-                <p className="text-xs text-[#5A4A42]">+91 63766 48869</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </div>
-  );
-}
-```
-
-### sadashiv-web/components/layout/Footer.tsx
-
-| Field | Value |
-| --- | --- |
-| Bytes | 6081 |
-| Score | 120 |
-| Why | changed |
-| Status | Full content |
-
-
-```tsx
-import Image from 'next/image';
-import Link from 'next/link';
-
-const WA_GENERAL = 'https://wa.me/916376648869?text=Hello%20Sadashiv%20Fashions%2C%20I%20am%20interested%20in%20your%20collection.%20Please%20share%20details.';
-const INSTAGRAM = 'https://www.instagram.com/sadashivfashionsjaipur/';
-
-export default function Footer() {
-  return (
-    <footer className="bg-[#292522] text-[#E6D8C8]">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8">
-
-          {/* Brand column */}
-          <div>
-            <Link href="/" aria-label="Sadashiv Fashions">
-              <Image
-                src="/brand/logo-black.png"
-                alt="Sadashiv Fashions"
-                width={110}
-                height={55}
-                className="h-10 w-auto object-contain invert brightness-200 mb-5"
-              />
-            </Link>
-            <p className="text-sm text-[#C8B8A2] leading-relaxed max-w-56">
-              A Jaipur-based fashion and textile store. Women's ethnic wear and fabrics for retail and wholesale.
-            </p>
-          </div>
-
-          {/* Navigation */}
-          <div>
-            <p className="text-xs uppercase tracking-widest text-[#A8907A] mb-5">Pages</p>
-            <nav className="flex flex-col gap-3" aria-label="Footer navigation">
-              {[
-                { href: '/', label: 'Home' },
-                { href: '/collections', label: 'Collections' },
-                { href: '/collections/suits', label: 'Suits' },
-                { href: '/collections/kurtis', label: 'Kurtis' },
-                { href: '/collections/fabrics', label: 'Fabrics' },
-                { href: '/collections/dupattas', label: 'Dupattas' },
-                { href: '/about', label: 'About' },
-                { href: '/gallery', label: 'Gallery' },
-                { href: '/visit', label: 'Visit Us' },
-              ].map((link) => (
-                <Link
-                  key={link.href}
-                  href={link.href}
-                  className="text-sm text-[#C8B8A2] hover:text-[#F7F3EC] transition-colors duration-200"
-                >
-                  {link.label}
-                </Link>
-              ))}
-            </nav>
-          </div>
-
-          {/* Contact */}
-          <div>
-            <p className="text-xs uppercase tracking-widest text-[#A8907A] mb-5">Contact & Visit</p>
-            <address className="not-italic text-sm text-[#C8B8A2] leading-relaxed mb-6">
-              2/72, Krishna Nand Marg,<br />
-              near Govt. Girls Sr. Sec. School,<br />
-              Malviya Nagar, Jaipur — 302017,<br />
-              Rajasthan
-            </address>
-            <div className="flex flex-col gap-3">
-              <a
-                href={WA_GENERAL}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-sm text-[#C8B8A2] hover:text-[#F7F3EC] transition-colors"
-              >
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />
-                  <path d="M12 0C5.373 0 0 5.373 0 12c0 2.136.564 4.14 1.546 5.877L.057 23.5l5.773-1.516A11.954 11.954 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.044-1.394l-.361-.214-3.735.979 1-3.639-.235-.374A9.818 9.818 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z" />
-                </svg>
-                +91 63766 48869
-              </a>
-              <a
-                href={INSTAGRAM}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-sm text-[#C8B8A2] hover:text-[#F7F3EC] transition-colors"
-              >
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
-                </svg>
-                @sadashivfashionsjaipur
-              </a>
-            </div>
-          </div>
-        </div>
-
-        {/* Bottom bar */}
-        <div className="mt-14 pt-6 border-t border-[#3D302D] flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
-          <p className="text-xs text-[#7A6358]">
-            © {new Date().getFullYear()} Sadashiv Fashions. Malviya Nagar, Jaipur.
-          </p>
-          <p className="text-xs text-[#7A6358]">
-            Retail & wholesale enquiries welcome.
-          </p>
-        </div>
-      </div>
-    </footer>
-  );
-}
-```
-
-### sadashiv-web/components/layout/Header.tsx
-
-| Field | Value |
-| --- | --- |
-| Bytes | 5433 |
-| Score | 120 |
-| Why | changed |
-| Status | Full content |
-
-
-```tsx
-'use client';
-
-import { useState, useEffect } from 'react';
-import Image from 'next/image';
-import Link from 'next/link';
-import { usePathname } from 'next/navigation';
-import MobileNav from './MobileNav';
-
-const navLinks = [
-  { href: '/collections', label: 'Collections' },
-  { href: '/about', label: 'About' },
-  { href: '/gallery', label: 'Gallery' },
-  { href: '/visit', label: 'Visit Us' },
-];
-
-const WA_GENERAL = 'https://wa.me/916376648869?text=Hello%20Sadashiv%20Fashions%2C%20I%20am%20interested%20in%20your%20collection.%20Please%20share%20details.';
-
-export default function Header() {
-  const [scrolled, setScrolled] = useState(false);
-  const [mobileOpen, setMobileOpen] = useState(false);
-  const pathname = usePathname();
-
-  useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 20);
-    window.addEventListener('scroll', onScroll, { passive: true });
-    return () => window.removeEventListener('scroll', onScroll);
-  }, []);
-
-  // Close mobile nav on route change
-  useEffect(() => {
-    setMobileOpen(false);
-  }, [pathname]);
-
-  return (
-    <>
-      <header
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-          scrolled
-            ? 'bg-[#F7F3EC]/95 backdrop-blur-sm shadow-sm'
-            : 'bg-[#F7F3EC]'
-        }`}
-      >
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-16 md:h-20">
-            {/* Logo */}
-            <Link href="/" aria-label="Sadashiv Fashions — Home">
-              <Image
-                src="/brand/logo-transparent.png"
-                alt="Sadashiv Fashions"
-                width={120}
-                height={60}
-                className="h-10 md:h-12 w-auto object-contain"
-                priority
-              />
-            </Link>
-
-            {/* Desktop nav */}
-            <nav className="hidden md:flex items-center gap-8" aria-label="Main navigation">
-              {navLinks.map((link) => (
-                <Link
-                  key={link.href}
-                  href={link.href}
-                  className={`text-sm tracking-wide transition-colors duration-200 link-underline ${
-                    pathname === link.href || pathname.startsWith(link.href + '/')
-                      ? 'text-[#D4197D] font-medium'
-                      : 'text-[#292522] hover:text-[#D4197D]'
-                  }`}
-                >
-                  {link.label}
-                </Link>
-              ))}
-            </nav>
-
-            {/* Desktop WhatsApp CTA */}
-            <div className="hidden md:flex items-center gap-4">
-              <a
-                href={WA_GENERAL}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-2 text-sm font-medium text-[#292522] border border-[#292522] px-4 py-2 hover:bg-[#292522] hover:text-[#F7F3EC] transition-colors duration-200"
-                aria-label="Enquire on WhatsApp"
-              >
-                <WhatsAppIcon />
-                Enquire
-              </a>
-            </div>
-
-            {/* Mobile hamburger */}
-            <button
-              className="md:hidden p-2 text-[#292522]"
-              onClick={() => setMobileOpen(!mobileOpen)}
-              aria-label={mobileOpen ? 'Close menu' : 'Open menu'}
-              aria-expanded={mobileOpen}
-            >
-              {mobileOpen ? <CloseIcon /> : <MenuIcon />}
-            </button>
-          </div>
-        </div>
-      </header>
-
-      {/* Mobile nav drawer */}
-      <MobileNav
-        isOpen={mobileOpen}
-        onClose={() => setMobileOpen(false)}
-        links={navLinks}
-        pathname={pathname}
-        waLink={WA_GENERAL}
-      />
-
-      {/* Spacer so content doesn't go under fixed header */}
-      <div className="h-16 md:h-20" />
-    </>
-  );
-}
-
-function MenuIcon() {
-  return (
-    <svg width="22" height="22" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24">
-      <path strokeLinecap="round" d="M4 6h16M4 12h16M4 18h16" />
-    </svg>
-  );
-}
-
-function CloseIcon() {
-  return (
-    <svg width="22" height="22" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24">
-      <path strokeLinecap="round" d="M6 18L18 6M6 6l12 12" />
-    </svg>
-  );
-}
-
-function WhatsAppIcon() {
-  return (
-    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />
-      <path d="M12 0C5.373 0 0 5.373 0 12c0 2.136.564 4.14 1.546 5.877L.057 23.5l5.773-1.516A11.954 11.954 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.044-1.394l-.361-.214-3.735.979 1-3.639-.235-.374A9.818 9.818 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z" />
-    </svg>
-  );
-}
-```
-
-### sadashiv-web/components/layout/MobileNav.tsx
-
-| Field | Value |
-| --- | --- |
-| Bytes | 4120 |
-| Score | 120 |
-| Why | changed |
-| Status | Full content |
-
-
-```tsx
-'use client';
-
-import { useEffect } from 'react';
-import Link from 'next/link';
-
-interface NavLink {
-  href: string;
-  label: string;
-}
-
-interface MobileNavProps {
-  isOpen: boolean;
-  onClose: () => void;
-  links: NavLink[];
-  pathname: string;
-  waLink: string;
-}
-
-export default function MobileNav({ isOpen, onClose, links, pathname, waLink }: MobileNavProps) {
-  // Prevent body scroll when open
-  useEffect(() => {
-    if (isOpen) {
-      document.body.style.overflow = 'hidden';
-    } else {
-      document.body.style.overflow = '';
-    }
-    return () => { document.body.style.overflow = ''; };
-  }, [isOpen]);
-
-  return (
-    <>
-      {/* Backdrop */}
-      <div
-        className={`fixed inset-0 z-40 bg-black/40 transition-opacity duration-300 md:hidden ${
-          isOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'
-        }`}
-        onClick={onClose}
-        aria-hidden="true"
-      />
-
-      {/* Drawer */}
-      <div
-        className={`fixed top-0 right-0 h-full w-72 max-w-[85vw] z-50 bg-[#F7F3EC] shadow-2xl transform transition-transform duration-300 ease-in-out md:hidden ${
-          isOpen ? 'translate-x-0' : 'translate-x-full'
-        }`}
-        role="dialog"
-        aria-modal="true"
-        aria-label="Navigation menu"
-      >
-        <div className="flex flex-col h-full px-6 py-8">
-          {/* Close button */}
-          <button
-            onClick={onClose}
-            className="self-end mb-10 p-1 text-[#292522]"
-            aria-label="Close menu"
-          >
-            <svg width="22" height="22" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24">
-              <path strokeLinecap="round" d="M6 18L18 6M6 6l12 12" />
-            </svg>
-          </button>
-
-          {/* Nav links */}
-          <nav className="flex flex-col gap-1" aria-label="Mobile navigation">
-            {links.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                onClick={onClose}
-                className={`py-3 text-lg border-b border-[#E6D8C8] transition-colors ${
-                  pathname === link.href || pathname.startsWith(link.href + '/')
-                    ? 'text-[#D4197D] font-medium'
-                    : 'text-[#292522]'
-                }`}
-              >
-                {link.label}
-              </Link>
-            ))}
-          </nav>
-
-          {/* WhatsApp CTA */}
-          <div className="mt-auto">
-            <a
-              href={waLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center justify-center gap-2 w-full py-3 bg-[#292522] text-[#F7F3EC] text-sm font-medium tracking-wide"
-              onClick={onClose}
-            >
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />
-                <path d="M12 0C5.373 0 0 5.373 0 12c0 2.136.564 4.14 1.546 5.877L.057 23.5l5.773-1.516A11.954 11.954 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.044-1.394l-.361-.214-3.735.979 1-3.639-.235-.374A9.818 9.818 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z" />
-              </svg>
-              Enquire on WhatsApp
-            </a>
-
-            <p className="mt-6 text-xs text-[#A85F50] text-center">
-              Malviya Nagar, Jaipur
-            </p>
-          </div>
-        </div>
-      </div>
-    </>
-  );
 }
 ```
 
@@ -1843,32 +358,281 @@ export default function MobileNav({ isOpen, onClose, links, pathname, waLink }: 
 
 | Field | Value |
 | --- | --- |
-| Bytes | 1724 |
+| Bytes | 4700 |
 | Score | 120 |
 | Why | changed |
 | Status | Full content |
 
 
 ```tsx
+'use client';
+
+import React, { useState } from 'react';
+
+const WA_GENERAL =
+  'https://wa.me/916376648869?text=Hello%20Sadashiv%20Fashions%2C%20I%20am%20interested%20in%20your%20collection.%20Please%20share%20details.';
+const WA_WHOLESALE =
+  'https://wa.me/916376648869?text=Hello%20Sadashiv%20Fashions%2C%20I%20am%20enquiring%20about%20a%20wholesale%20purchase.%20Please%20share%20your%20catalogue%2C%20pricing%20and%20terms.';
+
 export default function FloatingWhatsApp() {
-  const waLink =
-    'https://wa.me/916376648869?text=Hello%20Sadashiv%20Fashions%2C%20I%20am%20interested%20in%20your%20collection.%20Please%20share%20details.';
+  const [expanded, setExpanded] = useState(false);
 
   return (
-    <a
-      href={waLink}
-      target="_blank"
-      rel="noopener noreferrer"
-      aria-label="Enquire on WhatsApp"
-      className="fixed bottom-6 right-5 z-40 flex items-center justify-center w-13 h-13 bg-[#25D366] text-white shadow-lg md:hidden hover:bg-[#1FAD55] transition-colors duration-200"
-      style={{ width: 52, height: 52, borderRadius: '50%' }}
-    >
-      <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />
-        <path d="M12 0C5.373 0 0 5.373 0 12c0 2.136.564 4.14 1.546 5.877L.057 23.5l5.773-1.516A11.954 11.954 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.044-1.394l-.361-.214-3.735.979 1-3.639-.235-.374A9.818 9.818 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z" />
-      </svg>
-    </a>
+    <div className="fixed bottom-6 right-5 z-40 select-none">
+      {/* Expanded Quick Concierge Popover */}
+      {expanded && (
+        <div className="mb-3 w-72 bg-[#FAF6F0] rounded-2xl shadow-2xl border border-[#E6D8C8] p-4 animate-in fade-in slide-in-from-bottom-2 duration-200">
+          <div className="flex items-center justify-between pb-3 border-b border-[#E6D8C8]">
+            <div className="flex items-center gap-2">
+              <span className="w-2.5 h-2.5 rounded-full bg-[#25D366] animate-pulse" />
+              <p className="font-display text-sm font-semibold text-[#1A1817]">Sadashiv Concierge</p>
+            </div>
+            <button
+              onClick={() => setExpanded(false)}
+              className="text-[#7A6358] hover:text-[#1A1817] p-1 text-sm"
+              aria-label="Close Concierge popover"
+            >
+              ✕
+            </button>
+          </div>
+
+          <p className="text-xs text-[#5A4A42] my-3 leading-relaxed">
+            Welcome to Sadashiv Fashions. How may we assist your textile journey today?
+          </p>
+
+          <div className="space-y-2">
+            <a
+              href={WA_GENERAL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full flex items-center justify-between p-2.5 bg-[#FAF6F0] hover:bg-[#F3ECE2] border border-[#E6D8C8] rounded-xl text-xs text-[#1A1817] font-medium transition-colors"
+            >
+              <span>Retail Collection Enquiry</span>
+              <span className="text-[#D4197D]">↗</span>
+            </a>
+
+            <a
+              href={WA_WHOLESALE}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full flex items-center justify-between p-2.5 bg-[#1A1817] hover:bg-[#D4197D] text-[#FAF6F0] rounded-xl text-xs font-medium transition-colors"
+            >
+              <span>Wholesale &amp; Bulk Orders</span>
+              <span className="text-white">↗</span>
+            </a>
+          </div>
+
+          <p className="mt-3 text-[10px] text-center text-[#7A6358]">
+            Malviya Nagar, Jaipur · Instant WhatsApp Response
+          </p>
+        </div>
+      )}
+
+      {/* Main Floating Trigger Pill */}
+      <button
+        onClick={() => setExpanded(!expanded)}
+        className="group flex items-center gap-2.5 bg-[#1A1817] hover:bg-[#D4197D] text-white rounded-full pl-3.5 pr-4 py-2.5 shadow-xl border border-[#C5A059]/40 transition-all duration-300 active:scale-95"
+        aria-label="Open Sadashiv WhatsApp Concierge"
+        aria-expanded={expanded}
+      >
+        <span className="relative flex h-3 w-3">
+          <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#25D366] opacity-75" />
+          <span className="relative inline-flex rounded-full h-3 w-3 bg-[#25D366]" />
+        </span>
+        <span className="text-xs uppercase tracking-[0.16em] font-medium">Concierge</span>
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" className="text-[#25D366] group-hover:text-white transition-colors">
+          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />
+          <path d="M12 0C5.373 0 0 5.373 0 12c0 2.136.564 4.14 1.546 5.877L.057 23.5l5.773-1.516A11.954 11.954 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.044-1.394l-.361-.214-3.735.979 1-3.639-.235-.374A9.818 9.818 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z" />
+        </svg>
+      </button>
+    </div>
   );
+}
+```
+
+### sadashiv-web/components/shared/Logo.tsx
+
+| Field | Value |
+| --- | --- |
+| Bytes | 5248 |
+| Score | 120 |
+| Why | changed |
+| Status | Full content |
+
+
+```tsx
+'use client';
+
+import React from 'react';
+import Image from 'next/image';
+import Link from 'next/link';
+
+export type LogoVariant = 'full' | 'compact' | 'trishul';
+export type LogoTheme = 'magenta' | 'white' | 'gold' | 'charcoal';
+export type LogoSize = 'sm' | 'md' | 'lg' | 'xl' | 'hero' | 'custom';
+
+export interface LogoProps {
+  variant?: LogoVariant;
+  theme?: LogoTheme;
+  size?: LogoSize;
+  animated?: boolean;
+  showTagline?: boolean;
+  tagline?: string;
+  asLink?: boolean;
+  priority?: boolean;
+  className?: string;
+  customHeight?: number;
+}
+
+const ASSET_MAP: Record<LogoVariant, Record<LogoTheme, string>> = {
+  full: {
+    magenta: '/brand/variants/logo-full.png',
+    white: '/brand/variants/logo-full-white.png',
+    gold: '/brand/variants/logo-full-gold.png',
+    charcoal: '/brand/variants/logo-full-charcoal.png',
+  },
+  compact: {
+    magenta: '/brand/variants/logo-compact.png',
+    white: '/brand/variants/logo-compact-white.png',
+    gold: '/brand/variants/logo-compact-gold.png',
+    charcoal: '/brand/variants/logo-compact-charcoal.png',
+  },
+  trishul: {
+    magenta: '/brand/variants/logo-trishul.png',
+    white: '/brand/variants/logo-trishul-white.png',
+    gold: '/brand/variants/logo-trishul-gold.png',
+    charcoal: '/brand/variants/logo-trishul-charcoal.png',
+  },
+};
+
+// Intrinsic aspect ratios of the cropped variants
+const ASPECT_RATIOS: Record<LogoVariant, number> = {
+  full: 1589 / 963,    // ~1.650
+  compact: 1589 / 500, // ~3.178
+  trishul: 381 / 963,  // ~0.395
+};
+
+const HEIGHT_PRESETS: Record<LogoVariant, Record<Exclude<LogoSize, 'custom'>, number>> = {
+  full: {
+    sm: 36,
+    md: 48,
+    lg: 64,
+    xl: 84,
+    hero: 110,
+  },
+  compact: {
+    sm: 28,
+    md: 38,
+    lg: 48,
+    xl: 60,
+    hero: 76,
+  },
+  trishul: {
+    sm: 32,
+    md: 44,
+    lg: 60,
+    xl: 80,
+    hero: 104,
+  },
+};
+
+export default function Logo({
+  variant = 'full',
+  theme = 'magenta',
+  size = 'md',
+  animated = true,
+  showTagline = false,
+  tagline = 'JAIPUR · BOUTIQUE & TEXTILES',
+  asLink = false,
+  priority = false,
+  className = '',
+  customHeight,
+}: LogoProps) {
+  const assetSrc = ASSET_MAP[variant][theme] || ASSET_MAP[variant].magenta;
+  const aspectRatio = ASPECT_RATIOS[variant];
+  const height = customHeight ?? (size === 'custom' ? 48 : HEIGHT_PRESETS[variant][size]);
+  const width = Math.round(height * aspectRatio);
+
+  const content = (
+    <div
+      className={`group/logo relative inline-flex flex-col items-center select-none ${className}`}
+      style={{ minHeight: height }}
+    >
+      <div className="relative overflow-visible flex items-center justify-center">
+        {/* Ambient glow effect for animated logo */}
+        {animated && theme === 'magenta' && (
+          <div
+            aria-hidden="true"
+            className="absolute inset-0 bg-[#D4197D]/15 blur-xl rounded-full scale-110 opacity-0 group-hover/logo:opacity-100 transition-opacity duration-500 pointer-events-none"
+          />
+        )}
+        {animated && theme === 'gold' && (
+          <div
+            aria-hidden="true"
+            className="absolute inset-0 bg-[#C5A059]/20 blur-xl rounded-full scale-110 opacity-0 group-hover/logo:opacity-100 transition-opacity duration-500 pointer-events-none"
+          />
+        )}
+
+        {/* The Core Image Asset */}
+        <div
+          className={`relative transition-transform duration-500 ease-[cubic-bezier(0.32,0.72,0,1)] ${
+            animated ? 'group-hover/logo:scale-[1.03]' : ''
+          }`}
+          style={{ width, height }}
+        >
+          <Image
+            src={assetSrc}
+            alt="Sadashiv Fashions — Jaipur"
+            width={width}
+            height={height}
+            priority={priority}
+            className="w-full h-full object-contain filter drop-shadow-sm"
+          />
+
+          {/* Shimmer light reflection sweep on hover */}
+          {animated && (
+            <div
+              aria-hidden="true"
+              className="absolute inset-0 overflow-hidden pointer-events-none opacity-0 group-hover/logo:opacity-100 transition-opacity duration-300"
+            >
+              <div
+                className="absolute inset-y-0 w-1/3 bg-gradient-to-r from-transparent via-white/30 to-transparent -skew-x-12 -translate-x-full group-hover/logo:animate-[shimmer_1.2s_ease-in-out_infinite]"
+              />
+            </div>
+          )}
+        </div>
+      </div>
+
+      {/* Optional luxury typography subtext / tagline */}
+      {showTagline && (
+        <span
+          className={`mt-1.5 text-[9px] sm:text-[10px] tracking-[0.28em] uppercase font-medium transition-colors duration-300 ${
+            theme === 'white'
+              ? 'text-[#E6D8C8]/80 group-hover/logo:text-[#FAF6F0]'
+              : theme === 'gold'
+              ? 'text-[#C5A059]'
+              : 'text-[#9E4736] group-hover/logo:text-[#D4197D]'
+          }`}
+        >
+          {tagline}
+        </span>
+      )}
+    </div>
+  );
+
+  if (asLink) {
+    return (
+      <Link
+        href="/"
+        aria-label="Sadashiv Fashions — Home"
+        className="inline-flex items-center focus:outline-none focus-visible:ring-2 focus-visible:ring-[#D4197D]/50 rounded-sm"
+      >
+        {content}
+      </Link>
+    );
+  }
+
+  return content;
 }
 ```
 
@@ -1876,67 +640,135 @@ export default function FloatingWhatsApp() {
 
 | Field | Value |
 | --- | --- |
-| Bytes | 3053 |
+| Bytes | 5930 |
 | Score | 120 |
 | Why | changed |
 | Status | Full content |
 
 
 ```tsx
+'use client';
+
+import React, { useState } from 'react';
 import Image from 'next/image';
-import Link from 'next/link';
 import type { Product } from '@/data/products';
 import { buildProductWaLink } from './WhatsAppButton';
 
 interface ProductCardProps {
   product: Product;
-  baseUrl?: string;
+  className?: string;
 }
 
-export default function ProductCard({ product, baseUrl = 'https://sadashivfashions.in' }: ProductCardProps) {
-  const productUrl = `${baseUrl}/collections/${product.category}/${product.slug}`;
-  const waLink = buildProductWaLink(product.name, product.category, productUrl);
+export default function ProductCard({ product, className = '' }: ProductCardProps) {
+  const [isHovered, setIsHovered] = useState(false);
 
-  const categoryLabel = {
-    suits: 'Suits',
-    kurtis: 'Kurtis',
-    fabrics: 'Fabrics',
-    dupattas: 'Dupattas',
-  }[product.category];
+  const waLink = buildProductWaLink(product.name, product.category);
+
+  const categoryLabel =
+    {
+      suits: 'Suits',
+      kurtis: 'Kurtis',
+      fabrics: 'Fabrics',
+      dupattas: 'Dupattas',
+    }[product.category] || 'Collection';
+
+  const secondaryImage =
+    product.images && product.images.length > 1 ? product.images[1] : null;
 
   return (
-    <article className="group">
-      {/* Image */}
-      <div className="relative overflow-hidden bg-[#E6D8C8] aspect-[3/4]">
-        <Image
-          src={product.image}
-          alt={product.name}
-          fill
-          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-          className="object-cover transition-transform duration-500 group-hover:scale-103"
-        />
-      </div>
+    <article
+      id={product.slug}
+      className={`group relative bg-[#F3ECE2]/80 p-2 sm:p-2.5 rounded-2xl sm:rounded-3xl border border-[#E6D8C8] hover:border-[#C5A059]/60 transition-all duration-400 hover:shadow-[0_12px_36px_rgba(41,37,34,0.06)] flex flex-col justify-between ${className}`}
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+    >
+      {/* Inner Frame */}
+      <div className="bg-[#FAF6F0] rounded-xl sm:rounded-2xl overflow-hidden flex flex-col flex-1">
+        {/* Image Container Aspect 3:4 */}
+        <div className="relative aspect-[3/4] w-full overflow-hidden bg-[#E6D8C8]">
+          <Image
+            src={product.image}
+            alt={product.name}
+            fill
+            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+            className={`object-cover object-top transition-all duration-700 ease-[cubic-bezier(0.25,1,0.5,1)] ${
+              secondaryImage && isHovered
+                ? 'opacity-0 scale-105'
+                : 'opacity-100 group-hover:scale-[1.03]'
+            }`}
+          />
 
-      {/* Info */}
-      <div className="pt-3 pb-1">
-        <p className="text-xs uppercase tracking-widest text-[#A85F50] mb-1">{categoryLabel}</p>
-        <h3 className="font-display text-lg text-[#292522] leading-snug mb-2">{product.name}</h3>
-        {product.description && (
-          <p className="text-sm text-[#5A4A42] leading-relaxed mb-3 line-clamp-2">{product.description}</p>
-        )}
-        <a
-          href={waLink}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center gap-1.5 text-sm text-[#A85F50] hover:text-[#4A2927] transition-colors duration-200 group/wa"
-          aria-label={`Enquire about ${product.name} on WhatsApp`}
-        >
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />
-            <path d="M12 0C5.373 0 0 5.373 0 12c0 2.136.564 4.14 1.546 5.877L.057 23.5l5.773-1.516A11.954 11.954 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.044-1.394l-.361-.214-3.735.979 1-3.639-.235-.374A9.818 9.818 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z" />
-          </svg>
-          <span className="underline underline-offset-2">Enquire on WhatsApp</span>
-        </a>
+          {secondaryImage && (
+            <Image
+              src={secondaryImage}
+              alt={`${product.name} — detail`}
+              fill
+              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+              className={`object-cover object-center transition-all duration-700 ease-[cubic-bezier(0.25,1,0.5,1)] ${
+                isHovered
+                  ? 'opacity-100 scale-[1.02]'
+                  : 'opacity-0 scale-100 pointer-events-none'
+              }`}
+            />
+          )}
+
+          {/* Discreet Tag */}
+          <div className="absolute top-3 left-3 pointer-events-none">
+            <span className="bg-[#FAF6F0]/90 backdrop-blur-md text-[#9E4736] text-[9px] sm:text-[10px] font-semibold uppercase tracking-[0.2em] px-2.5 py-1 rounded-full border border-[#E6D8C8]/80 shadow-xs">
+              {product.fabric ? product.fabric.split(' ')[0] : categoryLabel}
+            </span>
+          </div>
+        </div>
+
+        {/* Caption & Boutique Details */}
+        <div className="p-4 flex flex-col flex-1 justify-between">
+          <div>
+            <div className="flex items-center justify-between text-[10px] uppercase tracking-[0.22em] text-[#9E4736] font-semibold mb-1">
+              <span>{categoryLabel}</span>
+              <span className="font-serif italic text-xs text-[#856020] lowercase tracking-normal">
+                jaipur atelier
+              </span>
+            </div>
+
+            <h3 className="font-display text-base sm:text-lg text-[#1A1817] leading-snug group-hover:text-[#D4197D] transition-colors duration-200 line-clamp-1">
+              {product.name}
+            </h3>
+
+            {product.craft && (
+              <p className="text-xs text-[#7A6358] mt-1 line-clamp-1 font-serif italic">
+                {product.craft}
+              </p>
+            )}
+
+            {product.description && (
+              <p className="text-xs text-[#5A4A42] leading-relaxed mt-1.5 line-clamp-2 font-sans">
+                {product.description}
+              </p>
+            )}
+          </div>
+
+          {/* Action: Enquire via WhatsApp */}
+          <div className="pt-3 mt-3 border-t border-[#E6D8C8]/70 flex items-center justify-between">
+            <a
+              href={waLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 text-xs font-semibold text-[#D4197D] hover:text-[#9E4736] transition-colors group/btn"
+              aria-label={`Enquire about ${product.name} on WhatsApp`}
+            >
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />
+                <path d="M12 0C5.373 0 0 5.373 0 12c0 2.136.564 4.14 1.546 5.877L.057 23.5l5.773-1.516A11.954 11.954 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.044-1.394l-.361-.214-3.735.979 1-3.639-.235-.374A9.818 9.818 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z" />
+              </svg>
+              <span>Enquire on WhatsApp</span>
+              <span className="text-[11px] transform group-hover/btn:translate-x-0.5 transition-transform">
+                ↗
+              </span>
+            </a>
+
+            <span className="text-[11px] text-[#7A6358] font-sans">Malviya Nagar</span>
+          </div>
+        </div>
       </div>
     </article>
   );
@@ -1947,15 +779,13 @@ export default function ProductCard({ product, baseUrl = 'https://sadashivfashio
 
 | Field | Value |
 | --- | --- |
-| Bytes | 2510 |
+| Bytes | 2499 |
 | Score | 120 |
 | Why | changed |
 | Status | Full content |
 
 
 ```tsx
-import Link from 'next/link';
-
 interface WhatsAppButtonProps {
   href: string;
   label?: string;
@@ -2001,237 +831,2108 @@ function WhatsAppIcon() {
 }
 
 // Helper to build WhatsApp enquiry links
-export function buildProductWaLink(productName: string, category: string, url: string): string {
-  const msg = `Hello Sadashiv Fashions,\n\nI am interested in this product:\nProduct: ${productName}\nCategory: ${category}\nProduct link: ${url}\n\nPlease share the price, availability and other details.`;
+export function buildProductWaLink(productName: string, category: string, url?: string): string {
+  const msg = `Hello Sadashiv Fashions,\n\nI am interested in this design from your boutique collection:\nPiece: ${productName}\nCategory: ${category}\n\nPlease share details and availability at your Malviya Nagar showroom.`;
   return `https://wa.me/916376648869?text=${encodeURIComponent(msg)}`;
 }
 ```
 
-### sadashiv-web/data/products.ts
+### sadashiv-web/next.config.ts
 
 | Field | Value |
 | --- | --- |
-| Bytes | 6453 |
+| Bytes | 1091 |
 | Score | 120 |
 | Why | changed |
 | Status | Full content |
 
 
 ```ts
-export interface Product {
-  id: string;
-  name: string;
-  category: 'suits' | 'kurtis' | 'fabrics' | 'dupattas';
-  slug: string;
-  image: string;
-  images?: string[];
-  description?: string;
-  details?: string;
-  featured?: boolean;
+import type { NextConfig } from "next";
+
+const nextConfig: NextConfig = {
+  /* config options here */
+  cacheComponents: true,
+  partialPrefetching: true,
+  async redirects() {
+    return [
+      {
+        source: '/collections/suits',
+        destination: '/collections#suits',
+        permanent: true,
+      },
+      {
+        source: '/collections/kurtis',
+        destination: '/collections#kurtis',
+        permanent: true,
+      },
+      {
+        source: '/collections/fabrics',
+        destination: '/collections#fabrics',
+        permanent: true,
+      },
+      {
+        source: '/collections/dupattas',
+        destination: '/collections#dupattas',
+        permanent: true,
+      },
+    ];
+  },
+  turbopack: {
+    rules: {
+      "*.css": {
+        loaders: ["@tailwindcss/turbopack"],
+        as: "*.css",
+      },
+    },
+  },
+};
+
+export default nextConfig;
+
+import type { NextConfig } from "next";
+
+const nextConfig: NextConfig = {
+  output: "export",
+  trailingSlash: true,
+  basePath: "/sadashiv-fashions",
+  images: {
+    unoptimized: true,
+  },
+};
+
+export default nextConfig;
+```
+
+### sadashiv-web/app/gallery/page.tsx
+
+| Field | Value |
+| --- | --- |
+| Bytes | 13210 |
+| Score | 119 |
+| Why | changed |
+| Status | Full content |
+
+
+```tsx
+'use client';
+
+import { useState, useEffect } from 'react';
+import Image from 'next/image';
+
+interface GalleryItem {
+  src: string;
+  alt: string;
+  caption: string;
+  tag: 'store' | 'display' | 'textile';
+  categoryLabel: string;
 }
 
-export const products: Product[] = [
-  // Suits
+const galleryItems: GalleryItem[] = [
   {
-    id: 'suit-01',
-    name: 'Suit Set 01',
-    category: 'suits',
-    slug: 'suit-set-01',
-    image: '/images/store/store-window.webp',
-    description: 'An elegant women\'s suit set available at Sadashiv Fashions. Contact us on WhatsApp for fabric, colour and size details.',
-    featured: true,
+    src: '/images/store/store-window.webp',
+    alt: 'Women\'s ethnic wear displayed in the Sadashiv Fashions store window — rani pink gown, suit and kurti',
+    caption: 'Store Window Display — Festive Ensembles & Kurtis',
+    tag: 'display',
+    categoryLabel: 'Window Display',
   },
   {
-    id: 'suit-02',
-    name: 'Suit Set 02',
-    category: 'suits',
-    slug: 'suit-set-02',
-    image: '/images/store/store-exterior.jpg',
-    description: 'A beautifully crafted suit set from our current collection. Enquire on WhatsApp for availability.',
-    featured: false,
+    src: '/images/products/mannequin-left.webp',
+    alt: 'Rani rose embroidered suit ensemble on display',
+    caption: 'Festive Rani Rose Suit — Detailed Neckline Embroidery',
+    tag: 'display',
+    categoryLabel: 'Curated Ensemble',
   },
   {
-    id: 'suit-03',
-    name: 'Suit Set 03',
-    category: 'suits',
-    slug: 'suit-set-03',
-    image: '/images/store/store-window.webp',
-    description: 'Stylish women\'s suit set. Contact us to learn about colours, fabric and sizing.',
-    featured: false,
+    src: '/images/store/store-signage.webp',
+    alt: 'Illuminated Sadashiv Fashions Hindi signage in Jaipur',
+    caption: 'Evening Glow — Illuminated Hindi Store Signage',
+    tag: 'store',
+    categoryLabel: 'Showroom Facade',
   },
   {
-    id: 'suit-04',
-    name: 'Suit Set 04',
-    category: 'suits',
-    slug: 'suit-set-04',
-    image: '/images/store/store-exterior.jpg',
-    description: 'Part of our current suit collection. Retail and wholesale enquiries welcome.',
-    featured: false,
-  },
-
-  // Kurtis
-  {
-    id: 'kurti-01',
-    name: 'Kurti 01',
-    category: 'kurtis',
-    slug: 'kurti-01',
-    image: '/images/store/store-window.webp',
-    description: 'A versatile kurti from our collection. Available in multiple sizes. Enquire on WhatsApp for details.',
-    featured: true,
+    src: '/images/products/detail-embroidery.webp',
+    alt: 'Close-up texture of delicate butta embroidery',
+    caption: 'Textile Craft — Hand-Finished Butta Needlework',
+    tag: 'textile',
+    categoryLabel: 'Textile Detail',
   },
   {
-    id: 'kurti-02',
-    name: 'Kurti 02',
-    category: 'kurtis',
-    slug: 'kurti-02',
-    image: '/images/store/store-exterior.jpg',
-    description: 'Comfortable and stylish kurti. Contact us for fabric, colour and size information.',
-    featured: true,
+    src: '/images/products/mannequin-center.webp',
+    alt: 'Chanderi cotton suit set with woven buttas',
+    caption: 'Chanderi Weave — Ivory & Pastel Ensemble',
+    tag: 'display',
+    categoryLabel: 'Curated Ensemble',
   },
   {
-    id: 'kurti-03',
-    name: 'Kurti 03',
-    category: 'kurtis',
-    slug: 'kurti-03',
-    image: '/images/store/store-window.webp',
-    description: 'Part of our current kurti range. Retail and wholesale enquiries welcome.',
-    featured: false,
+    src: '/images/products/detail-fabric-weave.webp',
+    alt: 'Close-up weave of traditional Jaipur cotton fabric',
+    caption: 'Authentic Fabric Weave — Pure Breathable Cotton',
+    tag: 'textile',
+    categoryLabel: 'Textile Detail',
   },
   {
-    id: 'kurti-04',
-    name: 'Kurti 04',
-    category: 'kurtis',
-    slug: 'kurti-04',
-    image: '/images/store/store-exterior.jpg',
-    description: 'A beautiful kurti with detailed craftsmanship. Enquire for current availability.',
-    featured: false,
-  },
-
-  // Fabrics
-  {
-    id: 'fabric-01',
-    name: 'Traditional Butta Cotton Fabric',
-    category: 'fabrics',
-    slug: 'traditional-butta-cotton',
-    image: '/images/store/store-window.webp',
-    description: 'Traditional butta pattern cotton fabric. Contact us to confirm current availability, width and pricing.',
-    featured: true,
+    src: '/images/store/store-exterior.jpg',
+    alt: 'Sadashiv Fashions store exterior in Malviya Nagar, Jaipur — daytime',
+    caption: 'Malviya Nagar Showroom — Day View',
+    tag: 'store',
+    categoryLabel: 'Showroom Facade',
   },
   {
-    id: 'fabric-02',
-    name: 'Embroidered Butta Chiffon Fabric',
-    category: 'fabrics',
-    slug: 'embroidered-butta-chiffon',
-    image: '/images/store/store-exterior.jpg',
-    description: 'Delicate chiffon with embroidered butta motifs. Enquire on WhatsApp for details.',
-    featured: true,
-  },
-  {
-    id: 'fabric-03',
-    name: 'Fancy Jari Net Fabric',
-    category: 'fabrics',
-    slug: 'fancy-jari-net',
-    image: '/images/store/store-window.webp',
-    description: 'Fancy jari net fabric suited for occasion wear. Contact us to confirm availability.',
-    featured: false,
-  },
-  {
-    id: 'fabric-04',
-    name: 'Handcrafted Butta Silk Fabric',
-    category: 'fabrics',
-    slug: 'handcrafted-butta-silk',
-    image: '/images/store/store-exterior.jpg',
-    description: 'Handcrafted silk fabric with butta design. Enquire for current stock and pricing.',
-    featured: false,
-  },
-  {
-    id: 'fabric-05',
-    name: 'Poly Santoon Fabric',
-    category: 'fabrics',
-    slug: 'poly-santoon',
-    image: '/images/store/store-window.webp',
-    description: 'Smooth poly santoon fabric, suitable for inner lining and garments. Contact us for availability.',
-    featured: false,
-  },
-  {
-    id: 'fabric-06',
-    name: 'Handwoven Cotton Ikat Fabric',
-    category: 'fabrics',
-    slug: 'handwoven-cotton-ikat',
-    image: '/images/store/store-exterior.jpg',
-    description: 'Handwoven cotton with ikat patterns. Contact us to confirm current availability and pricing.',
-    featured: false,
-  },
-
-  // Dupattas
-  {
-    id: 'dupatta-01',
-    name: 'Dupatta 01',
-    category: 'dupattas',
-    slug: 'dupatta-01',
-    image: '/images/store/store-window.webp',
-    description: 'An elegant dupatta from our collection. Contact us on WhatsApp for fabric and colour details.',
-    featured: true,
-  },
-  {
-    id: 'dupatta-02',
-    name: 'Dupatta 02',
-    category: 'dupattas',
-    slug: 'dupatta-02',
-    image: '/images/store/store-exterior.jpg',
-    description: 'A beautifully detailed dupatta. Retail and wholesale enquiries welcome.',
-    featured: false,
-  },
-  {
-    id: 'dupatta-03',
-    name: 'Dupatta 03',
-    category: 'dupattas',
-    slug: 'dupatta-03',
-    image: '/images/store/store-window.webp',
-    description: 'Part of our current dupatta range. Contact us for availability and pricing.',
-    featured: false,
-  },
-  {
-    id: 'dupatta-04',
-    name: 'Dupatta 04',
-    category: 'dupattas',
-    slug: 'dupatta-04',
-    image: '/images/store/store-exterior.jpg',
-    description: 'A graceful dupatta available for retail and wholesale. Enquire on WhatsApp.',
-    featured: false,
+    src: '/images/products/mannequin-right.webp',
+    alt: 'Classic Jaipur embroidered straight kurti',
+    caption: 'Straight Kurti — Tonal Resham Embroidery',
+    tag: 'display',
+    categoryLabel: 'Curated Ensemble',
   },
 ];
 
-export const getFeaturedProducts = () => products.filter((p) => p.featured);
+const INSTAGRAM = 'https://www.instagram.com/sadashivfashionsjaipur/';
 
-export const getProductsByCategory = (category: Product['category']) =>
-  products.filter((p) => p.category === category);
+export default function GalleryPage() {
+  const [filter, setFilter] = useState<'all' | 'store' | 'display' | 'textile'>('all');
+  const [activeLightbox, setActiveLightbox] = useState<GalleryItem | null>(null);
 
-export const getProductBySlug = (slug: string) =>
-  products.find((p) => p.slug === slug);
+  const filteredItems =
+    filter === 'all'
+      ? galleryItems
+      : galleryItems.filter((item) => item.tag === filter);
 
-export const categoryMeta = {
-  suits: {
-    label: 'Suits',
-    description: 'Women\'s suit sets and ethnic wear for every occasion.',
-    image: '/images/store/store-window.webp',
+  useEffect(() => {
+    if (!activeLightbox) return;
+    document.body.style.overflow = 'hidden';
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') setActiveLightbox(null);
+    };
+    window.addEventListener('keydown', handleKeyDown);
+    return () => {
+      document.body.style.overflow = '';
+      window.removeEventListener('keydown', handleKeyDown);
+    };
+  }, [activeLightbox]);
+
+  return (
+    <div className="bg-[#FAF6F0] min-h-screen">
+      {/* ── Page Header ─────────────────────────────────────────────── */}
+      <section className="pt-16 pb-12 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-b border-[#E6D8C8]">
+        <div className="max-w-3xl">
+          <div className="inline-flex items-center gap-2 text-[10px] uppercase tracking-[0.26em] text-[#9E4736] font-semibold mb-4">
+            <span className="w-1.5 h-1.5 rounded-full bg-[#D4197D]" />
+            <span>— Visual Journal &amp; Lookbook —</span>
+          </div>
+          <h1 className="font-display font-light text-4xl sm:text-6xl text-[#1A1817] leading-tight mb-4">
+            The Visual Journal
+          </h1>
+          <p className="text-sm sm:text-base text-[#5A4A42] leading-relaxed font-sans">
+            A photographic journal of our Malviya Nagar boutique, window displays, and handcrafted textile weaves. Click any image to examine in high resolution.
+          </p>
+
+          {/* Filter Pills */}
+          <div className="flex flex-wrap gap-2 mt-6">
+            <button
+              onClick={() => setFilter('all')}
+              className={`text-xs uppercase tracking-[0.16em] px-4 py-2 rounded-full font-medium transition-colors ${
+                filter === 'all'
+                  ? 'bg-[#1A1817] text-white'
+                  : 'bg-[#F3ECE2] text-[#1A1817] hover:bg-[#E6D8C8]'
+              }`}
+            >
+              All Photographs
+            </button>
+            <button
+              onClick={() => setFilter('display')}
+              className={`text-xs uppercase tracking-[0.16em] px-4 py-2 rounded-full font-medium transition-colors ${
+                filter === 'display'
+                  ? 'bg-[#1A1817] text-white'
+                  : 'bg-[#F3ECE2] text-[#1A1817] hover:bg-[#E6D8C8]'
+              }`}
+            >
+              Window Displays
+            </button>
+            <button
+              onClick={() => setFilter('textile')}
+              className={`text-xs uppercase tracking-[0.16em] px-4 py-2 rounded-full font-medium transition-colors ${
+                filter === 'textile'
+                  ? 'bg-[#1A1817] text-white'
+                  : 'bg-[#F3ECE2] text-[#1A1817] hover:bg-[#E6D8C8]'
+              }`}
+            >
+              Textiles &amp; Weaves
+            </button>
+            <button
+              onClick={() => setFilter('store')}
+              className={`text-xs uppercase tracking-[0.16em] px-4 py-2 rounded-full font-medium transition-colors ${
+                filter === 'store'
+                  ? 'bg-[#1A1817] text-white'
+                  : 'bg-[#F3ECE2] text-[#1A1817] hover:bg-[#E6D8C8]'
+              }`}
+            >
+              Store Facade
+            </button>
+          </div>
+        </div>
+      </section>
+
+      {/* ── Editorial Masonry Grid ──────────────────────────────────── */}
+      <section className="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {filteredItems.map((item, idx) => (
+            <div
+              key={idx}
+              role="button"
+              tabIndex={0}
+              aria-label={`Open view for ${item.caption}`}
+              onClick={() => setActiveLightbox(item)}
+              onKeyDown={(e) => {
+                if (e.key === 'Enter' || e.key === ' ') {
+                  e.preventDefault();
+                  setActiveLightbox(item);
+                }
+              }}
+              className="group cursor-pointer bg-[#F3ECE2]/80 p-2.5 rounded-2xl border border-[#E6D8C8] shadow-xs hover:shadow-md transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-[#D4197D]"
+            >
+              <div className="relative aspect-[4/5] rounded-xl overflow-hidden bg-[#E6D8C8]">
+                <Image
+                  src={item.src}
+                  alt={item.alt}
+                  fill
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  className="object-cover object-top transition-transform duration-700 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#1A1817]/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                <div className="absolute top-3 left-3">
+                  <span className="text-[9px] uppercase tracking-[0.2em] font-semibold text-[#FAF6F0] bg-[#1A1817]/70 backdrop-blur-md px-2.5 py-1 rounded-full">
+                    {item.categoryLabel}
+                  </span>
+                </div>
+                <div className="absolute bottom-3 right-3 w-8 h-8 rounded-full bg-white/80 text-[#1A1817] flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity shadow-sm">
+                  ⤢
+                </div>
+              </div>
+              <div className="pt-3 px-1">
+                <p className="font-display text-base text-[#1A1817] group-hover:text-[#D4197D] transition-colors line-clamp-1">
+                  {item.caption}
+                </p>
+                <p className="text-xs text-[#7A6358] mt-0.5">Sadashiv Fashions · Jaipur</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* ── Lightbox Overlay ────────────────────────────────────────── */}
+      {activeLightbox && (
+        <div
+          role="dialog"
+          aria-modal="true"
+          aria-label="Gallery Image Lightbox"
+          className="fixed inset-0 z-50 bg-[#1A1817]/90 backdrop-blur-md flex items-center justify-center p-4 sm:p-8"
+          onClick={() => setActiveLightbox(null)}
+        >
+          <div
+            className="relative max-w-4xl w-full max-h-[90vh] bg-[#FAF6F0] rounded-2xl overflow-hidden shadow-2xl flex flex-col"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <button
+              onClick={() => setActiveLightbox(null)}
+              className="absolute top-4 right-4 z-20 w-10 h-10 rounded-full bg-white/80 hover:bg-white text-[#1A1817] flex items-center justify-center shadow-md transition-colors"
+              aria-label="Close Lightbox"
+            >
+              ✕
+            </button>
+
+            <div className="relative aspect-[16/10] sm:aspect-[16/9] w-full bg-[#1A1817]">
+              <Image
+                src={activeLightbox.src}
+                alt={activeLightbox.alt}
+                fill
+                className="object-contain"
+                sizes="100vw"
+              />
+            </div>
+
+            <div className="p-6 bg-[#FAF6F0] flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 border-t border-[#E6D8C8]">
+              <div>
+                <span className="text-[10px] uppercase tracking-[0.22em] text-[#9E4736] font-semibold">
+                  {activeLightbox.categoryLabel}
+                </span>
+                <h3 className="font-display text-xl text-[#1A1817] mt-0.5">
+                  {activeLightbox.caption}
+                </h3>
+              </div>
+              <a
+                href="https://wa.me/916376648869?text=Hello%20Sadashiv%20Fashions%2C%20I%20am%20enquiring%20about%20a%20piece%20featured%20in%20your%20Visual%20Journal."
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 bg-[#D4197D] text-white text-xs uppercase tracking-[0.16em] font-semibold px-5 py-2.5 rounded-full hover:bg-[#B31468] transition-colors whitespace-nowrap"
+              >
+                Enquire on WhatsApp ↗
+              </a>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* ── Instagram Connection Strip ──────────────────────────────── */}
+      <section className="bg-[#1A1817] py-16 px-4 sm:px-6 lg:px-8 text-center text-[#FAF6F0] border-t border-[#C5A059]/30">
+        <p className="text-[10px] uppercase tracking-[0.28em] text-[#C5A059] font-bold mb-3">
+          Daily Atelier Updates
+        </p>
+        <h2 className="font-display text-3xl sm:text-4xl text-[#FAF6F0] mb-4">
+          Follow Our Journey on Instagram
+        </h2>
+        <p className="text-sm text-[#D4C4B8] mb-8 max-w-md mx-auto font-sans leading-relaxed">
+          See new seasonal arrivals, fabric arrivals, and store updates on our official Instagram account.
+        </p>
+        <a
+          href={INSTAGRAM}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-2.5 bg-[#FAF6F0] text-[#1A1817] hover:bg-white text-xs uppercase tracking-[0.16em] font-semibold px-7 py-3.5 rounded-full transition-colors shadow-sm"
+        >
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
+          </svg>
+          <span>@sadashivfashionsjaipur</span>
+        </a>
+      </section>
+    </div>
+  );
+}
+```
+
+### sadashiv-web/app/page.tsx
+
+| Field | Value |
+| --- | --- |
+| Bytes | 26244 |
+| Score | 118 |
+| Why | changed |
+| Status | Truncated (budget limit) |
+
+**Structural Outline:**
+  - `fn HomePage` (line 43)
+
+
+```tsx
+// … lines 1–6
+import type { Metadata } from 'next';
+import Image from 'next/image';
+import Link from 'next/link';
+import { getFeaturedProducts, categoryMeta } from '@/data/products';
+import ProductCard from '@/components/shared/ProductCard';
+import Logo from '@/components/shared/Logo';
+// … lines 42–47
+
+export default function HomePage() {
+  const featured = getFeaturedProducts().slice(0, 4);
+
+  return (
+    <>
+```
+
+### README.md
+
+| Field | Value |
+| --- | --- |
+| Bytes | 932 |
+| Score | 105 |
+| Why | project-metadata, high-signal-doc |
+| Status | Full content |
+
+
+```markdown
+# Sadashiv Fashions — Website Project
+
+Official web project for **Sadashiv Fashions**, a boutique fashion and textile store in Malviya Nagar, Jaipur, Rajasthan.
+
+## 📂 Project Organization
+
+- **`sadashiv-web/`**: Complete Next.js 16 (App Router) production application.
+- **`01-business-content-brief.md`**: Business information, store details, catalogue scope, and contact rules.
+- **`02-design-direction.md`**: Design direction, color palette tokens, typography rules, and anti-AI guidelines.
+- **`public/`**: Original business assets and photographs.
+
+## 🚀 Quick Start
+
+To run the website locally:
+
+```bash
+cd sadashiv-web
+npm install
+npm run dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+To build for production:
+
+```bash
+cd sadashiv-web
+npm run build
+```
+
+See [`sadashiv-web/README.md`](./sadashiv-web/README.md) for full documentation, product management, and deployment instructions.
+```
+
+### sadashiv-web/README.md
+
+| Field | Value |
+| --- | --- |
+| Bytes | 5384 |
+| Score | 105 |
+| Why | project-metadata, high-signal-doc |
+| Status | Full content |
+
+
+```markdown
+# Sadashiv Fashions — Official Website
+
+Production-grade website for **Sadashiv Fashions**, a Jaipur-based boutique fashion and textile store in Malviya Nagar, Jaipur, Rajasthan.
+
+---
+
+## 🌸 About the Project
+
+Sadashiv Fashions serves both retail customers and wholesale buyers with a curated selection of women's ethnic wear (Suits, Kurtis, Fabrics, and Dupattas). This website is a high-performance digital catalogue and direct WhatsApp enquiry channel designed with an authentic, editorial Jaipur boutique aesthetic.
+
+- **Stack:** Next.js 16 (App Router, Turbopack), React 19, TypeScript 5, Tailwind CSS v4
+- **Fonts:** Cormorant Garamond (display) & Inter (body) via `next/font/google`
+- **Enquiry Channel:** WhatsApp (+91 63766 48869)
+- **Deployment Target:** Vercel
+
+---
+
+## 📁 Repository Structure
+
+```
+sadashiv-web/
+├── app/
+│   ├── page.tsx                    # Home page
+│   ├── layout.tsx                  # Root layout (fonts, metadata, header, footer)
+│   ├── globals.css                 # Tailwind v4 theme & brand tokens
+│   ├── collections/
+│   │   ├── page.tsx                # Collections overview
+│   │   ├── suits/page.tsx          # Suits category
+│   │   ├── kurtis/page.tsx         # Kurtis category
+│   │   ├── fabrics/page.tsx        # Fabrics & dress materials category
+│   │   └── dupattas/page.tsx       # Dupattas category
+│   ├── about/page.tsx              # About Us (Suresh & Kashish Gangwani)
+│   ├── gallery/page.tsx            # Visual journal with store photography
+│   ├── visit/page.tsx              # Visit Us (address, hours, map, delivery info)
+│   ├── sitemap.ts                  # Auto-generated XML sitemap
+│   └── robots.ts                   # Search crawler directives
+├── components/
+│   ├── layout/
+│   │   ├── Header.tsx              # Brand logo, sticky navigation, WhatsApp CTA
+│   │   ├── Footer.tsx              # 3-column footer with address, links & brand
+│   │   └── MobileNav.tsx           # Off-canvas sliding drawer with Escape listener
+│   └── shared/
+│       ├── ProductCard.tsx         # Product card with hash anchor & WhatsApp CTA
+│       ├── WhatsAppButton.tsx      # Configurable WhatsApp CTA button
+│       └── FloatingWhatsApp.tsx    # Mobile-only floating WhatsApp quick action
+├── data/
+│   └── products.ts                 # Typed product catalogue data
+└── public/
+    ├── brand/                      # Transparent, white & black logo assets
+    └── images/
+        ├── store/                  # Store exterior, window display & night signage
+        └── owners/                 # Directory for owner portrait photos
+```
+
+---
+
+## 🚀 Getting Started
+
+### 1. Install dependencies
+```bash
+npm install
+```
+
+### 2. Run local development server
+```bash
+npm run dev
+```
+Open [http://localhost:3000](http://localhost:3000) to view the site in your browser.
+
+### 3. Build for production
+```bash
+npm run build
+```
+
+### 4. Run production preview
+```bash
+npm run start
+```
+
+---
+
+## 🎨 Brand Design Tokens
+
+| Token | Hex | Role |
+|---|---|---|
+| `brand-magenta` | `#D4197D` | Authentic Devanagari brand logo & restrained active states |
+| `warm-ivory` | `#F7F3EC` | Primary page background |
+| `soft-chalk` | `#FCFAF6` | Alternating section background |
+| `jaipur-rose` | `#C98780` | Accent highlights & monogram avatars |
+| `dusty-terracotta` | `#A85F50` | Links & uppercase category eyebrows |
+| `deep-maroon` | `#4A2927` | Primary dark buttons & hover states |
+| `warm-charcoal` | `#292522` | Editorial typography & dark cards |
+| `sandstone-beige` | `#E6D8C8` | Structural dividers & image frames |
+
+---
+
+## 🛍️ Managing Product Data
+
+Products are maintained in [`data/products.ts`](./data/products.ts). To add a product:
+
+```typescript
+{
+  id: 'suit-05',
+  name: 'Suit Set 05',
+  category: 'suits', // 'suits' | 'kurtis' | 'fabrics' | 'dupattas'
+  slug: 'suit-set-05',
+  image: '/images/store/your-photo.jpg',
+  description: 'Product description here.',
+  featured: true, // true to display on homepage
+}
+```
+
+---
+
+## 📞 WhatsApp Enquiry Integration
+
+- **Number:** `+91 63766 48869`
+- Prefilled message formats:
+  - **General:** `Hello Sadashiv Fashions, I am interested in your collection. Please share details.`
+  - **Wholesale:** `Hello Sadashiv Fashions, I am enquiring about a wholesale purchase. Please share your catalogue, pricing and terms.`
+  - **Product:** Dynamically populated with Product Name, Category, and URL.
+
+---
+
+## 📝 Pre-Launch Checklist (Owner Input)
+
+1. **Owner Portraits:** Place high-res portraits of Suresh Gangwani and Kashish Gangwani into `public/images/owners/` and link them in `app/about/page.tsx`.
+2. **Owner Bios:** Update approved role titles and biographies in `app/about/page.tsx`.
+3. **Store Timings:** Confirm operating hours in `app/visit/page.tsx`.
+4. **Google Maps Link:** Replace the search placeholder link in `app/visit/page.tsx` with the official Google Business Profile share link.
+
+---
+
+## 🚢 Deploying to Vercel
+
+1. Push this repository to GitHub or GitLab.
+2. Import the project into [Vercel](https://vercel.com).
+3. Set the Root Directory to `sadashiv-web`.
+4. Deploy with default Next.js settings.
+```
+
+### sadashiv-web/package.json
+
+| Field | Value |
+| --- | --- |
+| Bytes | 593 |
+| Score | 70 |
+| Why | project-metadata |
+| Status | Full content |
+
+
+```json
+{
+  "name": "sadashiv-web",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint"
   },
-  kurtis: {
-    label: 'Kurtis',
-    description: 'A curated range of kurtis in varied styles, fabrics and prints.',
-    image: '/images/store/store-exterior.jpg',
+  "dependencies": {
+    "lucide-react": "^1.70.0",
+    "motion": "^14.10.1",
+    "next": "16.4.5",
+    "react": "19.3.0",
+    "react-dom": "19.3.0"
   },
-  fabrics: {
-    label: 'Fabrics',
-    description: 'Dress materials and fabrics for retail and wholesale buyers.',
-    image: '/images/store/store-window.webp',
+  "devDependencies": {
+    "@tailwindcss/turbopack": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.4.5",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  }
+}
+```
+
+### sadashiv-web/tsconfig.json
+
+| Field | Value |
+| --- | --- |
+| Bytes | 666 |
+| Score | 70 |
+| Why | project-metadata |
+| Status | Full content |
+
+
+```json
+{
+  "compilerOptions": {
+    "target": "ES2017",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "react-jsx",
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "paths": {
+      "@/*": ["./*"]
+    }
   },
-  dupattas: {
-    label: 'Dupattas',
-    description: 'Hand-finished dupattas to complete any ethnic look.',
-    image: '/images/store/store-exterior.jpg',
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    ".next/dev/types/**/*.ts",
+    "**/*.mts"
+  ],
+  "exclude": ["node_modules"]
+}
+```
+
+### AGENTS.md
+
+| Field | Value |
+| --- | --- |
+| Bytes | 381 |
+| Score | 0 |
+| Why | context |
+| Status | Full content |
+
+
+```markdown
+# TokenCap Start Here
+
+Project intelligence is generated locally in `.tokencap/`.
+
+1. Read `.tokencap/agent/START_HERE.md`.
+2. Use `.tokencap/agent/allowed-context.json` to find task-relevant files.
+3. Use the connected TokenCap MCP server for overview, search, impact, memory, and debug context.
+4. Do not scan the repository broadly unless the generated context is insufficient.
+```
+
+### sadashiv-web/AGENTS.md
+
+| Field | Value |
+| --- | --- |
+| Bytes | 679 |
+| Score | 0 |
+| Why | context |
+| Status | Full content |
+
+
+```markdown
+<!-- BEGIN:nextjs-agent-rules -->
+
+## This is NOT the Next.js you know
+
+This version has breaking changes — APIs, conventions, and file structure may all differ from your training data. Read the relevant guide in `node_modules/next/dist/docs/` (resolved from this file's directory; in monorepos the `next` package may not be visible from the repo root) before writing any code. Heed deprecation notices.
+
+This block is written and re-added by `next dev` — verify at `node_modules/next/dist/server/lib/generate-agent-files.js`. Removing it from a diff only re-creates the uncommitted change; committing it with your work keeps the tree clean.
+
+<!-- END:nextjs-agent-rules -->
+```
+
+### sadashiv-web/app/about/page.tsx
+
+| Field | Value |
+| --- | --- |
+| Bytes | 10460 |
+| Score | 0 |
+| Why | context |
+| Status | Full content |
+
+
+```tsx
+import type { Metadata } from 'next';
+import Image from 'next/image';
+import Link from 'next/link';
+import Logo from '@/components/shared/Logo';
+
+export const metadata: Metadata = {
+  title: 'About — The People Behind Sadashiv Fashions',
+  description:
+    'Meet Suresh Gangwani and Kashish Gangwani, the people behind Sadashiv Fashions — a Jaipur-based fashion and textile store in Malviya Nagar.',
+  openGraph: {
+    title: 'About | Sadashiv Fashions',
+    description: 'Meet the people behind Sadashiv Fashions, Jaipur.',
+    images: [{ url: '/images/store/store-exterior.jpg' }],
   },
-} as const;
+};
+
+const WA_GENERAL =
+  'https://wa.me/916376648869?text=Hello%20Sadashiv%20Fashions%2C%20I%20am%20interested%20in%20your%20collection.%20Please%20share%20details.';
+
+const owners = [
+  {
+    name: 'Suresh Gangwani',
+    initials: 'SG',
+    tagline: 'Sadashiv Fashions · Malviya Nagar, Jaipur',
+  },
+  {
+    name: 'Kashish Gangwani',
+    initials: 'KG',
+    tagline: 'Sadashiv Fashions · Malviya Nagar, Jaipur',
+  },
+];
+
+export default function AboutPage() {
+  return (
+    <div className="bg-[#FAF6F0] min-h-screen">
+      {/* ── 1. Page Header ─────────────────────────────────────────── */}
+      <section className="pt-16 pb-12 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-b border-[#E6D8C8]">
+        <div className="max-w-3xl">
+          <div className="inline-flex items-center gap-2 text-[10px] uppercase tracking-[0.26em] text-[#9E4736] font-semibold mb-4">
+            <span className="w-1.5 h-1.5 rounded-full bg-[#D4197D]" />
+            <span>— II · The Atelier &amp; Custodians —</span>
+          </div>
+          <h1 className="font-display font-light text-4xl sm:text-6xl text-[#1A1817] leading-tight mb-5">
+            Meet the people behind <br />
+            <span className="font-normal italic text-[#D4197D]">Sadashiv Fashions</span>
+          </h1>
+          <p className="text-sm sm:text-base text-[#5A4A42] leading-relaxed font-sans">
+            A Jaipur-based fashion and textile store bringing together a curated selection of women&apos;s ethnic wear and fabrics. Get to know the people behind the store and explore the collections in person or through our online catalogue.
+          </p>
+        </div>
+      </section>
+
+      {/* ── 2. Showroom Architectural Strip ───────────────────────── */}
+      <section className="relative h-64 md:h-96 overflow-hidden bg-[#1A1817]">
+        <Image
+          src="/images/store/store-exterior.jpg"
+          alt="Sadashiv Fashions store exterior in Malviya Nagar, Jaipur"
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover object-center opacity-85"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#1A1817] via-transparent to-transparent opacity-60" />
+        <div className="absolute bottom-4 left-6 sm:left-12 p-3 bg-[#FAF6F0]/90 backdrop-blur-md rounded-xl border border-white/50 text-xs text-[#1A1817]">
+          <span className="font-medium">Malviya Nagar Showroom</span> · Jaipur, Rajasthan
+        </div>
+      </section>
+
+      {/* ── 3. Custodian Profiles: Suresh & Kashish Gangwani ────────── */}
+      <section className="py-20 md:py-28 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <div className="max-w-2xl mb-14">
+          <p className="text-[10px] uppercase tracking-[0.26em] text-[#9E4736] font-semibold mb-3">
+            Showroom Leadership
+          </p>
+          <h2 className="font-display text-3xl sm:text-4xl text-[#1A1817]">
+            The People Behind the Store
+          </h2>
+          <p className="text-xs text-[#7A6358] mt-2">
+            Welcoming both individual retail shoppers and wholesale merchant partners.
+          </p>
+        </div>
+
+        <div className="grid md:grid-cols-2 gap-10 lg:gap-14">
+          {owners.map((owner) => (
+            <article
+              key={owner.name}
+              className="bg-[#F3ECE2]/80 rounded-3xl p-3 sm:p-4 border border-[#E6D8C8] shadow-sm flex flex-col justify-between"
+            >
+              {/* Inner Double-Bezel Plate */}
+              <div className="bg-[#FAF6F0] rounded-2xl p-6 sm:p-8 flex flex-col justify-between h-full">
+                <div>
+                  {/* Portrait Plate with Architectural Jaipur Arch & Monogram */}
+                  <div className="relative aspect-[4/5] rounded-xl overflow-hidden bg-[#F3ECE2] border border-[#C5A059]/30 flex flex-col items-center justify-center p-6 text-center mb-6 shadow-inner">
+                    {/* Arch Motif Header */}
+                    <div className="w-12 h-6 border-t-2 border-x-2 border-[#C5A059]/40 rounded-t-full mb-3" />
+
+                    {/* Monogram Medallion */}
+                    <div className="w-20 h-20 rounded-full border border-[#C5A059] bg-[#FAF6F0] flex items-center justify-center shadow-xs mb-4">
+                      <span className="font-display text-3xl text-[#D4197D] font-light">
+                        {owner.initials}
+                      </span>
+                    </div>
+
+                    <p className="font-display text-xl text-[#1A1817] mb-1">{owner.name}</p>
+                    <p className="text-[10px] uppercase tracking-[0.24em] text-[#9E4736] font-semibold">
+                      Sadashiv Fashions · Jaipur
+                    </p>
+
+                    <p className="text-xs text-[#7A6358] mt-4 max-w-xs leading-relaxed italic font-serif">
+                      Owner portrait to be added. Please supply an approved photograph.
+                    </p>
+
+                    {/* Antique Gold Seal Star */}
+                    <div className="absolute top-3 right-3 text-[#C5A059] text-xs">✦</div>
+                  </div>
+
+                  {/* Profile Header */}
+                  <div className="mb-4">
+                    <span className="text-[10px] uppercase tracking-[0.2em] font-bold text-[#9E4736]">
+                      [Role to be confirmed]
+                    </span>
+                    <h3 className="font-display text-2xl sm:text-3xl text-[#1A1817] mt-1">
+                      {owner.name}
+                    </h3>
+                    <p className="text-xs text-[#7A6358] mt-0.5">{owner.tagline}</p>
+                  </div>
+
+                  {/* Factual Narrative Placeholder */}
+                  <div className="border-t border-[#E6D8C8] pt-4 mb-6">
+                    <p className="text-sm text-[#5A4A42] leading-relaxed font-sans italic">
+                      [Biography to be provided and approved by the owner.]
+                    </p>
+                    <p className="text-xs text-[#7A6358] mt-3 leading-relaxed">
+                      At Sadashiv Fashions, the focus is on curating dependable quality women&apos;s ethnic wear, suits, kurtis, and dress materials with personal attention to every customer and wholesale enquiry.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="pt-4 border-t border-[#E6D8C8]/60 flex items-center justify-between">
+                  <span className="text-xs font-serif italic text-[#C5A059]">Malviya Nagar Showroom</span>
+                  <a
+                    href={WA_GENERAL}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-xs uppercase tracking-[0.16em] font-semibold text-[#D4197D] hover:text-[#9E4736] transition-colors"
+                  >
+                    Enquire on WhatsApp →
+                  </a>
+                </div>
+              </div>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      {/* ── 4. The Store Experience ─────────────────────────────────── */}
+      <section className="bg-[#FCFAF6] py-20 px-4 sm:px-6 lg:px-8 border-t border-[#E6D8C8]">
+        <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 md:gap-16 items-center">
+          <div>
+            <div className="inline-flex items-center gap-2 text-[10px] uppercase tracking-[0.25em] text-[#9E4736] font-semibold mb-3">
+              <span>✦</span>
+              <span>Our Boutique</span>
+            </div>
+            <h2 className="font-display text-3xl sm:text-4xl text-[#1A1817] leading-tight mb-5">
+              Visit us in Malviya Nagar, Jaipur
+            </h2>
+            <address className="not-italic text-sm text-[#5A4A42] leading-relaxed mb-6 font-sans">
+              2/72, Krishna Nand Marg,<br />
+              near Government Girls Senior Secondary School,<br />
+              Malviya Nagar, Jaipur — 302017,<br />
+              Rajasthan, India
+            </address>
+            <p className="text-sm text-[#5A4A42] leading-relaxed mb-8 font-sans">
+              We welcome walk-in visitors to inspect our fabrics, suit sets, and kurtis in person. For local customers, delivery is available across Jaipur and nearby areas, with details confirmed over WhatsApp.
+            </p>
+            <div className="flex flex-wrap gap-4">
+              <a
+                href={WA_GENERAL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 bg-[#1A1817] hover:bg-[#D4197D] text-white text-xs font-semibold uppercase tracking-[0.16em] px-6 py-3.5 rounded-full transition-colors"
+              >
+                <span>Connect with Us</span>
+                <span>↗</span>
+              </a>
+              <Link
+                href="/collections"
+                className="inline-flex items-center gap-2 border border-[#1A1817]/30 text-[#1A1817] text-xs font-semibold uppercase tracking-[0.16em] px-6 py-3.5 rounded-full hover:bg-[#1A1817] hover:text-white transition-colors"
+              >
+                <span>Browse Catalogue</span>
+              </Link>
+            </div>
+          </div>
+
+          <div className="relative aspect-[4/3] rounded-3xl overflow-hidden bg-[#E6D8C8] shadow-md border border-[#E6D8C8]">
+            <Image
+              src="/images/store/store-signage.webp"
+              alt="Sadashiv Fashions store signage in Jaipur"
+              fill
+              sizes="(max-width: 768px) 100vw, 50vw"
+              className="object-cover"
+            />
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+}
+```
+
+### sadashiv-web/app/collections/page.tsx
+
+| Field | Value |
+| --- | --- |
+| Bytes | 6907 |
+| Score | 0 |
+| Why | context |
+| Status | Full content |
+
+
+```tsx
+import type { Metadata } from 'next';
+import Image from 'next/image';
+import Link from 'next/link';
+import { products, categoryMeta } from '@/data/products';
+import ProductCard from '@/components/shared/ProductCard';
+
+export const metadata: Metadata = {
+  title: 'Collections — Suits, Kurtis, Fabrics & Dupattas',
+  description:
+    'Browse all collections at Sadashiv Fashions — women\'s suits, kurtis, fabrics and dupattas in Malviya Nagar, Jaipur. Retail and wholesale enquiries welcome.',
+  openGraph: {
+    title: 'Collections | Sadashiv Fashions',
+    description: 'Browse women\'s ethnic wear and fabrics at Sadashiv Fashions, Malviya Nagar, Jaipur.',
+    images: [{ url: '/images/products/mannequin-left.webp' }],
+  },
+};
+
+const categories = Object.entries(categoryMeta) as [
+  keyof typeof categoryMeta,
+  (typeof categoryMeta)[keyof typeof categoryMeta]
+][];
+
+export default function CollectionsPage() {
+  const featured = products.filter((p) => p.featured);
+
+  return (
+    <div className="bg-[#FAF6F0] min-h-screen">
+      {/* ── Page Header ─────────────────────────────────────────────── */}
+      <section className="pt-16 pb-12 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-b border-[#E6D8C8]">
+        <div className="max-w-3xl">
+          <div className="inline-flex items-center gap-2 text-[10px] uppercase tracking-[0.26em] text-[#9E4736] font-semibold mb-4">
+            <span className="w-1.5 h-1.5 rounded-full bg-[#D4197D]" />
+            <span>— Complete Atelier Catalogue —</span>
+          </div>
+          <h1 className="font-display font-light text-4xl sm:text-6xl text-[#1A1817] leading-tight mb-4">
+            The Collections
+          </h1>
+          <p className="text-sm sm:text-base text-[#5A4A42] leading-relaxed font-sans">
+            Women&apos;s tailored ethnic wear, graceful kurtis, heirloom dupattas, and unstitched dress materials. Sourced and curated in the Pink City for retail wardrobes and wholesale partners.
+          </p>
+
+          {/* Quick Category Selector Links */}
+          <div className="flex flex-wrap gap-2.5 mt-6">
+            <Link
+              href="/collections"
+              className="bg-[#1A1817] text-white text-xs uppercase tracking-[0.16em] px-4 py-2 rounded-full font-medium"
+            >
+              All Categories
+            </Link>
+            {categories.map(([key, cat]) => (
+              <Link
+                key={key}
+                href={`/collections/${key}`}
+                className="bg-[#F3ECE2] hover:bg-[#E6D8C8] text-[#1A1817] text-xs uppercase tracking-[0.16em] px-4 py-2 rounded-full font-medium transition-colors"
+              >
+                {cat.label}
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── Category Portals ────────────────────────────────────────── */}
+      <section className="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <h2 className="text-xs uppercase tracking-[0.22em] text-[#7A6358] font-semibold mb-8">
+          Browse by Category
+        </h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+          {categories.map(([key, cat]) => (
+            <Link
+              key={key}
+              href={`/collections/${key}`}
+              className="group relative aspect-[3/4] rounded-2xl overflow-hidden bg-[#E6D8C8] border border-[#E6D8C8] shadow-xs"
+            >
+              <Image
+                src={cat.image}
+                alt={cat.label}
+                fill
+                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                className="object-cover object-top transition-transform duration-700 group-hover:scale-105"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#1A1817]/85 via-[#1A1817]/25 to-transparent" />
+              <div className="absolute bottom-0 left-0 p-5">
+                <span className="text-[10px] uppercase tracking-[0.22em] text-[#C5A059] font-medium block mb-1">
+                  {cat.tagline}
+                </span>
+                <h3 className="font-display text-2xl text-white mb-1.5">{cat.label}</h3>
+                <p className="text-xs text-[#D4C4B8] line-clamp-2">{cat.description}</p>
+              </div>
+              <div className="absolute top-3 right-3 text-white text-xs bg-black/30 backdrop-blur-md px-2.5 py-1 rounded-full opacity-0 group-hover:opacity-100 transition-opacity">
+                View →
+              </div>
+            </Link>
+          ))}
+        </div>
+      </section>
+
+      {/* ── Complete Featured Showcase ──────────────────────────────── */}
+      <section className="bg-[#FCFAF6] py-16 px-4 sm:px-6 lg:px-8 border-t border-[#E6D8C8]">
+        <div className="max-w-7xl mx-auto">
+          <div className="flex items-baseline justify-between mb-10">
+            <div>
+              <p className="text-[10px] uppercase tracking-[0.26em] text-[#9E4736] font-semibold mb-1">
+                Showroom Favourites
+              </p>
+              <h2 className="font-display text-2xl sm:text-3xl text-[#1A1817]">
+                Featured Across All Categories
+              </h2>
+            </div>
+            <p className="text-xs text-[#7A6358] hidden sm:block">
+              1-Click WhatsApp Enquiry for sizing and availability
+            </p>
+          </div>
+
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6 lg:gap-8">
+            {featured.map((product) => (
+              <ProductCard key={product.id} product={product} />
+            ))}
+          </div>
+
+          <div className="mt-14 p-6 sm:p-8 bg-[#FAF6F0] rounded-2xl border border-[#E6D8C8] text-center max-w-2xl mx-auto">
+            <h3 className="font-display text-xl text-[#1A1817] mb-2">Looking for a specific fabric or custom cut?</h3>
+            <p className="text-xs text-[#5A4A42] leading-relaxed mb-4">
+              Our store in Malviya Nagar, Jaipur stocks extensive variations. Contact us on WhatsApp with your exact preference or roll requirement.
+            </p>
+            <a
+              href="https://wa.me/916376648869?text=Hello%20Sadashiv%20Fashions%2C%20I%20am%20looking%20for%20a%20specific%20product%20or%20fabric.%20Please%20guide%20me."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 bg-[#D4197D] text-white text-xs font-semibold uppercase tracking-[0.16em] px-6 py-3 rounded-full hover:bg-[#B31468] transition-colors"
+            >
+              Ask Atelier on WhatsApp ↗
+            </a>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+}
+```
+
+### sadashiv-web/app/globals.css
+
+| Field | Value |
+| --- | --- |
+| Bytes | 3087 |
+| Score | 0 |
+| Why | context |
+| Status | Full content |
+
+
+```css
+@import "tailwindcss";
+
+@theme inline {
+  /* Brand colours */
+  --color-brand-magenta: #D4197D;
+  --color-brand-magenta-dark: #A50F5E;
+  --color-brand-magenta-light: #FDF2F8;
+  --color-warm-ivory: #FAF6F0;
+  --color-soft-chalk: #FCFAF6;
+  --color-jaipur-rose: #C98780;
+  --color-dusty-terracotta: #A85F50;
+  --color-deep-maroon: #4A2927;
+  --color-deep-wine: #381A22;
+  --color-warm-charcoal: #292522;
+  --color-sandstone-beige: #E6D8C8;
+  --color-antique-gold: #C5A059;
+
+  /* Typography */
+  --font-display: var(--font-cormorant), 'Cormorant Garamond', Georgia, serif;
+  --font-body: var(--font-inter), 'Inter', system-ui, sans-serif;
+}
+
+:root {
+  --background: #FAF6F0;
+  --foreground: #292522;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Display font utility */
+.font-display {
+  font-family: var(--font-display);
+}
+
+/* Subtle link underline animation */
+.link-underline {
+  position: relative;
+  text-decoration: none;
+}
+.link-underline::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: currentColor;
+  transition: width 0.35s cubic-bezier(0.32, 0.72, 0, 1);
+}
+.link-underline:hover::after {
+  width: 100%;
+}
+
+/* Image fade-in */
+img {
+  transition: opacity 0.4s ease;
+}
+
+/* Luxury hairline borders */
+.border-hairline {
+  border-width: 1px;
+  border-color: rgba(230, 216, 200, 0.6);
+}
+
+/* Double-bezel luxury framing */
+.double-bezel {
+  background-color: rgba(255, 255, 255, 0.4);
+  border: 1px solid rgba(230, 216, 200, 0.7);
+  box-shadow: 0 4px 20px -2px rgba(41, 37, 34, 0.04), inset 0 1px 1px rgba(255, 255, 255, 0.8);
+}
+
+/* Shimmer animation keyframe */
+@keyframes shimmer {
+  0% {
+    transform: translateX(-150%) skewX(-12deg);
+  }
+  100% {
+    transform: translateX(250%) skewX(-12deg);
+  }
+}
+
+/* Marquee infinite scroll */
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 30s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+/* Gentle pulse glow */
+@keyframes pulseGlow {
+  0%, 100% {
+    opacity: 0.4;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.8;
+    transform: scale(1.05);
+  }
+}
+
+.animate-pulse-glow {
+  animation: pulseGlow 4s ease-in-out infinite;
+}
+
+/* Smooth custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #FAF6F0;
+}
+::-webkit-scrollbar-thumb {
+  background: #E6D8C8;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #A85F50;
+}
+```
+
+### sadashiv-web/app/layout.tsx
+
+| Field | Value |
+| --- | --- |
+| Bytes | 1937 |
+| Score | 0 |
+| Why | context |
+| Status | Full content |
+
+
+```tsx
+import type { Metadata } from 'next';
+import { Cormorant_Garamond, Inter } from 'next/font/google';
+import './globals.css';
+import Header from '@/components/layout/Header';
+import Footer from '@/components/layout/Footer';
+import FloatingWhatsApp from '@/components/shared/FloatingWhatsApp';
+
+const cormorant = Cormorant_Garamond({
+  subsets: ['latin'],
+  variable: '--font-cormorant',
+  weight: ['300', '400', '500', '600', '700'],
+  display: 'swap',
+});
+
+const inter = Inter({
+  subsets: ['latin'],
+  variable: '--font-inter',
+  weight: ['300', '400', '500', '600'],
+  display: 'swap',
+});
+
+export const metadata: Metadata = {
+  metadataBase: new URL('https://sadashivfashions.in'),
+  title: {
+    default: 'Sadashiv Fashions Jaipur | Ethnic Wear, Suits, Kurtis & Fabrics',
+    template: '%s | Sadashiv Fashions',
+  },
+  description:
+    'Explore suits, kurtis, fabrics and dupattas at Sadashiv Fashions in Malviya Nagar, Jaipur. Browse the collection and enquire directly on WhatsApp.',
+  keywords: [
+    'Sadashiv Fashions Jaipur',
+    'ethnic wear Jaipur',
+    'women suits Jaipur',
+    'kurtis Jaipur',
+    'fabrics Malviya Nagar',
+    'dupatta store Jaipur',
+    'wholesale fabric Jaipur',
+  ],
+  icons: {
+    icon: '/brand/variants/logo-trishul.png',
+    apple: '/brand/variants/logo-trishul.png',
+  },
+  openGraph: {
+    type: 'website',
+    locale: 'en_IN',
+    siteName: 'Sadashiv Fashions',
+    images: [{ url: '/brand/variants/logo-full.png', width: 1200, height: 630 }],
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+};
+
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  return (
+    <html lang="en" className={`${cormorant.variable} ${inter.variable}`}>
+      <body className="font-body selection:bg-[#D4197D]/20 selection:text-[#1A1817]">
+        <Header />
+        <main>{children}</main>
+        <Footer />
+        <FloatingWhatsApp />
+      </body>
+    </html>
+  );
+}
+```
+
+### sadashiv-web/app/robots.ts
+
+| Field | Value |
+| --- | --- |
+| Bytes | 236 |
+| Score | 0 |
+| Why | context |
+| Status | Full content |
+
+
+```ts
+import type { MetadataRoute } from 'next';
+
+export default function robots(): MetadataRoute.Robots {
+  return {
+    rules: {
+      userAgent: '*',
+      allow: '/',
+    },
+    sitemap: 'https://sadashivfashions.in/sitemap.xml',
+  };
+}
+```
+
+### sadashiv-web/app/visit/page.tsx
+
+| Field | Value |
+| --- | --- |
+| Bytes | 11074 |
+| Score | 0 |
+| Why | context |
+| Status | Full content |
+
+
+```tsx
+import type { Metadata } from 'next';
+import Image from 'next/image';
+
+export const metadata: Metadata = {
+  title: 'Visit Us — Showroom Location & Contact',
+  description:
+    'Visit Sadashiv Fashions at Malviya Nagar, Jaipur. Enquire on WhatsApp for showroom directions, timings and local delivery in Jaipur and nearby areas.',
+  openGraph: {
+    title: 'Visit Us | Sadashiv Fashions',
+    description: 'Contact and visit Sadashiv Fashions in Malviya Nagar, Jaipur.',
+    images: [{ url: '/images/store/store-exterior.jpg' }],
+  },
+};
+
+const WA_GENERAL =
+  'https://wa.me/916376648869?text=Hello%20Sadashiv%20Fashions%2C%20I%20am%20interested%20in%20your%20collection.%20Please%20share%20details.';
+const WA_DIRECTIONS =
+  'https://wa.me/916376648869?text=Hello%20Sadashiv%20Fashions%2C%20I%20would%20like%20to%20visit%20the%20store.%20Could%20you%20share%20the%20exact%20location%20and%20today%27s%20timings%3F';
+const WA_WHOLESALE =
+  'https://wa.me/916376648869?text=Hello%20Sadashiv%20Fashions%2C%20I%20am%20enquiring%20about%20a%20wholesale%20purchase.%20Please%20share%20your%20catalogue%2C%20pricing%20and%20terms.';
+const INSTAGRAM = 'https://www.instagram.com/sadashivfashionsjaipur/';
+const MAPS_URL = 'https://maps.google.com/?q=Sadashiv+Fashions+Malviya+Nagar+Jaipur';
+
+export default function VisitPage() {
+  return (
+    <div className="bg-[#FAF6F0] min-h-screen">
+      {/* ── Page Header ─────────────────────────────────────────────── */}
+      <section className="pt-16 pb-12 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-b border-[#E6D8C8]">
+        <div className="max-w-3xl">
+          <div className="inline-flex items-center gap-2 text-[10px] uppercase tracking-[0.26em] text-[#9E4736] font-semibold mb-4">
+            <span className="w-1.5 h-1.5 rounded-full bg-[#D4197D]" />
+            <span>— Showroom &amp; Contact Concierge —</span>
+          </div>
+          <h1 className="font-display font-light text-4xl sm:text-6xl text-[#1A1817] leading-tight mb-4">
+            Visit the Atelier
+          </h1>
+          <p className="text-sm sm:text-base text-[#5A4A42] leading-relaxed font-sans">
+            We are located in Malviya Nagar, Jaipur. Visit our boutique to inspect our fabrics, suits, and kurtis in person, or connect directly through WhatsApp.
+          </p>
+        </div>
+      </section>
+
+      {/* ── Main Details Grid ───────────────────────────────────────── */}
+      <section className="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <div className="grid lg:grid-cols-12 gap-10 lg:gap-14">
+          {/* Left: Contact & Location Cards (7 cols) */}
+          <div className="lg:col-span-7 space-y-8">
+            {/* Showroom Address Card */}
+            <div className="bg-[#FAF6F0] p-8 rounded-3xl border border-[#E6D8C8] shadow-xs">
+              <span className="text-[10px] uppercase tracking-[0.26em] text-[#9E4736] font-bold block mb-3">
+                Showroom Address
+              </span>
+              <address className="not-italic text-base sm:text-lg text-[#1A1817] leading-relaxed font-display mb-5">
+                2/72, Krishna Nand Marg,<br />
+                near Government Girls Senior Secondary School,<br />
+                Malviya Nagar, Jaipur — 302017,<br />
+                Rajasthan, India
+              </address>
+              <div className="flex flex-wrap items-center gap-4">
+                <a
+                  href={MAPS_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 bg-[#1A1817] hover:bg-[#D4197D] text-white text-xs uppercase tracking-[0.16em] font-semibold px-5 py-3 rounded-full transition-colors"
+                >
+                  <span>Google Maps Directions</span>
+                  <span>↗</span>
+                </a>
+                <a
+                  href={WA_DIRECTIONS}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 border border-[#1A1817]/30 text-[#1A1817] text-xs uppercase tracking-[0.16em] font-semibold px-5 py-3 rounded-full hover:bg-[#1A1817] hover:text-white transition-colors"
+                >
+                  <span>Ask Directions on WhatsApp</span>
+                </a>
+              </div>
+              <p className="mt-4 text-[11px] text-[#7A6358]">
+                * Exact Google Maps destination to be confirmed by the owners.
+              </p>
+            </div>
+
+            {/* Timings & Delivery */}
+            <div className="grid sm:grid-cols-2 gap-6">
+              {/* Timings */}
+              <div className="bg-[#F3ECE2]/80 p-6 rounded-2xl border border-[#E6D8C8]">
+                <span className="text-[10px] uppercase tracking-[0.24em] text-[#9E4736] font-bold block mb-2">
+                  Operating Hours
+                </span>
+                <p className="text-sm font-medium text-[#1A1817] mb-1">
+                  10:30 AM – 9:00 PM (approx.)
+                </p>
+                <p className="text-xs text-[#5A4A42] leading-relaxed mb-3">
+                  Please message us on WhatsApp before visiting to confirm current daily hours.
+                </p>
+                <a
+                  href={WA_DIRECTIONS}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-xs font-semibold text-[#D4197D] hover:underline"
+                >
+                  Check Today&apos;s Hours →
+                </a>
+              </div>
+
+              {/* Local Delivery */}
+              <div className="bg-[#F3ECE2]/80 p-6 rounded-2xl border border-[#E6D8C8]">
+                <span className="text-[10px] uppercase tracking-[0.24em] text-[#9E4736] font-bold block mb-2">
+                  Local Jaipur Delivery
+                </span>
+                <p className="text-sm font-medium text-[#1A1817] mb-1">
+                  Jaipur &amp; Nearby Areas
+                </p>
+                <p className="text-xs text-[#5A4A42] leading-relaxed mb-3">
+                  Local delivery is serviced across Jaipur. Exact serviceability and charges are confirmed on WhatsApp.
+                </p>
+                <span className="text-[11px] font-medium text-[#7A6358]">
+                  WhatsApp dispatch confirmation
+                </span>
+              </div>
+            </div>
+
+            {/* Direct Digital Channels */}
+            <div className="bg-[#FAF6F0] p-6 rounded-2xl border border-[#E6D8C8] space-y-3">
+              <span className="text-[10px] uppercase tracking-[0.24em] text-[#9E4736] font-bold block mb-1">
+                Direct Channels
+              </span>
+              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-sm">
+                <a
+                  href={WA_GENERAL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 text-[#1A1817] hover:text-[#D4197D] font-medium"
+                >
+                  <span className="w-2.5 h-2.5 rounded-full bg-[#25D366]" />
+                  <span>WhatsApp: +91 63766 48869</span>
+                </a>
+                <a
+                  href={INSTAGRAM}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 text-[#1A1817] hover:text-[#D4197D]"
+                >
+                  <span>Instagram: @sadashivfashionsjaipur</span>
+                  <span>↗</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          {/* Right: Concierge Action Card (5 cols) */}
+          <div className="lg:col-span-5">
+            <div className="bg-[#1A1817] text-[#FAF6F0] p-8 sm:p-10 rounded-3xl border border-[#C5A059]/40 shadow-xl h-full flex flex-col justify-between relative overflow-hidden">
+              <div className="absolute top-0 right-0 w-64 h-64 bg-[#D4197D]/10 rounded-full blur-2xl pointer-events-none" />
+
+              <div className="relative z-10">
+                <div className="flex items-center justify-between mb-6">
+                  <span className="text-[10px] uppercase tracking-[0.28em] font-bold text-[#C5A059]">
+                    Atelier Concierge
+                  </span>
+                  <span className="w-2 h-2 rounded-full bg-[#25D366] animate-pulse" />
+                </div>
+
+                <h3 className="font-display text-3xl sm:text-4xl text-[#FAF6F0] mb-4 leading-tight">
+                  Connect Directly on WhatsApp
+                </h3>
+
+                <p className="text-sm text-[#D4C4B8] leading-relaxed mb-8 font-sans">
+                  Whether you are planning a showroom visit, inquiring about a particular suit set, or placing a wholesale order for fabric bolts, our team responds directly on WhatsApp.
+                </p>
+
+                <div className="space-y-3">
+                  <a
+                    href={WA_GENERAL}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full flex items-center justify-between bg-[#D4197D] hover:bg-[#B31468] text-white py-3.5 px-6 rounded-full text-xs uppercase tracking-[0.16em] font-semibold transition-colors shadow-sm"
+                  >
+                    <span>Retail Enquiry</span>
+                    <span>↗</span>
+                  </a>
+
+                  <a
+                    href={WA_WHOLESALE}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full flex items-center justify-between border border-white/20 hover:border-white text-white py-3.5 px-6 rounded-full text-xs uppercase tracking-[0.16em] font-semibold transition-colors"
+                  >
+                    <span>Wholesale &amp; Bulk Enquiries</span>
+                    <span>✦</span>
+                  </a>
+                </div>
+              </div>
+
+              <div className="relative z-10 pt-8 mt-8 border-t border-white/10 text-xs text-[#8A7C73]">
+                <p>Sadashiv Fashions · Malviya Nagar, Jaipur, Rajasthan</p>
+                <p className="mt-1">Phone / WhatsApp: +91 63766 48869</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ── Showroom Visual Strip ───────────────────────────────────── */}
+      <section className="relative h-64 sm:h-80 overflow-hidden bg-[#E6D8C8] border-t border-[#E6D8C8]">
+        <Image
+          src="/images/store/store-signage.webp"
+          alt="Sadashiv Fashions store in Jaipur"
+          fill
+          sizes="100vw"
+          className="object-cover object-center"
+        />
+        <div className="absolute inset-0 bg-[#1A1817]/30" />
+      </section>
+    </div>
+  );
+}
+```
+
+### sadashiv-web/components/layout/Footer.tsx
+
+| Field | Value |
+| --- | --- |
+| Bytes | 7386 |
+| Score | 0 |
+| Why | context |
+| Status | Full content |
+
+
+```tsx
+import Link from 'next/link';
+import Logo from '@/components/shared/Logo';
+
+const WA_GENERAL =
+  'https://wa.me/916376648869?text=Hello%20Sadashiv%20Fashions%2C%20I%20am%20interested%20in%20your%20collection.%20Please%20share%20details.';
+const WA_WHOLESALE =
+  'https://wa.me/916376648869?text=Hello%20Sadashiv%20Fashions%2C%20I%20am%20enquiring%20about%20a%20wholesale%20purchase.%20Please%20share%20your%20catalogue%2C%20pricing%20and%20terms.';
+const INSTAGRAM = 'https://www.instagram.com/sadashivfashionsjaipur/';
+
+export default function Footer() {
+  return (
+    <footer className="bg-[#1A1817] text-[#FAF6F0] border-t border-[#C5A059]/30 relative overflow-hidden">
+      {/* Subtle Jaipur Pattern Ambient Glow */}
+      <div className="absolute top-0 right-1/4 w-96 h-96 bg-[#D4197D]/5 rounded-full blur-3xl pointer-events-none" />
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-12 relative z-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 lg:gap-8 mb-16">
+          {/* Brand Column (Span 2 on lg) */}
+          <div className="lg:col-span-2 space-y-5">
+            <Logo variant="full" theme="white" size="lg" asLink priority />
+            <p className="text-sm text-[#D4C4B8] leading-relaxed max-w-sm font-sans">
+              An exclusive boutique in Malviya Nagar, Jaipur, dedicated to fine women&apos;s ethnic wear, curated suits, graceful kurtis, heirloom dupattas, and pure handloom fabrics.
+            </p>
+            <div className="pt-2 flex flex-wrap items-center gap-3">
+              <span className="text-[10px] uppercase tracking-[0.24em] font-medium text-[#C5A059] border border-[#C5A059]/40 rounded-full px-3 py-1">
+                Retail &amp; Wholesale
+              </span>
+              <span className="text-[10px] uppercase tracking-[0.24em] font-medium text-[#D4C4B8] border border-white/15 rounded-full px-3 py-1">
+                Jaipur Atelier
+              </span>
+            </div>
+          </div>
+
+          {/* Curations Column */}
+          <div>
+            <p className="text-[11px] uppercase tracking-[0.22em] text-[#C5A059] font-semibold mb-4">
+              Curations
+            </p>
+            <nav className="flex flex-col space-y-2.5 text-sm" aria-label="Collections Navigation">
+              <Link href="/collections" className="text-[#D4C4B8] hover:text-[#FAF6F0] transition-colors">
+                All Collections
+              </Link>
+              <Link href="/collections/suits" className="text-[#D4C4B8] hover:text-[#FAF6F0] transition-colors">
+                Tailored Suits
+              </Link>
+              <Link href="/collections/kurtis" className="text-[#D4C4B8] hover:text-[#FAF6F0] transition-colors">
+                Boutique Kurtis
+              </Link>
+              <Link href="/collections/fabrics" className="text-[#D4C4B8] hover:text-[#FAF6F0] transition-colors">
+                Dress Materials &amp; Fabrics
+              </Link>
+              <Link href="/collections/dupattas" className="text-[#D4C4B8] hover:text-[#FAF6F0] transition-colors">
+                Hand-Finished Dupattas
+              </Link>
+            </nav>
+          </div>
+
+          {/* House & Story Column */}
+          <div>
+            <p className="text-[11px] uppercase tracking-[0.22em] text-[#C5A059] font-semibold mb-4">
+              The Atelier
+            </p>
+            <nav className="flex flex-col space-y-2.5 text-sm" aria-label="Atelier Navigation">
+              <Link href="/about" className="text-[#D4C4B8] hover:text-[#FAF6F0] transition-colors">
+                Our Story &amp; People
+              </Link>
+              <Link href="/gallery" className="text-[#D4C4B8] hover:text-[#FAF6F0] transition-colors">
+                Visual Lookbook
+              </Link>
+              <Link href="/visit" className="text-[#D4C4B8] hover:text-[#FAF6F0] transition-colors">
+                Visit Malviya Nagar
+              </Link>
+              <a
+                href={WA_WHOLESALE}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[#D4C4B8] hover:text-[#D4197D] transition-colors flex items-center gap-1.5"
+              >
+                <span>Wholesale Desk</span>
+                <span className="text-[10px]">↗</span>
+              </a>
+            </nav>
+          </div>
+
+          {/* Contact & Location Column */}
+          <div>
+            <p className="text-[11px] uppercase tracking-[0.22em] text-[#C5A059] font-semibold mb-4">
+              Showroom
+            </p>
+            <address className="not-italic text-sm text-[#D4C4B8] leading-relaxed mb-4">
+              2/72, Krishna Nand Marg,<br />
+              near Govt. Girls Sr. Sec. School,<br />
+              Malviya Nagar, Jaipur — 302017,<br />
+              Rajasthan, India
+            </address>
+
+            <div className="space-y-2 pt-1 text-sm">
+              <a
+                href={WA_GENERAL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-[#D4C4B8] hover:text-[#FAF6F0] transition-colors"
+              >
+                <span className="w-2 h-2 rounded-full bg-[#25D366]" />
+                <span>+91 63766 48869</span>
+              </a>
+
+              <div>
+                <a
+                  href={INSTAGRAM}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 text-[#D4C4B8] hover:text-[#D4197D] transition-colors"
+                >
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
+                  </svg>
+                  <span>@sadashivfashionsjaipur</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Bottom Bar */}
+        <div className="pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[#8A7C73]">
+          <p>© 2026 Sadashiv Fashions · Malviya Nagar, Jaipur, Rajasthan</p>
+          <div className="flex items-center gap-4">
+            <span>Local Delivery in Jaipur</span>
+            <span>•</span>
+            <span>Wholesale &amp; Retail</span>
+            <span>•</span>
+            <span className="font-serif italic text-[#C5A059]">Jaipur Pink City Heritage</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
+}
+```
+
+### sadashiv-web/components/layout/Header.tsx
+
+| Field | Value |
+| --- | --- |
+| Bytes | 9521 |
+| Score | 0 |
+| Why | context |
+| Status | Full content |
+
+
+```tsx
+'use client';
+
+import { useState, useEffect } from 'react';
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
+import Logo from '@/components/shared/Logo';
+import MobileNav from './MobileNav';
+
+const navLinks = [
+  { href: '/collections', label: 'Collections' },
+  { href: '/collections/suits', label: 'Suits' },
+  { href: '/collections/kurtis', label: 'Kurtis' },
+  { href: '/collections/fabrics', label: 'Fabrics' },
+  { href: '/collections/dupattas', label: 'Dupattas' },
+  { href: '/about', label: 'Our Story' },
+  { href: '/gallery', label: 'Visual Journal' },
+  { href: '/visit', label: 'Visit Atelier' },
+];
+
+const WA_CONCIERGE =
+  'https://wa.me/916376648869?text=Hello%20Sadashiv%20Fashions%2C%20I%20am%20interested%20in%20your%20curated%20collection.%20Please%20guide%20me.';
+
+export default function Header() {
+  const [scrolled, setScrolled] = useState(false);
+  const [mobileOpen, setMobileOpen] = useState(false);
+  const pathname = usePathname();
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 24);
+    window.addEventListener('scroll', onScroll, { passive: true });
+    return () => window.removeEventListener('scroll', onScroll);
+  }, []);
+
+  useEffect(() => {
+    setMobileOpen(false);
+  }, [pathname]);
+
+  return (
+    <>
+      {/* ── Top Announcement Marquee Banner ────────────────────────── */}
+      <div className="bg-[#1A1817] text-[#FAF6F0] py-2 px-4 overflow-hidden border-b border-[#C5A059]/25 text-[10px] sm:text-[11px] font-sans tracking-[0.24em] uppercase select-none relative z-50">
+        <div className="flex animate-marquee whitespace-nowrap">
+          <span className="mx-6 flex items-center gap-2">
+            <span className="w-1.5 h-1.5 rounded-full bg-[#D4197D]" />
+            Sadashiv Fashions · Malviya Nagar, Jaipur
+          </span>
+          <span className="mx-6 text-[#C5A059]">✦</span>
+          <span className="mx-6">Suits · Kurtis · Handloom Fabrics · Dupattas</span>
+          <span className="mx-6 text-[#C5A059]">✦</span>
+          <span className="mx-6">Wholesale &amp; Retail Enquiries Welcome</span>
+          <span className="mx-6 text-[#C5A059]">✦</span>
+          <span className="mx-6">Local Delivery Across Jaipur &amp; Nearby Areas</span>
+          <span className="mx-6 text-[#C5A059]">✦</span>
+
+          {/* Repeat for seamless loop */}
+          <span className="mx-6 flex items-center gap-2">
+            <span className="w-1.5 h-1.5 rounded-full bg-[#D4197D]" />
+            Sadashiv Fashions · Malviya Nagar, Jaipur
+          </span>
+          <span className="mx-6 text-[#C5A059]">✦</span>
+          <span className="mx-6">Suits · Kurtis · Handloom Fabrics · Dupattas</span>
+          <span className="mx-6 text-[#C5A059]">✦</span>
+          <span className="mx-6">Wholesale &amp; Retail Enquiries Welcome</span>
+          <span className="mx-6 text-[#C5A059]">✦</span>
+          <span className="mx-6">Local Delivery Across Jaipur &amp; Nearby Areas</span>
+          <span className="mx-6 text-[#C5A059]">✦</span>
+        </div>
+      </div>
+
+      {/* ── Main Sticky Navigation Bar ─────────────────────────────── */}
+      <header
+        className={`sticky top-0 left-0 right-0 z-40 transition-all duration-400 ${
+          scrolled
+            ? 'bg-[#FAF6F0]/95 backdrop-blur-md shadow-[0_8px_30px_rgba(26,24,23,0.06)] border-b border-[#E6D8C8]'
+            : 'bg-[#FAF6F0] border-b border-[#E6D8C8]/50'
+        }`}
+      >
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex items-center justify-between h-20 md:h-24">
+            {/* Brand Logo with Variants & Interactive Glow */}
+            <div className="flex-shrink-0 py-2">
+              {/* Desktop Full Logo */}
+              <div className="hidden lg:block">
+                <Logo variant="full" theme="magenta" size="lg" asLink priority />
+              </div>
+              {/* Tablet & Mobile Balanced Compact Logo */}
+              <div className="lg:hidden">
+                <Logo variant="compact" theme="magenta" size="md" asLink priority />
+              </div>
+            </div>
+
+            {/* Desktop Navigation Links */}
+            <nav className="hidden xl:flex items-center gap-7" aria-label="Main Navigation">
+              {navLinks.map((link) => {
+                const isActive =
+                  pathname === link.href ||
+                  (link.href !== '/' && pathname.startsWith(link.href + '/'));
+
+                return (
+                  <Link
+                    key={link.href}
+                    href={link.href}
+                    className={`relative text-[11px] uppercase tracking-[0.2em] font-medium transition-colors duration-200 py-1 link-underline ${
+                      isActive
+                        ? 'text-[#D4197D] font-semibold'
+                        : 'text-[#292522] hover:text-[#D4197D]'
+                    }`}
+                  >
+                    {link.label}
+                    {isActive && (
+                      <span className="absolute -bottom-1 left-1/2 -translate-x-1/2 w-1.5 h-1.5 rounded-full bg-[#D4197D]" />
+                    )}
+                  </Link>
+                );
+              })}
+            </nav>
+
+            {/* Desktop Concierge CTA & Actions */}
+            <div className="hidden md:flex items-center gap-3">
+              <a
+                href={WA_CONCIERGE}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group inline-flex items-center gap-2.5 bg-[#1A1817] hover:bg-[#D4197D] text-[#FAF6F0] rounded-full pl-4 pr-2 py-2 text-xs uppercase tracking-[0.16em] font-medium transition-all duration-300 shadow-sm hover:shadow-md active:scale-98"
+                aria-label="Direct WhatsApp Concierge"
+              >
+                <span>Concierge</span>
+                <span className="w-6 h-6 rounded-full bg-white/10 group-hover:bg-white/20 flex items-center justify-center transition-colors">
+                  <span className="w-2 h-2 rounded-full bg-[#25D366] animate-pulse" />
+                </span>
+              </a>
+
+              <Link
+                href="/visit"
+                className="inline-flex items-center gap-1.5 border border-[#1A1817]/25 hover:border-[#1A1817] text-[#1A1817] rounded-full px-4 py-2 text-xs uppercase tracking-[0.16em] font-medium transition-colors duration-200"
+              >
+                Malviya Nagar
+              </Link>
+            </div>
+
+            {/* Mobile Hamburger Button */}
+            <div className="flex items-center gap-2 xl:hidden">
+              <a
+                href={WA_CONCIERGE}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center w-9 h-9 rounded-full bg-[#D4197D] text-white shadow-sm md:hidden"
+                aria-label="Quick WhatsApp Consultation"
+              >
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />
+                  <path d="M12 0C5.373 0 0 5.373 0 12c0 2.136.564 4.14 1.546 5.877L.057 23.5l5.773-1.516A11.954 11.954 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.044-1.394l-.361-.214-3.735.979 1-3.639-.235-.374A9.818 9.818 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z" />
+                </svg>
+              </a>
+
+              <button
+                className="p-2.5 rounded-full text-[#1A1817] hover:bg-[#E6D8C8]/40 transition-colors"
+                onClick={() => setMobileOpen(!mobileOpen)}
+                aria-label={mobileOpen ? 'Close Navigation Menu' : 'Open Navigation Menu'}
+                aria-expanded={mobileOpen}
+              >
+                {mobileOpen ? <CloseIcon /> : <MenuIcon />}
+              </button>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      {/* ── Mobile Navigation Drawer ───────────────────────────────── */}
+      <MobileNav
+        isOpen={mobileOpen}
+        onClose={() => setMobileOpen(false)}
+        links={navLinks}
+        pathname={pathname}
+        waLink={WA_CONCIERGE}
+      />
+    </>
+  );
+}
+
+function MenuIcon() {
+  return (
+    <svg width="24" height="24" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24">
+      <path strokeLinecap="round" d="M3.75 6.75h16.5M3.75 12h16.5M3.75 17.25h16.5" />
+    </svg>
+  );
+}
+
+function CloseIcon() {
+  return (
+    <svg width="24" height="24" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24">
+      <path strokeLinecap="round" d="M6 18L18 6M6 6l12 12" />
+    </svg>
+  );
+}
+```
+
+### sadashiv-web/components/layout/MobileNav.tsx
+
+| Field | Value |
+| --- | --- |
+| Bytes | 5359 |
+| Score | 0 |
+| Why | context |
+| Status | Full content |
+
+
+```tsx
+'use client';
+
+import { useEffect } from 'react';
+import Link from 'next/link';
+import Logo from '@/components/shared/Logo';
+
+interface NavLink {
+  href: string;
+  label: string;
+}
+
+interface MobileNavProps {
+  isOpen: boolean;
+  onClose: () => void;
+  links: NavLink[];
+  pathname: string;
+  waLink: string;
+}
+
+export default function MobileNav({ isOpen, onClose, links, pathname, waLink }: MobileNavProps) {
+  useEffect(() => {
+    if (!isOpen) return;
+    document.body.style.overflow = 'hidden';
+
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') onClose();
+    };
+
+    window.addEventListener('keydown', handleKeyDown);
+    return () => {
+      document.body.style.overflow = '';
+      window.removeEventListener('keydown', handleKeyDown);
+    };
+  }, [isOpen, onClose]);
+
+  return (
+    <>
+      {/* Backdrop */}
+      <div
+        className={`fixed inset-0 z-50 bg-[#1A1817]/70 backdrop-blur-sm transition-opacity duration-300 xl:hidden ${
+          isOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'
+        }`}
+        onClick={onClose}
+        aria-hidden="true"
+      />
+
+      {/* Drawer */}
+      <div
+        className={`fixed top-0 right-0 h-full w-84 max-w-[90vw] z-50 bg-[#FAF6F0] shadow-2xl transform transition-transform duration-400 ease-[cubic-bezier(0.32,0.72,0,1)] xl:hidden flex flex-col justify-between border-l border-[#E6D8C8] overflow-y-auto ${
+          isOpen ? 'translate-x-0' : 'translate-x-full'
+        }`}
+        role="dialog"
+        aria-modal="true"
+        aria-label="Navigation Menu"
+      >
+        {/* Top Header */}
+        <div className="p-6 border-b border-[#E6D8C8] flex items-center justify-between">
+          <Logo variant="compact" theme="magenta" size="sm" />
+          <button
+            onClick={onClose}
+            className="p-2 rounded-full text-[#1A1817] hover:bg-[#E6D8C8]/50 transition-colors"
+            aria-label="Close Menu"
+          >
+            <svg width="22" height="22" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24">
+              <path strokeLinecap="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+
+        {/* Navigation Links */}
+        <nav className="p-6 flex-1 flex flex-col gap-1" aria-label="Mobile Navigation">
+          <p className="text-[10px] uppercase tracking-[0.28em] text-[#9E4736] font-semibold mb-3">
+            Atelier Directory
+          </p>
+          {links.map((link, idx) => {
+            const isActive =
+              pathname === link.href ||
+              (link.href !== '/' && pathname.startsWith(link.href + '/'));
+
+            return (
+              <Link
+                key={link.href}
+                href={link.href}
+                onClick={onClose}
+                className={`py-3 px-3 rounded-lg text-base tracking-wide flex items-center justify-between transition-colors ${
+                  isActive
+                    ? 'bg-[#F3ECE2] text-[#D4197D] font-medium'
+                    : 'text-[#292522] hover:bg-[#F3ECE2]/50 hover:text-[#D4197D]'
+                }`}
+              >
+                <span>{link.label}</span>
+                <span className="font-serif italic text-xs text-[#C5A059]">0{idx + 1}</span>
+              </Link>
+            );
+          })}
+        </nav>
+
+        {/* Bottom Contact & Atelier Card */}
+        <div className="p-6 bg-[#F3ECE2]/80 border-t border-[#E6D8C8] space-y-4">
+          <a
+            href={waLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={onClose}
+            className="w-full flex items-center justify-center gap-2.5 py-3.5 bg-[#D4197D] text-white rounded-full text-xs uppercase tracking-[0.18em] font-semibold hover:bg-[#B31468] transition-colors shadow-sm"
+          >
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />
+              <path d="M12 0C5.373 0 0 5.373 0 12c0 2.136.564 4.14 1.546 5.877L.057 23.5l5.773-1.516A11.954 11.954 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.044-1.394l-.361-.214-3.735.979 1-3.639-.235-.374A9.818 9.818 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z" />
+            </svg>
+            WhatsApp Concierge
+          </a>
+
+          <div className="text-center text-xs text-[#7A6358] space-y-1">
+            <p className="font-medium text-[#1A1817]">2/72, Krishna Nand Marg, Malviya Nagar</p>
+            <p>Jaipur — 302017, Rajasthan</p>
+            <p className="text-[11px] text-[#9E4736] pt-1">Wholesale &amp; Retail Inquiries</p>
+          </div>
+        </div>
+      </div>
+    </>
+  );
+}
 ```
 
 ### sadashiv-web/eslint.config.mjs
@@ -2239,8 +2940,8 @@ export const categoryMeta = {
 | Field | Value |
 | --- | --- |
 | Bytes | 465 |
-| Score | 120 |
-| Why | changed |
+| Score | 0 |
+| Why | context |
 | Status | Full content |
 
 
@@ -2265,43 +2966,13 @@ const eslintConfig = defineConfig([
 export default eslintConfig;
 ```
 
-### sadashiv-web/next.config.ts
-
-| Field | Value |
-| --- | --- |
-| Bytes | 318 |
-| Score | 120 |
-| Why | changed |
-| Status | Full content |
-
-
-```ts
-import type { NextConfig } from "next";
-
-const nextConfig: NextConfig = {
-  /* config options here */
-  cacheComponents: true,
-  partialPrefetching: true,
-  turbopack: {
-    rules: {
-      "*.css": {
-        loaders: ["@tailwindcss/turbopack"],
-        as: "*.css",
-      },
-    },
-  },
-};
-
-export default nextConfig;
-```
-
 ### 01-business-content-brief.md
 
 | Field | Value |
 | --- | --- |
 | Bytes | 17762 |
-| Score | 119 |
-| Why | changed |
+| Score | -1 |
+| Why | context |
 | Status | Truncated (budget limit) |
 
 **Structural Outline:**
@@ -2323,8 +2994,8 @@ making the interface complicated.
 | Field | Value |
 | --- | --- |
 | Bytes | 19180 |
-| Score | 119 |
-| Why | changed |
+| Score | -1 |
+| Why | context |
 | Status | Truncated (budget limit) |
 
 
@@ -2513,53 +3184,92 @@ Carefully written neutral copy where no specific fact is available.
 /* …290 lines not shown — file has no detected definitions; ask for full content if needed. */
 ```
 
-### sadashiv-web/app/page.tsx
+### sadashiv-web/data/products.ts
 
 | Field | Value |
 | --- | --- |
-| Bytes | 14522 |
-| Score | 119 |
-| Why | changed |
+| Bytes | 15560 |
+| Score | -1 |
+| Why | context |
 | Status | Truncated (budget limit) |
 
 **Structural Outline:**
-  - `fn HomePage` (line 43)
+  - `interface Product` (line 1)
+  - `fn getFeaturedProducts` (line 375)
+  - `fn getProductsByCategory` (line 377)
+  - `fn getProductBySlug` (line 380)
 
 
-```tsx
-// … lines 1–6
-import type { Metadata } from 'next';
-import Image from 'next/image';
-import Link from 'next/link';
-import { getFeaturedProducts, categoryMeta } from '@/data/products';
-import ProductCard from '@/components/shared/ProductCard';
-import WhatsAppButton from '@/components/shared/WhatsAppButton';
-// … lines 42–47
+```ts
+// … lines 1–58
+export interface Product {
+  id: string;
+  name: string;
+  category: 'suits' | 'kurtis' | 'fabrics' | 'dupattas';
+  slug: string;
+  image: string;
+  images?: string[];
+  fabric?: string;
+  craft?: string;
+  badge?: string;
+  description: string;
+  details?: string[];
+  featured?: boolean;
+}
 
-export default function HomePage() {
-  const featured = getFeaturedProducts().slice(0, 4);
+export const products: Product[] = [
+  // ── Suits ───────────────────────────────────────────────────────────
+  {
+    id: 'suit-01',
+    name: 'Rani Rose Embroidered Suit Set',
+    category: 'suits',
+    slug: 'rani-rose-embroidered-suit-set',
+    image: '/images/products/mannequin-left.webp',
+    images: [
+      '/images/products/mannequin-left.webp',
+      '/images/products/detail-embroidery.webp',
+      '/images/store/store-window.webp',
+    ],
+    fabric: 'Fine Cotton Silk blend',
+    craft: 'Embroidered neckline & detailed hem',
+    badge: 'Store Display Highlight',
+    description:
+      'An exquisite women\'s suit set featuring classic Jaipur tailoring, rich rose tones, and intricate neckline embroidery. Available for retail and wholesale enquiry.',
+    details: [
+      'Tailored ethnic silhouette with graceful drape',
+      'Accompanied by coordinating bottom and dupatta',
+      'Sizes and customization confirmed on WhatsApp',
+      'Local delivery across Jaipur and nearby areas',
+    ],
+    featured: true,
+  },
+  {
+    id: 'suit-02',
+    name: 'Ivory & Butta Occasion Suit Set',
+    category: 'suits',
+    slug: 'ivory-butta-occasion-suit-set',
+    image: '/images/products/mannequin-center.webp',
+    images: [
+      '/images/products/mannequin-center.webp',
+      '/images/products/detail-fabric-weave.webp',
+    ],
+    fabric: 'Chanderi Cotton',
+    craft: 'Traditional Butta work & delicate border',
+    badge: 'Boutique Collection',
+    description:
+      'Sophisticated ivory and soft pastel suit set crafted in lightweight Chanderi weave with delicate hand-finished butta embellishment.',
+    details: [
+      'Boutique exclusive design from our Jaipur showroom',
+// … lines 374–384
 
-  return (
-    <>
-```
+export const getFeaturedProducts = () => products.filter((p) => p.featured);
 
-### AGENTS.md
+export const getProductsByCategory = (category: Product['category']) =>
+  products.filter((p) => p.category === category);
 
-| Field | Value |
-| --- | --- |
-| Bytes | 381 |
-| Score | 0 |
-| Why | context |
-| Status | Full content |
+export const getProductBySlug = (slug: string) =>
+  products.find((p) => p.slug === slug);
 
-
-```markdown
-# TokenCap Start Here
-
-Project intelligence is generated locally in `.tokencap/`.
-
-1. Read `.tokencap/agent/START_HERE.md`.
-2. Use `.tokencap/agent/allowed-context.json` to find task-relevant files.
-3. Use the connected TokenCap MCP server for overview, search, impact, memory, and debug context.
-4. Do not scan the repository broadly unless the generated context is insufficient.
+export const categoryMeta = {
+  suits: {
 ```

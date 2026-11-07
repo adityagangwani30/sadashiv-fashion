@@ -1,9 +1,9 @@
 {
   "version": 2,
-  "runCount": 2,
-  "totalTokensSaved": 11443,
-  "lastBuildSavings": 5691,
-  "lastBuildAt": "2026-11-07T13:08:31.603Z",
+  "runCount": 4,
+  "totalTokensSaved": 35501,
+  "lastBuildSavings": 11394,
+  "lastBuildAt": "2026-11-07T14:27:08.434Z",
   "notifiedMilestones": [],
   "newMilestones": [],
   "notice": null,
@@ -25,6 +25,24 @@
       "baselineTokens": 33616,
       "snapshotTokens": 27925,
       "savedTokens": 5691,
+      "tokenizerProfile": "tokencap-estimate-v1",
+      "baselineDefinition": "Eligible redacted text source files before ranking, selection, or compression."
+    },
+    {
+      "generatedAt": "2026-11-07T14:09:43.286Z",
+      "profile": "balanced",
+      "baselineTokens": 53510,
+      "snapshotTokens": 40846,
+      "savedTokens": 12664,
+      "tokenizerProfile": "tokencap-estimate-v1",
+      "baselineDefinition": "Eligible redacted text source files before ranking, selection, or compression."
+    },
+    {
+      "generatedAt": "2026-11-07T14:27:08.434Z",
+      "profile": "balanced",
+      "baselineTokens": 46264,
+      "snapshotTokens": 34870,
+      "savedTokens": 11394,
       "tokenizerProfile": "tokencap-estimate-v1",
       "baselineDefinition": "Eligible redacted text source files before ranking, selection, or compression."
     }

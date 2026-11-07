@@ -15,9 +15,19 @@ interface MobileNavProps {
   links: NavLink[];
   pathname: string;
   waLink: string;
+  telLink?: string;
+  mapsLink?: string;
 }
 
-export default function MobileNav({ isOpen, onClose, links, pathname, waLink }: MobileNavProps) {
+export default function MobileNav({
+  isOpen,
+  onClose,
+  links,
+  pathname,
+  waLink,
+  telLink = 'tel:+916376648869',
+  mapsLink = 'https://maps.google.com/?q=Sadashiv+Fashions+Malviya+Nagar+Jaipur',
+}: MobileNavProps) {
   useEffect(() => {
     if (!isOpen) return;
     document.body.style.overflow = 'hidden';
@@ -37,7 +47,7 @@ export default function MobileNav({ isOpen, onClose, links, pathname, waLink }: 
     <>
       {/* Backdrop */}
       <div
-        className={`fixed inset-0 z-50 bg-[#1A1817]/70 backdrop-blur-sm transition-opacity duration-300 xl:hidden ${
+        className={`fixed inset-0 z-50 bg-[#1A1817]/70 backdrop-blur-sm transition-opacity duration-300 lg:hidden ${
           isOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'
         }`}
         onClick={onClose}
@@ -46,7 +56,7 @@ export default function MobileNav({ isOpen, onClose, links, pathname, waLink }: 
 
       {/* Drawer */}
       <div
-        className={`fixed top-0 right-0 h-full w-84 max-w-[90vw] z-50 bg-[#FAF6F0] shadow-2xl transform transition-transform duration-400 ease-[cubic-bezier(0.32,0.72,0,1)] xl:hidden flex flex-col justify-between border-l border-[#E6D8C8] overflow-y-auto ${
+        className={`fixed top-0 right-0 h-full w-84 max-w-[90vw] z-50 bg-[#FAF6F0] shadow-2xl transform transition-transform duration-400 ease-[cubic-bezier(0.32,0.72,0,1)] lg:hidden flex flex-col justify-between border-l border-[#E6D8C8] overflow-y-auto ${
           isOpen ? 'translate-x-0' : 'translate-x-full'
         }`}
         role="dialog"
@@ -68,53 +78,78 @@ export default function MobileNav({ isOpen, onClose, links, pathname, waLink }: 
         </div>
 
         {/* Navigation Links */}
-        <nav className="p-6 flex-1 flex flex-col gap-1" aria-label="Mobile Navigation">
+        <nav className="p-6 flex-1 flex flex-col gap-1.5" aria-label="Mobile Navigation">
           <p className="text-[10px] uppercase tracking-[0.28em] text-[#9E4736] font-semibold mb-3">
             Atelier Directory
           </p>
           {links.map((link, idx) => {
             const isActive =
               pathname === link.href ||
-              (link.href !== '/' && pathname.startsWith(link.href + '/'));
+              (link.href !== '/' && pathname.startsWith(link.href));
 
             return (
               <Link
                 key={link.href}
                 href={link.href}
                 onClick={onClose}
-                className={`py-3 px-3 rounded-lg text-base tracking-wide flex items-center justify-between transition-colors ${
+                className={`py-3 px-3.5 rounded-xl text-base tracking-wide flex items-center justify-between transition-colors ${
                   isActive
-                    ? 'bg-[#F3ECE2] text-[#D4197D] font-medium'
+                    ? 'bg-[#F3ECE2] text-[#D4197D] font-semibold'
                     : 'text-[#292522] hover:bg-[#F3ECE2]/50 hover:text-[#D4197D]'
                 }`}
               >
                 <span>{link.label}</span>
-                <span className="font-serif italic text-xs text-[#C5A059]">0{idx + 1}</span>
+                <span className="font-serif italic text-xs text-[#856020]">0{idx + 1}</span>
               </Link>
             );
           })}
         </nav>
 
-        {/* Bottom Contact & Atelier Card */}
-        <div className="p-6 bg-[#F3ECE2]/80 border-t border-[#E6D8C8] space-y-4">
+        {/* Bottom Actions: WhatsApp, Call, Directions */}
+        <div className="p-6 bg-[#F3ECE2]/80 border-t border-[#E6D8C8] space-y-3">
+          <p className="text-[10px] uppercase tracking-[0.24em] text-[#9E4736] font-semibold mb-2">
+            Direct Boutique Actions
+          </p>
+
           <a
             href={waLink}
             target="_blank"
             rel="noopener noreferrer"
             onClick={onClose}
-            className="w-full flex items-center justify-center gap-2.5 py-3.5 bg-[#D4197D] text-white rounded-full text-xs uppercase tracking-[0.18em] font-semibold hover:bg-[#B31468] transition-colors shadow-sm"
+            className="w-full flex items-center justify-center gap-2.5 py-3 bg-[#D4197D] text-white rounded-full text-xs uppercase tracking-[0.16em] font-semibold hover:bg-[#B31468] transition-colors shadow-sm"
           >
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor">
               <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />
               <path d="M12 0C5.373 0 0 5.373 0 12c0 2.136.564 4.14 1.546 5.877L.057 23.5l5.773-1.516A11.954 11.954 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.044-1.394l-.361-.214-3.735.979 1-3.639-.235-.374A9.818 9.818 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z" />
             </svg>
-            WhatsApp Concierge
+            <span>WhatsApp Enquiry</span>
           </a>
 
-          <div className="text-center text-xs text-[#7A6358] space-y-1">
+          <div className="grid grid-cols-2 gap-2">
+            <a
+              href={telLink}
+              className="flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-full border border-[#1A1817]/25 text-[#1A1817] text-[11px] uppercase tracking-[0.14em] font-medium hover:bg-[#1A1817] hover:text-[#FAF6F0] transition-colors"
+            >
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
+              </svg>
+              <span>Call Us</span>
+            </a>
+
+            <a
+              href={mapsLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={onClose}
+              className="flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-full border border-[#1A1817]/25 text-[#1A1817] text-[11px] uppercase tracking-[0.14em] font-medium hover:bg-[#1A1817] hover:text-[#FAF6F0] transition-colors"
+            >
+              <span>Directions ↗</span>
+            </a>
+          </div>
+
+          <div className="text-center text-[11px] text-[#7A6358] pt-2 border-t border-[#E6D8C8]">
             <p className="font-medium text-[#1A1817]">2/72, Krishna Nand Marg, Malviya Nagar</p>
             <p>Jaipur — 302017, Rajasthan</p>
-            <p className="text-[11px] text-[#9E4736] pt-1">Wholesale &amp; Retail Inquiries</p>
           </div>
         </div>
       </div>

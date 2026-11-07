@@ -6,17 +6,19 @@ import ProductCard from '@/components/shared/ProductCard';
 import Logo from '@/components/shared/Logo';
 
 export const metadata: Metadata = {
-  title: 'Sadashiv Fashions Jaipur | Ethnic Wear, Suits, Kurtis & Fabrics',
+  title: 'Sadashiv Fashions Jaipur | Boutique Ethnic Wear, Suits, Kurtis & Fabrics',
   description:
-    'Explore suits, kurtis, fabrics and dupattas at Sadashiv Fashions in Malviya Nagar, Jaipur. Browse the collection and enquire directly on WhatsApp.',
+    'Sadashiv Fashions is an authentic physical fashion boutique in Malviya Nagar, Jaipur, offering women’s suits, kurtis, pure fabrics, and dupattas. Explore collections, call us, or get showroom directions.',
   openGraph: {
-    title: 'Sadashiv Fashions Jaipur | Ethnic Wear, Suits, Kurtis & Fabrics',
+    title: 'Sadashiv Fashions Jaipur | Boutique Ethnic Wear & Handloom Fabrics',
     description:
-      'Explore suits, kurtis, fabrics and dupattas at Sadashiv Fashions in Malviya Nagar, Jaipur.',
+      'Visit Sadashiv Fashions at Malviya Nagar, Jaipur. Tailored women’s ethnic wear and pure textiles.',
     images: [{ url: '/images/store/store-window.webp', width: 1200, height: 630 }],
   },
 };
 
+const TEL_LINK = 'tel:+916376648869';
+const MAPS_LINK = 'https://maps.google.com/?q=Sadashiv+Fashions+Malviya+Nagar+Jaipur';
 const WA_GENERAL =
   'https://wa.me/916376648869?text=Hello%20Sadashiv%20Fashions%2C%20I%20am%20interested%20in%20your%20curated%20collection.%20Please%20guide%20me.';
 const WA_WHOLESALE =
@@ -37,7 +39,7 @@ const jsonLd = {
   telephone: '+916376648869',
   url: 'https://sadashivfashions.in',
   sameAs: ['https://www.instagram.com/sadashivfashionsjaipur/'],
-  priceRange: 'Contact on WhatsApp for pricing',
+  description: 'A physical fashion boutique and textile atelier in Malviya Nagar, Jaipur.',
 };
 
 export default function HomePage() {
@@ -50,7 +52,7 @@ export default function HomePage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
 
-      {/* ── 1. Hero: Cinematic Editorial Poise ───────────────────────── */}
+      {/* ── 1. Hero: Cinematic Editorial Boutique Presence ───────────── */}
       <section className="relative min-h-[92dvh] flex items-end pb-16 sm:pb-24 pt-20 px-4 sm:px-8 overflow-hidden bg-[#1A1817]">
         {/* Background Visual */}
         <Image
@@ -59,7 +61,7 @@ export default function HomePage() {
           fill
           priority
           sizes="100vw"
-          className="object-cover object-center scale-102 transition-transform duration-1000"
+          className="object-cover object-center scale-[1.02] transition-transform duration-1000"
         />
 
         {/* Cinematic Dusk Gradients */}
@@ -86,11 +88,11 @@ export default function HomePage() {
             </h1>
 
             <p className="text-sm sm:text-base text-[#D4C4B8] leading-relaxed max-w-xl mb-10 font-sans">
-              Discover women&apos;s ethnic wear, curated suit sets, handcrafted kurtis, heirloom dupattas, and fine dress materials. Sourced and tailored for both retail wardrobes and wholesale partners.
+              Welcome to Sadashiv Fashions, a landmark physical fashion boutique in Malviya Nagar, Jaipur. We bring together a considered selection of women&apos;s tailored suit sets, breathable kurtis, pure fabrics, and heirloom dupattas.
             </p>
 
-            {/* Dual CTAs */}
-            <div className="flex flex-wrap items-center gap-4">
+            {/* Primary Actions: Explore, WhatsApp, Call, Directions */}
+            <div className="flex flex-wrap items-center gap-3">
               <Link
                 href="/collections"
                 className="group inline-flex items-center gap-3 bg-[#FAF6F0] text-[#1A1817] rounded-full pl-6 pr-2 py-2 text-xs uppercase tracking-[0.18em] font-semibold transition-all duration-300 hover:bg-white hover:shadow-[0_10px_30px_rgba(250,246,240,0.2)] active:scale-95"
@@ -105,10 +107,30 @@ export default function HomePage() {
                 href={WA_GENERAL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-3 bg-white/10 hover:bg-white/15 text-[#FAF6F0] border border-white/20 backdrop-blur-md rounded-full px-6 py-3.5 text-xs uppercase tracking-[0.18em] font-medium transition-all duration-300 hover:border-[#D4197D]"
+                className="inline-flex items-center gap-2.5 bg-[#D4197D] hover:bg-[#B31468] text-white rounded-full px-6 py-3.5 text-xs uppercase tracking-[0.18em] font-semibold transition-all duration-300 shadow-sm"
               >
                 <span className="w-2 h-2 rounded-full bg-[#25D366] animate-pulse" />
-                <span>WhatsApp Atelier</span>
+                <span>WhatsApp Enquiry</span>
+              </a>
+
+              <a
+                href={TEL_LINK}
+                className="inline-flex items-center gap-2 bg-white/10 hover:bg-white/15 text-[#FAF6F0] border border-white/20 backdrop-blur-md rounded-full px-5 py-3.5 text-xs uppercase tracking-[0.16em] font-medium transition-colors"
+              >
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
+                </svg>
+                <span>Call Us</span>
+              </a>
+
+              <a
+                href={MAPS_LINK}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 border border-white/20 hover:border-white text-white rounded-full px-5 py-3.5 text-xs uppercase tracking-[0.16em] font-medium transition-colors"
+              >
+                <span>Get Directions</span>
+                <span>↗</span>
               </a>
             </div>
           </div>
@@ -117,7 +139,7 @@ export default function HomePage() {
           <div className="mt-14 pt-8 border-t border-white/15 grid grid-cols-2 sm:grid-cols-4 gap-6 text-left">
             <div>
               <p className="font-serif italic text-sm text-[#C5A059]">01</p>
-              <p className="text-[11px] uppercase tracking-wider text-[#D4C4B8] mt-1 font-medium">Bespoke Curation</p>
+              <p className="text-[11px] uppercase tracking-wider text-[#D4C4B8] mt-1 font-medium">Physical Boutique</p>
             </div>
             <div>
               <p className="font-serif italic text-sm text-[#C5A059]">02</p>
@@ -129,7 +151,7 @@ export default function HomePage() {
             </div>
             <div>
               <p className="font-serif italic text-sm text-[#C5A059]">04</p>
-              <p className="text-[11px] uppercase tracking-wider text-[#D4C4B8] mt-1 font-medium">Jaipur Delivery</p>
+              <p className="text-[11px] uppercase tracking-wider text-[#D4C4B8] mt-1 font-medium">Local Jaipur Service</p>
             </div>
           </div>
         </div>
@@ -156,30 +178,30 @@ export default function HomePage() {
               <span>Jaipur Fashion &amp; Textile Boutique</span>
             </div>
             <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl text-[#1A1817] leading-tight mb-6">
-              A Jaipur-based house bringing together curated women&apos;s ethnic wear and pure fabrics.
+              A Jaipur house dedicated to women&apos;s ethnic grace and tactile textiles.
             </h2>
             <p className="text-sm sm:text-base text-[#5A4A42] leading-relaxed mb-6 font-sans">
-              Located in the heart of Malviya Nagar, Sadashiv Fashions is dedicated to honoring Rajasthan&apos;s rich textile vocabulary. From delicately embroidered suit sets to breathable daily kurtis and authentic dress materials, we serve individual fashion seekers and wholesale buyers alike.
+              Located on Krishna Nand Marg in Malviya Nagar, Sadashiv Fashions is an authentic brick-and-mortar destination for curated ethnic wear. We invite you to explore our racks in person, feel the textures of pure cotton and silk, and consult with our team for wardrobe styling or bulk fabric requirements.
             </p>
-            <div className="flex flex-wrap items-center gap-6 pt-2">
+            <div className="flex flex-wrap items-center gap-4 pt-2">
               <Link
                 href="/about"
                 className="text-xs uppercase tracking-[0.18em] font-semibold text-[#1A1817] hover:text-[#D4197D] transition-colors border-b-2 border-[#1A1817] pb-1 hover:border-[#D4197D]"
               >
-                Meet the Custodians →
+                Our Story &amp; Custodians →
               </Link>
               <Link
                 href="/visit"
                 className="text-xs uppercase tracking-[0.18em] font-semibold text-[#7A6358] hover:text-[#1A1817] transition-colors"
               >
-                Showroom Directions &amp; Hours
+                Visit Showroom &amp; Hours
               </Link>
             </div>
           </div>
         </div>
       </section>
 
-      {/* ── 3. Curated Collections: Editorial Asymmetric Grid ────────── */}
+      {/* ── 3. Four Core Collections: Visual Bento Grid ─────────────── */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
         <div className="flex flex-col sm:flex-row sm:items-baseline justify-between mb-12 border-b border-[#E6D8C8] pb-6">
           <div>
@@ -192,23 +214,23 @@ export default function HomePage() {
             href="/collections"
             className="text-xs uppercase tracking-[0.18em] text-[#9E4736] hover:text-[#D4197D] font-medium link-underline mt-3 sm:mt-0"
           >
-            Explore Complete Catalogue →
+            Explore Complete Collections Gallery →
           </Link>
         </div>
 
         {/* Asymmetrical Editorial Grid */}
         <div className="grid grid-cols-1 md:grid-cols-12 gap-5 sm:gap-6">
-          {/* Tile 1: Suits (Large 7 col feature) */}
+          {/* Tile 1: Suits (7 col feature) */}
           <Link
-            href="/collections/suits"
+            href="/collections#suits"
             className="group relative md:col-span-7 aspect-[4/3] md:aspect-[16/11] rounded-3xl overflow-hidden bg-[#E6D8C8] border border-[#E6D8C8] shadow-xs"
           >
             <Image
               src="/images/products/mannequin-left.webp"
-              alt="Women's Suits Collection"
+              alt="Women's Suits Collection at Sadashiv Fashions"
               fill
               sizes="(max-width: 768px) 100vw, 60vw"
-              className="object-cover object-top transition-transform duration-700 group-hover:scale-104"
+              className="object-cover object-top transition-transform duration-700 group-hover:scale-[1.04]"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-[#1A1817]/85 via-[#1A1817]/20 to-transparent" />
             <div className="absolute bottom-0 left-0 p-6 sm:p-8">
@@ -229,7 +251,7 @@ export default function HomePage() {
 
           {/* Tile 2: Kurtis (5 col feature) */}
           <Link
-            href="/collections/kurtis"
+            href="/collections#kurtis"
             className="group relative md:col-span-5 aspect-[4/3] md:aspect-[16/11] rounded-3xl overflow-hidden bg-[#E6D8C8] border border-[#E6D8C8] shadow-xs"
           >
             <Image
@@ -237,7 +259,7 @@ export default function HomePage() {
               alt="Curated Kurtis Collection"
               fill
               sizes="(max-width: 768px) 100vw, 40vw"
-              className="object-cover object-top transition-transform duration-700 group-hover:scale-104"
+              className="object-cover object-top transition-transform duration-700 group-hover:scale-[1.04]"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-[#1A1817]/85 via-[#1A1817]/20 to-transparent" />
             <div className="absolute bottom-0 left-0 p-6 sm:p-8">
@@ -258,7 +280,7 @@ export default function HomePage() {
 
           {/* Tile 3: Fabrics (5 col feature) */}
           <Link
-            href="/collections/fabrics"
+            href="/collections#fabrics"
             className="group relative md:col-span-5 aspect-[4/3] md:aspect-[16/11] rounded-3xl overflow-hidden bg-[#E6D8C8] border border-[#E6D8C8] shadow-xs"
           >
             <Image
@@ -266,7 +288,7 @@ export default function HomePage() {
               alt="Handloom Fabrics & Dress Materials"
               fill
               sizes="(max-width: 768px) 100vw, 40vw"
-              className="object-cover object-center transition-transform duration-700 group-hover:scale-104"
+              className="object-cover object-center transition-transform duration-700 group-hover:scale-[1.04]"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-[#1A1817]/85 via-[#1A1817]/20 to-transparent" />
             <div className="absolute bottom-0 left-0 p-6 sm:p-8">
@@ -287,7 +309,7 @@ export default function HomePage() {
 
           {/* Tile 4: Dupattas (7 col feature) */}
           <Link
-            href="/collections/dupattas"
+            href="/collections#dupattas"
             className="group relative md:col-span-7 aspect-[4/3] md:aspect-[16/11] rounded-3xl overflow-hidden bg-[#E6D8C8] border border-[#E6D8C8] shadow-xs"
           >
             <Image
@@ -295,7 +317,7 @@ export default function HomePage() {
               alt="Artisanal Hand-Finished Dupattas"
               fill
               sizes="(max-width: 768px) 100vw, 60vw"
-              className="object-cover object-top transition-transform duration-700 group-hover:scale-104"
+              className="object-cover object-top transition-transform duration-700 group-hover:scale-[1.04]"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-[#1A1817]/85 via-[#1A1817]/20 to-transparent" />
             <div className="absolute bottom-0 left-0 p-6 sm:p-8">
@@ -316,7 +338,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── 4. Showroom Highlights: Product Showcase ────────────────── */}
+      {/* ── 4. Showroom Highlights: Pure Editorial Gallery ──────────── */}
       <section className="bg-[#FCFAF6] py-20 px-4 sm:px-6 lg:px-8 border-y border-[#E6D8C8]">
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-col sm:flex-row sm:items-baseline justify-between mb-12">
@@ -324,17 +346,17 @@ export default function HomePage() {
               <p className="text-[10px] uppercase tracking-[0.26em] text-[#9E4736] font-semibold mb-2">
                 Showroom Curation
               </p>
-              <h2 className="font-display text-3xl sm:text-4xl text-[#1A1817]">Featured in Store</h2>
+              <h2 className="font-display text-3xl sm:text-4xl text-[#1A1817]">Featured in Boutique</h2>
             </div>
             <Link
               href="/collections"
               className="text-xs uppercase tracking-[0.18em] text-[#1A1817] hover:text-[#D4197D] font-medium link-underline mt-3 sm:mt-0"
             >
-              Browse Complete Inventory →
+              Explore All Collections →
             </Link>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 lg:gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {featured.map((product) => (
               <ProductCard key={product.id} product={product} />
             ))}
@@ -342,127 +364,88 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── 5. Retail & Wholesale Concierge ─────────────────────────── */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-        <div className="grid md:grid-cols-2 gap-8">
-          {/* Retail Card */}
-          <div className="bg-[#FAF6F0] border border-[#E6D8C8] rounded-3xl p-8 sm:p-10 shadow-xs flex flex-col justify-between">
-            <div>
-              <div className="flex items-center justify-between mb-4">
-                <span className="text-[10px] uppercase tracking-[0.28em] font-bold text-[#9E4736]">
-                  Retail Client
-                </span>
-                <span className="font-serif italic text-xs text-[#C5A059]">Wardrobe Consultation</span>
+      {/* ── 5. Featuring the Custodians: Suresh & Kashish Gangwani ──── */}
+      <section className="py-20 md:py-28 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <div className="bg-[#FAF6F0] rounded-3xl border border-[#E6D8C8] p-8 sm:p-14 shadow-xs">
+          <div className="grid md:grid-cols-12 gap-10 md:gap-14 items-center">
+            {/* Showroom & People Card */}
+            <div className="md:col-span-5 relative aspect-[4/5] rounded-2xl overflow-hidden bg-[#E6D8C8] border border-[#E6D8C8] shadow-sm">
+              <Image
+                src="/images/store/store-exterior.jpg"
+                alt="Sadashiv Fashions boutique exterior in Malviya Nagar, Jaipur"
+                fill
+                sizes="(max-width: 768px) 100vw, 40vw"
+                className="object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#1A1817]/75 via-[#1A1817]/20 to-transparent" />
+              <div className="absolute bottom-4 left-4 right-4 p-4 bg-[#FAF6F0]/95 backdrop-blur-md rounded-xl border border-white/40">
+                <p className="font-display text-base text-[#1A1817]">Suresh Gangwani &amp; Kashish Gangwani</p>
+                <p className="text-xs text-[#7A6358] mt-0.5">Custodians · Sadashiv Fashions</p>
               </div>
-              <h3 className="font-display text-2xl sm:text-3xl text-[#1A1817] mb-4">
-                Shopping for your wardrobe?
-              </h3>
+            </div>
+
+            {/* Editorial Introduction */}
+            <div className="md:col-span-7">
+              <div className="inline-flex items-center gap-2 text-[10px] uppercase tracking-[0.26em] text-[#9E4736] font-semibold mb-3">
+                <span>✦</span>
+                <span>The People Behind the Boutique</span>
+              </div>
+              <h2 className="font-display text-3xl sm:text-4xl text-[#1A1817] leading-snug mb-5">
+                Guided by personal passion for Jaipur’s textile traditions.
+              </h2>
               <p className="text-sm text-[#5A4A42] leading-relaxed mb-6 font-sans">
-                Browse our collection of suits, kurtis, fabrics and dupattas. Contact our WhatsApp concierge to confirm fabric composition, exact sizing, colorways, and local delivery in Jaipur and nearby areas.
+                At Sadashiv Fashions, store owners Suresh Gangwani and Kashish Gangwani oversee the curation of every ensemble, unstitched fabric bolt, and handcrafted kurti. Our Malviya Nagar boutique offers warm hospitality, personal style guidance, and wholesale partnerships built on trust.
               </p>
-            </div>
-            <div>
-              <a
-                href={WA_GENERAL}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2.5 bg-[#1A1817] hover:bg-[#D4197D] text-[#FAF6F0] rounded-full px-6 py-3.5 text-xs uppercase tracking-[0.16em] font-semibold transition-all duration-300"
-              >
-                <span>Enquire as Retail Client</span>
-                <span>↗</span>
-              </a>
-            </div>
-          </div>
 
-          {/* Wholesale Card (Rich Midnight Velvet) */}
-          <div className="bg-[#1A1817] text-[#FAF6F0] rounded-3xl p-8 sm:p-10 shadow-xl border border-[#C5A059]/30 flex flex-col justify-between relative overflow-hidden">
-            <div className="absolute top-0 right-0 w-64 h-64 bg-[#D4197D]/10 rounded-full blur-2xl pointer-events-none" />
-            <div className="relative z-10">
-              <div className="flex items-center justify-between mb-4">
-                <span className="text-[10px] uppercase tracking-[0.28em] font-bold text-[#C5A059]">
-                  Wholesale Partner
-                </span>
-                <span className="font-serif italic text-xs text-[#D4C4B8]">Boutique &amp; Merchant Supply</span>
+              <div className="grid grid-cols-2 gap-4 pt-2 mb-8">
+                <div className="p-4 bg-[#F3ECE2] rounded-2xl border border-[#E6D8C8]">
+                  <p className="font-display text-lg text-[#1A1817]">Suresh Gangwani</p>
+                  <p className="text-xs text-[#7A6358] mt-0.5 font-serif italic">Boutique Leadership</p>
+                </div>
+                <div className="p-4 bg-[#F3ECE2] rounded-2xl border border-[#E6D8C8]">
+                  <p className="font-display text-lg text-[#1A1817]">Kashish Gangwani</p>
+                  <p className="text-xs text-[#7A6358] mt-0.5 font-serif italic">Curatorial Direction</p>
+                </div>
               </div>
-              <h3 className="font-display text-2xl sm:text-3xl text-[#FAF6F0] mb-4">
-                Wholesale enquiries welcome.
-              </h3>
-              <p className="text-sm text-[#D4C4B8] leading-relaxed mb-6 font-sans">
-                Sadashiv Fashions supplies boutiques, fashion labels, and fabric merchants. Send us your products of interest, approximate quantity, and destination city on WhatsApp to receive catalogue and terms.
-              </p>
-            </div>
-            <div className="relative z-10">
-              <a
-                href={WA_WHOLESALE}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2.5 bg-[#FAF6F0] hover:bg-white text-[#1A1817] rounded-full px-6 py-3.5 text-xs uppercase tracking-[0.16em] font-semibold transition-all duration-300"
-              >
-                <span>Send Wholesale Enquiry</span>
-                <span className="text-[#D4197D]">✦</span>
-              </a>
+
+              <div className="flex flex-wrap items-center gap-4">
+                <Link
+                  href="/about"
+                  className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.16em] font-semibold text-[#1A1817] hover:text-[#D4197D] border-b border-[#1A1817] pb-1 hover:border-[#D4197D] transition-colors"
+                >
+                  <span>Learn More in Our Story</span>
+                  <span>→</span>
+                </Link>
+                <a
+                  href={TEL_LINK}
+                  className="inline-flex items-center gap-1.5 text-xs uppercase tracking-[0.16em] font-medium text-[#7A6358] hover:text-[#1A1817] transition-colors"
+                >
+                  <span>Call Atelier: +91 63766 48869</span>
+                </a>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* ── 6. About the Custodians Preview ─────────────────────────── */}
-      <section className="bg-[#FCFAF6] py-20 px-4 sm:px-6 lg:px-8 border-t border-[#E6D8C8]">
-        <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 md:gap-16 items-center">
-          <div className="relative aspect-[4/3] rounded-3xl overflow-hidden bg-[#E6D8C8] shadow-md border border-[#E6D8C8]">
-            <Image
-              src="/images/store/store-exterior.jpg"
-              alt="Sadashiv Fashions store in Malviya Nagar, Jaipur"
-              fill
-              sizes="(max-width: 768px) 100vw, 50vw"
-              className="object-cover"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-[#1A1817]/60 via-transparent to-transparent" />
-            <div className="absolute bottom-4 left-4 right-4 p-4 bg-[#FAF6F0]/90 backdrop-blur-md rounded-2xl border border-white/40">
-              <p className="font-display text-base text-[#1A1817]">Suresh Gangwani &amp; Kashish Gangwani</p>
-              <p className="text-xs text-[#7A6358]">Sadashiv Fashions · Malviya Nagar Atelier</p>
-            </div>
-          </div>
-
-          <div>
-            <p className="text-[10px] uppercase tracking-[0.26em] text-[#9E4736] font-semibold mb-3">
-              The People Behind
-            </p>
-            <h2 className="font-display text-3xl sm:text-4xl text-[#1A1817] leading-snug mb-5">
-              Meet the people behind Sadashiv Fashions
-            </h2>
-            <p className="text-sm text-[#5A4A42] leading-relaxed mb-6 font-sans">
-              Sadashiv Fashions is a Jaipur-based fashion and textile store bringing together a considered selection of women&apos;s ethnic wear and fabrics. Get to know the people behind the store and explore our collection in person or through our digital catalogue.
-            </p>
-            <Link
-              href="/about"
-              className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.18em] font-semibold text-[#1A1817] hover:text-[#D4197D] border-b border-[#1A1817] pb-1 hover:border-[#D4197D] transition-colors"
-            >
-              <span>Read Our Full Story</span>
-              <span>→</span>
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* ── 7. Visit Atelier: Malviya Nagar, Jaipur ─────────────────── */}
+      {/* ── 6. Showroom Visit & Direct Guidance ──────────────────────── */}
       <section className="relative py-24 sm:py-32 px-4 sm:px-6 lg:px-8 overflow-hidden bg-[#1A1817]">
         <Image
           src="/images/store/store-signage.webp"
           alt="Sadashiv Fashions illuminated Hindi signage in Jaipur"
           fill
-          className="object-cover object-center opacity-40"
+          className="object-cover object-center opacity-30"
           sizes="100vw"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-[#1A1817]/95 via-[#1A1817]/85 to-[#1A1817]/70" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#1A1817]/95 via-[#1A1817]/85 to-[#1A1817]/75" />
 
         <div className="relative max-w-7xl mx-auto z-10">
           <div className="max-w-2xl">
             <span className="text-[10px] uppercase tracking-[0.28em] text-[#C5A059] font-bold mb-4 block">
-              Jaipur Atelier
+              Malviya Nagar Boutique
             </span>
             <h2 className="font-display text-3xl sm:text-5xl text-[#FAF6F0] mb-5 leading-tight">
-              Come see the collection in person.
+              We welcome you to visit our physical showroom.
             </h2>
             <address className="not-italic text-sm text-[#D4C4B8] leading-relaxed mb-8 font-sans">
               2/72, Krishna Nand Marg,<br />
@@ -470,29 +453,39 @@ export default function HomePage() {
               Malviya Nagar, Jaipur — 302017, Rajasthan
             </address>
 
-            <div className="flex flex-wrap items-center gap-4">
+            <div className="flex flex-wrap items-center gap-3">
               <a
-                href="https://maps.google.com/?q=Sadashiv+Fashions+Malviya+Nagar+Jaipur"
+                href={MAPS_LINK}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 bg-[#FAF6F0] text-[#1A1817] text-xs font-semibold uppercase tracking-[0.16em] px-6 py-3.5 rounded-full hover:bg-white transition-colors"
+                className="inline-flex items-center gap-2 bg-[#FAF6F0] text-[#1A1817] text-xs font-semibold uppercase tracking-[0.16em] px-6 py-3.5 rounded-full hover:bg-white transition-colors shadow-sm"
               >
-                <span>Google Maps Directions</span>
+                <span>Get Directions on Google Maps</span>
                 <span>↗</span>
+              </a>
+
+              <a
+                href={TEL_LINK}
+                className="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 text-[#FAF6F0] border border-white/20 text-xs font-semibold uppercase tracking-[0.16em] px-6 py-3.5 rounded-full transition-colors"
+              >
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
+                </svg>
+                <span>Call Us</span>
               </a>
 
               <a
                 href={WA_GENERAL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 border border-white/30 text-white text-xs font-semibold uppercase tracking-[0.16em] px-6 py-3.5 rounded-full hover:bg-white/10 transition-colors"
+                className="inline-flex items-center gap-2 bg-[#D4197D] hover:bg-[#B31468] text-white text-xs font-semibold uppercase tracking-[0.16em] px-6 py-3.5 rounded-full transition-colors shadow-sm"
               >
-                <span>WhatsApp Directions</span>
+                <span>WhatsApp Enquiry</span>
               </a>
             </div>
 
             <p className="mt-8 text-xs text-[#8A7C73]">
-              * Local delivery available in Jaipur and nearby areas. Direct WhatsApp confirmation for delivery radius and charges.
+              * Serving individual wardrobe clients and boutique wholesale merchants. Local delivery available in Jaipur and nearby areas.
             </p>
           </div>
         </div>

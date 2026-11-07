@@ -173,21 +173,41 @@ export default function AboutPage() {
             <p className="text-sm text-[#5A4A42] leading-relaxed mb-8 font-sans">
               We welcome walk-in visitors to inspect our fabrics, suit sets, and kurtis in person. For local customers, delivery is available across Jaipur and nearby areas, with details confirmed over WhatsApp.
             </p>
-            <div className="flex flex-wrap gap-4">
+            <div className="flex flex-wrap items-center gap-3">
               <a
                 href={WA_GENERAL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 bg-[#1A1817] hover:bg-[#D4197D] text-white text-xs font-semibold uppercase tracking-[0.16em] px-6 py-3.5 rounded-full transition-colors"
+                className="inline-flex items-center gap-2 bg-[#D4197D] hover:bg-[#B31468] text-white text-xs font-semibold uppercase tracking-[0.16em] px-6 py-3.5 rounded-full transition-colors shadow-sm"
               >
-                <span>Connect with Us</span>
+                <span>WhatsApp Enquiry</span>
                 <span>↗</span>
               </a>
+
+              <a
+                href="tel:+916376648869"
+                className="inline-flex items-center gap-2 bg-[#1A1817] hover:bg-[#292522] text-[#FAF6F0] text-xs font-semibold uppercase tracking-[0.16em] px-5 py-3.5 rounded-full transition-colors"
+              >
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
+                </svg>
+                <span>Call Us</span>
+              </a>
+
+              <a
+                href="https://maps.google.com/?q=Sadashiv+Fashions+Malviya+Nagar+Jaipur"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 border border-[#1A1817]/25 hover:border-[#1A1817] text-[#1A1817] text-xs font-semibold uppercase tracking-[0.16em] px-5 py-3.5 rounded-full transition-colors"
+              >
+                <span>Get Directions ↗</span>
+              </a>
+
               <Link
                 href="/collections"
-                className="inline-flex items-center gap-2 border border-[#1A1817]/30 text-[#1A1817] text-xs font-semibold uppercase tracking-[0.16em] px-6 py-3.5 rounded-full hover:bg-[#1A1817] hover:text-white transition-colors"
+                className="inline-flex items-center gap-2 border border-[#1A1817]/25 hover:border-[#1A1817] text-[#1A1817] text-xs font-semibold uppercase tracking-[0.16em] px-5 py-3.5 rounded-full transition-colors"
               >
-                <span>Browse Catalogue</span>
+                <span>Explore Collections</span>
               </Link>
             </div>
           </div>

@@ -8,17 +8,15 @@ import MobileNav from './MobileNav';
 
 const navLinks = [
   { href: '/collections', label: 'Collections' },
-  { href: '/collections/suits', label: 'Suits' },
-  { href: '/collections/kurtis', label: 'Kurtis' },
-  { href: '/collections/fabrics', label: 'Fabrics' },
-  { href: '/collections/dupattas', label: 'Dupattas' },
   { href: '/about', label: 'Our Story' },
   { href: '/gallery', label: 'Visual Journal' },
   { href: '/visit', label: 'Visit Atelier' },
 ];
 
+const TEL_LINK = 'tel:+916376648869';
+const MAPS_LINK = 'https://maps.google.com/?q=Sadashiv+Fashions+Malviya+Nagar+Jaipur';
 const WA_CONCIERGE =
-  'https://wa.me/916376648869?text=Hello%20Sadashiv%20Fashions%2C%20I%20am%20interested%20in%20your%20curated%20collection.%20Please%20guide%20me.';
+  'https://wa.me/916376648869?text=Hello%20Sadashiv%20Fashions%2C%20I%20would%20like%20to%20enquire%20about%20your%20boutique%20collection%20in%20Malviya%20Nagar%2C%20Jaipur.';
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
@@ -37,33 +35,35 @@ export default function Header() {
 
   return (
     <>
-      {/* ── Top Announcement Marquee Banner ────────────────────────── */}
-      <div className="bg-[#1A1817] text-[#FAF6F0] py-2 px-4 overflow-hidden border-b border-[#C5A059]/25 text-[10px] sm:text-[11px] font-sans tracking-[0.24em] uppercase select-none relative z-50">
-        <div className="flex animate-marquee whitespace-nowrap">
-          <span className="mx-6 flex items-center gap-2">
+      {/* ── Top Announcement Strip with Direct Contact ───────────────── */}
+      <div className="bg-[#1A1817] text-[#FAF6F0] py-2 px-4 border-b border-[#C5A059]/25 text-[10px] sm:text-[11px] font-sans tracking-[0.22em] uppercase select-none relative z-50">
+        <div className="max-w-7xl mx-auto flex items-center justify-between">
+          <div className="flex items-center gap-2">
             <span className="w-1.5 h-1.5 rounded-full bg-[#D4197D]" />
-            Sadashiv Fashions · Malviya Nagar, Jaipur
-          </span>
-          <span className="mx-6 text-[#C5A059]">✦</span>
-          <span className="mx-6">Suits · Kurtis · Handloom Fabrics · Dupattas</span>
-          <span className="mx-6 text-[#C5A059]">✦</span>
-          <span className="mx-6">Wholesale &amp; Retail Enquiries Welcome</span>
-          <span className="mx-6 text-[#C5A059]">✦</span>
-          <span className="mx-6">Local Delivery Across Jaipur &amp; Nearby Areas</span>
-          <span className="mx-6 text-[#C5A059]">✦</span>
+            <span className="hidden sm:inline">Physical Fashion Boutique ·</span>
+            <span>Malviya Nagar, Jaipur</span>
+          </div>
 
-          {/* Repeat for seamless loop */}
-          <span className="mx-6 flex items-center gap-2">
-            <span className="w-1.5 h-1.5 rounded-full bg-[#D4197D]" />
-            Sadashiv Fashions · Malviya Nagar, Jaipur
-          </span>
-          <span className="mx-6 text-[#C5A059]">✦</span>
-          <span className="mx-6">Suits · Kurtis · Handloom Fabrics · Dupattas</span>
-          <span className="mx-6 text-[#C5A059]">✦</span>
-          <span className="mx-6">Wholesale &amp; Retail Enquiries Welcome</span>
-          <span className="mx-6 text-[#C5A059]">✦</span>
-          <span className="mx-6">Local Delivery Across Jaipur &amp; Nearby Areas</span>
-          <span className="mx-6 text-[#C5A059]">✦</span>
+          <div className="flex items-center gap-4 text-[10px]">
+            <a
+              href={TEL_LINK}
+              className="text-[#FAF6F0] hover:text-[#C5A059] transition-colors flex items-center gap-1.5"
+            >
+              <svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
+              </svg>
+              <span>Call: +91 63766 48869</span>
+            </a>
+            <span className="text-[#C5A059] hidden md:inline">✦</span>
+            <a
+              href={MAPS_LINK}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hidden md:inline hover:text-[#C5A059] transition-colors"
+            >
+              Get Directions ↗
+            </a>
+          </div>
         </div>
       </div>
 
@@ -72,7 +72,7 @@ export default function Header() {
         className={`sticky top-0 left-0 right-0 z-40 transition-all duration-400 ${
           scrolled
             ? 'bg-[#FAF6F0]/95 backdrop-blur-md shadow-[0_8px_30px_rgba(26,24,23,0.06)] border-b border-[#E6D8C8]'
-            : 'bg-[#FAF6F0] border-b border-[#E6D8C8]/50'
+            : 'bg-[#FAF6F0] border-b border-[#E6D8C8]/60'
         }`}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -90,17 +90,17 @@ export default function Header() {
             </div>
 
             {/* Desktop Navigation Links */}
-            <nav className="hidden xl:flex items-center gap-7" aria-label="Main Navigation">
+            <nav className="hidden lg:flex items-center gap-8" aria-label="Main Navigation">
               {navLinks.map((link) => {
                 const isActive =
                   pathname === link.href ||
-                  (link.href !== '/' && pathname.startsWith(link.href + '/'));
+                  (link.href !== '/' && pathname.startsWith(link.href));
 
                 return (
                   <Link
                     key={link.href}
                     href={link.href}
-                    className={`relative text-[11px] uppercase tracking-[0.2em] font-medium transition-colors duration-200 py-1 link-underline ${
+                    className={`relative text-[11px] uppercase tracking-[0.24em] font-medium transition-colors duration-200 py-1 link-underline ${
                       isActive
                         ? 'text-[#D4197D] font-semibold'
                         : 'text-[#292522] hover:text-[#D4197D]'
@@ -115,39 +115,62 @@ export default function Header() {
               })}
             </nav>
 
-            {/* Desktop Concierge CTA & Actions */}
-            <div className="hidden md:flex items-center gap-3">
+            {/* Desktop Action Buttons: Call Us, WhatsApp, Get Directions */}
+            <div className="hidden md:flex items-center gap-2.5">
               <a
-                href={WA_CONCIERGE}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group inline-flex items-center gap-2.5 bg-[#1A1817] hover:bg-[#D4197D] text-[#FAF6F0] rounded-full pl-4 pr-2 py-2 text-xs uppercase tracking-[0.16em] font-medium transition-all duration-300 shadow-sm hover:shadow-md active:scale-98"
-                aria-label="Direct WhatsApp Concierge"
+                href={TEL_LINK}
+                className="inline-flex items-center gap-1.5 border border-[#1A1817]/20 hover:border-[#1A1817] text-[#1A1817] hover:bg-[#1A1817] hover:text-[#FAF6F0] rounded-full px-4 py-2 text-xs uppercase tracking-[0.16em] font-medium transition-colors duration-200"
+                aria-label="Call Sadashiv Fashions Showroom"
               >
-                <span>Concierge</span>
-                <span className="w-6 h-6 rounded-full bg-white/10 group-hover:bg-white/20 flex items-center justify-center transition-colors">
-                  <span className="w-2 h-2 rounded-full bg-[#25D366] animate-pulse" />
-                </span>
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
+                </svg>
+                <span>Call Us</span>
               </a>
 
-              <Link
-                href="/visit"
-                className="inline-flex items-center gap-1.5 border border-[#1A1817]/25 hover:border-[#1A1817] text-[#1A1817] rounded-full px-4 py-2 text-xs uppercase tracking-[0.16em] font-medium transition-colors duration-200"
-              >
-                Malviya Nagar
-              </Link>
-            </div>
-
-            {/* Mobile Hamburger Button */}
-            <div className="flex items-center gap-2 xl:hidden">
               <a
                 href={WA_CONCIERGE}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center w-9 h-9 rounded-full bg-[#D4197D] text-white shadow-sm md:hidden"
+                className="group inline-flex items-center gap-2 bg-[#D4197D] hover:bg-[#B31468] text-[#FAF6F0] rounded-full pl-3.5 pr-4 py-2 text-xs uppercase tracking-[0.16em] font-semibold transition-all duration-300 shadow-sm hover:shadow-md active:scale-98"
+                aria-label="Direct WhatsApp Enquiry"
+              >
+                <span className="w-2 h-2 rounded-full bg-[#25D366] animate-pulse" />
+                <span>WhatsApp</span>
+              </a>
+
+              <a
+                href={MAPS_LINK}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 border border-[#1A1817]/20 hover:border-[#1A1817] text-[#1A1817] rounded-full px-4 py-2 text-xs uppercase tracking-[0.16em] font-medium transition-colors duration-200"
+                aria-label="Get Directions to Malviya Nagar Showroom"
+              >
+                <span>Directions</span>
+                <span>↗</span>
+              </a>
+            </div>
+
+            {/* Mobile Actions & Menu Toggle */}
+            <div className="flex items-center gap-2 lg:hidden">
+              <a
+                href={TEL_LINK}
+                className="inline-flex items-center justify-center w-9 h-9 rounded-full border border-[#1A1817]/20 text-[#1A1817] sm:hidden"
+                aria-label="Call Boutique"
+              >
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
+                </svg>
+              </a>
+
+              <a
+                href={WA_CONCIERGE}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center w-9 h-9 rounded-full bg-[#D4197D] text-white shadow-sm sm:hidden"
                 aria-label="Quick WhatsApp Consultation"
               >
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
                   <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />
                   <path d="M12 0C5.373 0 0 5.373 0 12c0 2.136.564 4.14 1.546 5.877L.057 23.5l5.773-1.516A11.954 11.954 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.044-1.394l-.361-.214-3.735.979 1-3.639-.235-.374A9.818 9.818 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z" />
                 </svg>
@@ -173,6 +196,8 @@ export default function Header() {
         links={navLinks}
         pathname={pathname}
         waLink={WA_CONCIERGE}
+        telLink={TEL_LINK}
+        mapsLink={MAPS_LINK}
       />
     </>
   );
