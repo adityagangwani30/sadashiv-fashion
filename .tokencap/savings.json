@@ -1,0 +1,49 @@
+{
+  "baseline": {
+    "tokens": 33616,
+    "dollars": 0.08404
+  },
+  "actual": {
+    "tokens": 27925,
+    "dollars": 0.069813
+  },
+  "savings": {
+    "tokens": 5691,
+    "dollars": 0.014227000000000004,
+    "percent": 16.9
+  },
+  "generatedAt": "2026-11-07T13:08:31.603Z",
+  "profile": "balanced",
+  "stats": {
+    "version": 2,
+    "runCount": 2,
+    "totalTokensSaved": 11443,
+    "lastBuildSavings": 5691,
+    "lastBuildAt": "2026-11-07T13:08:31.603Z",
+    "notifiedMilestones": [],
+    "newMilestones": [],
+    "notice": null,
+    "baselineDefinition": "Eligible redacted text source files before ranking, selection, or compression.",
+    "tokenizerProfile": "tokencap-estimate-v1",
+    "runs": [
+      {
+        "generatedAt": "2026-11-07T13:07:21.331Z",
+        "profile": "balanced",
+        "baselineTokens": 33526,
+        "snapshotTokens": 27774,
+        "savedTokens": 5752,
+        "tokenizerProfile": "tokencap-estimate-v1",
+        "baselineDefinition": "Eligible redacted text source files before ranking, selection, or compression."
+      },
+      {
+        "generatedAt": "2026-11-07T13:08:31.603Z",
+        "profile": "balanced",
+        "baselineTokens": 33616,
+        "snapshotTokens": 27925,
+        "savedTokens": 5691,
+        "tokenizerProfile": "tokencap-estimate-v1",
+        "baselineDefinition": "Eligible redacted text source files before ranking, selection, or compression."
+      }
+    ]
+  }
+}

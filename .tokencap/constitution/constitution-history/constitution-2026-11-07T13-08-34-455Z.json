@@ -1,0 +1,95 @@
+{
+  "version": "1.2",
+  "generatedAt": "2026-11-07T13:08:34.455Z",
+  "rules": [
+    {
+      "id": "CONST-ARCH-BD3B55",
+      "category": "Architecture",
+      "severity": "HIGH",
+      "confidence": 0.72,
+      "source": "heuristic",
+      "description": "Services cannot import UI components.",
+      "reason": "Importing UI components into services couples server-side logic to browser rendering. This breaks SSR, testability, and separation of concerns.",
+      "whatBreaks": "Server-side services gain browser-only dependencies. Unit tests for services fail. SSR breaks.",
+      "examples": [
+        "Respect the layer boundary described."
+      ],
+      "derivedFrom": [],
+      "relationships": [],
+      "manual": false
+    },
+    {
+      "id": "CONST-ARCH-C8FC0E",
+      "category": "Architecture",
+      "severity": "HIGH",
+      "confidence": 0.72,
+      "source": "heuristic",
+      "description": "Controllers cannot access the database directly.",
+      "reason": "Direct DB access in controllers bypasses the service layer. This breaks the layered architecture and makes logic untestable.",
+      "whatBreaks": "Business logic leaks into controllers. Database coupling makes refactoring expensive.",
+      "examples": [
+        "Respect the layer boundary described."
+      ],
+      "derivedFrom": [],
+      "relationships": [],
+      "manual": false
+    },
+    {
+      "id": "CONST-ARCH-AB5D67",
+      "category": "Architecture",
+      "severity": "HIGH",
+      "confidence": 0.72,
+      "source": "heuristic",
+      "description": "Route handlers cannot access the database directly.",
+      "reason": "Routes should delegate to services/controllers, not query the database themselves.",
+      "whatBreaks": "Business logic scattered across route files. Impossible to test in isolation.",
+      "examples": [
+        "Respect the layer boundary described."
+      ],
+      "derivedFrom": [],
+      "relationships": [],
+      "manual": false
+    },
+    {
+      "id": "CONST-ARCH-5A618E",
+      "category": "Architecture",
+      "severity": "HIGH",
+      "confidence": 0.72,
+      "source": "heuristic",
+      "description": "UI components cannot import server-only modules.",
+      "reason": "Server-only modules may contain secrets or Node.js-only APIs that crash in the browser.",
+      "whatBreaks": "Build errors in browser environments. Potential secret exposure.",
+      "examples": [
+        "Respect the layer boundary described."
+      ],
+      "derivedFrom": [],
+      "relationships": [],
+      "manual": false
+    },
+    {
+      "id": "CONST-ARCH-53A928",
+      "category": "Architecture",
+      "severity": "HIGH",
+      "confidence": 0.8,
+      "source": "heuristic",
+      "description": "High-impact clusters (Config) must not gain new circular dependencies.",
+      "reason": "High-impact clusters already coordinate many modules. Adding circular imports makes builds fragile.",
+      "whatBreaks": "Module resolution fails. Build tools (webpack, esbuild) may hang or produce incorrect output.",
+      "examples": [
+        "Use dependency injection or an event bus to break cycles."
+      ],
+      "derivedFrom": [],
+      "relationships": [],
+      "manual": false
+    }
+  ],
+  "score": {
+    "total": 91,
+    "architecture": 100,
+    "apiStability": 90,
+    "schemaIntegrity": 90,
+    "security": 85,
+    "compliance": 95
+  },
+  "filesWritten": []
+}

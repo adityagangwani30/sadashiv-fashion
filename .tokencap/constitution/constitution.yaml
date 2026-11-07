@@ -1,0 +1,82 @@
+# TokenCap Constitution Engine
+# Generated: 2026-11-07T13:08:34.455Z
+# Version: 1.2
+
+constitution:
+  version: "1.2"
+  generated_at: "2026-11-07T13:08:34.455Z"
+  rule_count: 5
+
+  score:
+    total:            91
+    architecture:     100
+    api_stability:    90
+    schema_integrity: 90
+    security:         85
+    compliance:       95
+
+  rules:
+    - id: "CONST-ARCH-BD3B55"
+      category: "Architecture"
+      severity: "HIGH"
+      confidence: 0.72
+      source: "heuristic"
+      manual: false
+      description: |-
+        Services cannot import UI components.
+      reason: |-
+        Importing UI components into services couples server-side logic to browser rendering. This breaks SSR, testability, and separation of concerns.
+      what_breaks: |-
+        Server-side services gain browser-only dependencies. Unit tests for services fail. SSR breaks.
+
+    - id: "CONST-ARCH-C8FC0E"
+      category: "Architecture"
+      severity: "HIGH"
+      confidence: 0.72
+      source: "heuristic"
+      manual: false
+      description: |-
+        Controllers cannot access the database directly.
+      reason: |-
+        Direct DB access in controllers bypasses the service layer. This breaks the layered architecture and makes logic untestable.
+      what_breaks: |-
+        Business logic leaks into controllers. Database coupling makes refactoring expensive.
+
+    - id: "CONST-ARCH-AB5D67"
+      category: "Architecture"
+      severity: "HIGH"
+      confidence: 0.72
+      source: "heuristic"
+      manual: false
+      description: |-
+        Route handlers cannot access the database directly.
+      reason: |-
+        Routes should delegate to services/controllers, not query the database themselves.
+      what_breaks: |-
+        Business logic scattered across route files. Impossible to test in isolation.
+
+    - id: "CONST-ARCH-5A618E"
+      category: "Architecture"
+      severity: "HIGH"
+      confidence: 0.72
+      source: "heuristic"
+      manual: false
+      description: |-
+        UI components cannot import server-only modules.
+      reason: |-
+        Server-only modules may contain secrets or Node.js-only APIs that crash in the browser.
+      what_breaks: |-
+        Build errors in browser environments. Potential secret exposure.
+
+    - id: "CONST-ARCH-53A928"
+      category: "Architecture"
+      severity: "HIGH"
+      confidence: 0.80
+      source: "heuristic"
+      manual: false
+      description: |-
+        High-impact clusters (Config) must not gain new circular dependencies.
+      reason: |-
+        High-impact clusters already coordinate many modules. Adding circular imports makes builds fragile.
+      what_breaks: |-
+        Module resolution fails. Build tools (webpack, esbuild) may hang or produce incorrect output.

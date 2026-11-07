@@ -1,0 +1,192 @@
+{
+  "version": "0.9",
+  "generatedAt": "2026-11-07T13:08:36.265Z",
+  "techStack": {
+    "languages": [],
+    "frameworks": [],
+    "databases": [],
+    "orms": [],
+    "auth": [],
+    "testing": [],
+    "buildTools": [],
+    "cloudSdks": [],
+    "payments": [],
+    "other": [],
+    "packageManager": "npm",
+    "summary": "(unknown)"
+  },
+  "clusters": [
+    {
+      "name": "Frontend",
+      "files": [
+        "sadashiv-web/app/about/page.tsx",
+        "sadashiv-web/app/collections/dupattas/page.tsx",
+        "sadashiv-web/app/collections/fabrics/page.tsx",
+        "sadashiv-web/app/collections/kurtis/page.tsx",
+        "sadashiv-web/app/collections/page.tsx",
+        "sadashiv-web/app/collections/suits/page.tsx",
+        "sadashiv-web/app/gallery/page.tsx",
+        "sadashiv-web/app/layout.tsx",
+        "sadashiv-web/app/page.tsx",
+        "sadashiv-web/app/visit/page.tsx",
+        "sadashiv-web/components/layout/Footer.tsx",
+        "sadashiv-web/components/shared/FloatingWhatsApp.tsx"
+      ],
+      "risk": "MEDIUM",
+      "centralFile": "sadashiv-web/app/about/page.tsx",
+      "dependsOn": [],
+      "usedBy": []
+    },
+    {
+      "name": "Other",
+      "files": [
+        "sadashiv-web/app/robots.ts",
+        "sadashiv-web/app/sitemap.ts",
+        "sadashiv-web/data/products.ts"
+      ],
+      "risk": "MEDIUM",
+      "centralFile": "sadashiv-web/app/robots.ts",
+      "dependsOn": [],
+      "usedBy": []
+    },
+    {
+      "name": "Layout (MobileNav)",
+      "files": [
+        "sadashiv-web/components/layout/Header.tsx",
+        "sadashiv-web/components/layout/MobileNav.tsx"
+      ],
+      "risk": "MEDIUM",
+      "centralFile": "sadashiv-web/components/layout/MobileNav.tsx",
+      "dependsOn": [],
+      "usedBy": []
+    },
+    {
+      "name": "Shared (WhatsAppButton)",
+      "files": [
+        "sadashiv-web/components/shared/ProductCard.tsx",
+        "sadashiv-web/components/shared/WhatsAppButton.tsx"
+      ],
+      "risk": "MEDIUM",
+      "centralFile": "sadashiv-web/components/shared/WhatsAppButton.tsx",
+      "dependsOn": [],
+      "usedBy": []
+    },
+    {
+      "name": "Config",
+      "files": [
+        "sadashiv-web/eslint.config.mjs",
+        "sadashiv-web/next-env.d.ts",
+        "sadashiv-web/next.config.ts"
+      ],
+      "risk": "MEDIUM",
+      "centralFile": "sadashiv-web/eslint.config.mjs",
+      "dependsOn": [],
+      "usedBy": []
+    }
+  ],
+  "criticalFiles": [
+    "sadashiv-web/eslint.config.mjs",
+    "sadashiv-web/next.config.ts"
+  ],
+  "architecture": {
+    "style": "Modular",
+    "layers": [
+      "Modular"
+    ],
+    "criticalChains": []
+  },
+  "riskAreas": [
+    {
+      "cluster": "Frontend",
+      "level": "MEDIUM",
+      "files": [
+        "sadashiv-web/app/about/page.tsx",
+        "sadashiv-web/app/collections/dupattas/page.tsx",
+        "sadashiv-web/app/collections/fabrics/page.tsx",
+        "sadashiv-web/app/collections/kurtis/page.tsx",
+        "sadashiv-web/app/collections/page.tsx"
+      ],
+      "reason": "Frontend contains 12 modules with elevated risk."
+    },
+    {
+      "cluster": "Unclassified: sadashiv-web/app",
+      "level": "MEDIUM",
+      "files": [
+        "sadashiv-web/app/robots.ts",
+        "sadashiv-web/app/sitemap.ts"
+      ],
+      "reason": "Unclassified: sadashiv-web/app contains 2 modules with elevated risk."
+    },
+    {
+      "cluster": "Layout (MobileNav)",
+      "level": "MEDIUM",
+      "files": [
+        "sadashiv-web/components/layout/Header.tsx",
+        "sadashiv-web/components/layout/MobileNav.tsx"
+      ],
+      "reason": "Layout (MobileNav) contains 2 modules with elevated risk. Most-connected file: MobileNav.tsx (1 importers)."
+    },
+    {
+      "cluster": "Shared (WhatsAppButton)",
+      "level": "MEDIUM",
+      "files": [
+        "sadashiv-web/components/shared/ProductCard.tsx",
+        "sadashiv-web/components/shared/WhatsAppButton.tsx"
+      ],
+      "reason": "Shared (WhatsAppButton) contains 2 modules with elevated risk. Most-connected file: WhatsAppButton.tsx (1 importers)."
+    },
+    {
+      "cluster": "Unclassified: sadashiv-web/data",
+      "level": "MEDIUM",
+      "files": [
+        "sadashiv-web/data/products.ts"
+      ],
+      "reason": "Unclassified: sadashiv-web/data contains 1 modules with elevated risk."
+    },
+    {
+      "cluster": "Config",
+      "level": "MEDIUM",
+      "files": [
+        "sadashiv-web/eslint.config.mjs",
+        "sadashiv-web/next-env.d.ts",
+        "sadashiv-web/next.config.ts"
+      ],
+      "reason": "Configuration controls runtime behavior. Misconfiguration causes outages."
+    }
+  ],
+  "reviewGroups": [],
+  "recentChanges": {
+    "branch": "unknown",
+    "filesChanged": 49,
+    "riskLevel": "HIGH",
+    "featuresAdded": [
+      "Documentation: 01 Business Content Brief.Md",
+      "Documentation: Sadashiv Web",
+      "Configuration: Package Lock",
+      "Configuration",
+      "Application Logic",
+      "Application Logic: .Gitignore",
+      "Application Logic: Products",
+      "Application Logic",
+      "Application Logic",
+      "Application Logic",
+      "Application Logic",
+      "Frontend Layer: Page",
+      "Frontend Layer: Page",
+      "Frontend Layer: Page",
+      "Frontend Layer: Page",
+      "Frontend Layer: Page",
+      "Frontend Layer: Page",
+      "Frontend Layer",
+      "Frontend Layer: Page",
+      "Frontend Layer: Page",
+      "Frontend Layer",
+      "Frontend Layer"
+    ],
+    "featuresModified": []
+  },
+  "rules": [
+    "UI components live in components/ — keep them presentational",
+    "App Router entry points live in app/ — follow Next.js file conventions"
+  ]
+}

@@ -1,0 +1,167 @@
+'use client';
+
+import React, { useState } from 'react';
+import Image from 'next/image';
+import type { Product } from '@/data/products';
+import { buildProductWaLink } from './WhatsAppButton';
+import QuickViewModal from './QuickViewModal';
+
+interface ProductCardProps {
+  product: Product;
+  baseUrl?: string;
+  onQuickView?: (product: Product) => void;
+}
+
+export default function ProductCard({
+  product,
+  baseUrl = 'https://sadashivfashions.in',
+  onQuickView,
+}: ProductCardProps) {
+  const [isHovered, setIsHovered] = useState(false);
+  const [modalOpen, setModalOpen] = useState(false);
+
+  const productUrl = `${baseUrl}/collections/${product.category}#${product.slug}`;
+  const waLink = buildProductWaLink(product.name, product.category, productUrl);
+
+  const categoryLabel = {
+    suits: 'Suits',
+    kurtis: 'Kurtis',
+    fabrics: 'Fabrics',
+    dupattas: 'Dupattas',
+  }[product.category] || 'Collection';
+
+  // Check if secondary image exists for hover peek
+  const secondaryImage =
+    product.images && product.images.length > 1
+      ? product.images[1]
+      : null;
+
+  const handleQuickView = () => {
+    if (onQuickView) {
+      onQuickView(product);
+    } else {
+      setModalOpen(true);
+    }
+  };
+
+  return (
+    <>
+      <article
+        id={product.slug}
+        className="group relative bg-[#F3ECE2]/70 p-2 sm:p-2.5 rounded-2xl sm:rounded-3xl border border-[#E6D8C8] hover:border-[#C5A059]/50 transition-all duration-400 hover:shadow-[0_12px_36px_rgba(41,37,34,0.08)] flex flex-col justify-between"
+        onMouseEnter={() => setIsHovered(true)}
+        onMouseLeave={() => setIsHovered(false)}
+      >
+        {/* Inner Card Core */}
+        <div className="bg-[#FAF6F0] rounded-xl sm:rounded-2xl overflow-hidden flex flex-col flex-1">
+          {/* Image Container Aspect 3:4 */}
+          <div className="relative aspect-[3/4] w-full overflow-hidden bg-[#E6D8C8]">
+            {/* Primary Image */}
+            <Image
+              src={product.image}
+              alt={product.name}
+              fill
+              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+              className={`object-cover object-top transition-all duration-700 ease-[cubic-bezier(0.25,1,0.5,1)] ${
+                secondaryImage && isHovered ? 'opacity-0 scale-105' : 'opacity-100 group-hover:scale-104'
+              }`}
+            />
+
+            {/* Secondary Image Peek on Hover */}
+            {secondaryImage && (
+              <Image
+                src={secondaryImage}
+                alt={`${product.name} - detail view`}
+                fill
+                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                className={`object-cover object-center transition-all duration-700 ease-[cubic-bezier(0.25,1,0.5,1)] ${
+                  isHovered ? 'opacity-100 scale-102' : 'opacity-0 scale-100 pointer-events-none'
+                }`}
+              />
+            )}
+
+            {/* Top Badges */}
+            <div className="absolute top-2.5 left-2.5 right-2.5 flex items-center justify-between pointer-events-none">
+              <span className="bg-[#FAF6F0]/90 backdrop-blur-md text-[#9E4736] text-[9px] sm:text-[10px] font-semibold uppercase tracking-[0.2em] px-2.5 py-1 rounded-full border border-[#E6D8C8] shadow-xs">
+                {product.fabric ? product.fabric.split(' ')[0] : categoryLabel}
+              </span>
+
+              {product.badge && (
+                <span className="bg-[#D4197D] text-white text-[9px] font-medium uppercase tracking-[0.16em] px-2 py-0.5 rounded-full shadow-xs">
+                  {product.badge}
+                </span>
+              )}
+            </div>
+
+            {/* Quick View Button (Desktop overlay) */}
+            <button
+              onClick={handleQuickView}
+              className="absolute bottom-3 left-1/2 -translate-x-1/2 bg-[#1A1817]/90 hover:bg-[#D4197D] text-white text-[10px] uppercase tracking-[0.18em] font-medium py-2 px-4 rounded-full backdrop-blur-md opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 transition-all duration-300 shadow-md flex items-center gap-1.5 whitespace-nowrap"
+              aria-label={`Quick view details for ${product.name}`}
+            >
+              <span>Quick View</span>
+              <span>↗</span>
+            </button>
+          </div>
+
+          {/* Product Details */}
+          <div className="p-3.5 sm:p-4 flex flex-col flex-1 justify-between">
+            <div>
+              <div className="flex items-center justify-between mb-1">
+                <p className="text-[10px] uppercase tracking-[0.22em] text-[#9E4736] font-semibold">
+                  {categoryLabel}
+                </p>
+                <span className="font-serif italic text-xs text-[#C5A059]">Jaipur</span>
+              </div>
+
+              <h3 className="font-display text-base sm:text-lg text-[#1A1817] leading-snug group-hover:text-[#D4197D] transition-colors duration-200 line-clamp-1">
+                {product.name}
+              </h3>
+
+              {product.craft && (
+                <p className="text-xs text-[#7A6358] mt-1 line-clamp-1 italic font-serif">
+                  {product.craft}
+                </p>
+              )}
+
+              {product.description && (
+                <p className="text-xs text-[#5A4A42] leading-relaxed mt-1.5 line-clamp-2">
+                  {product.description}
+                </p>
+              )}
+            </div>
+
+            {/* Bottom Actions */}
+            <div className="pt-3 mt-3 border-t border-[#E6D8C8]/60 flex items-center justify-between gap-2">
+              <a
+                href={waLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#D4197D] hover:text-[#9E4736] transition-colors"
+                aria-label={`Enquire about ${product.name} on WhatsApp`}
+              >
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />
+                  <path d="M12 0C5.373 0 0 5.373 0 12c0 2.136.564 4.14 1.546 5.877L.057 23.5l5.773-1.516A11.954 11.954 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.044-1.394l-.361-.214-3.735.979 1-3.639-.235-.374A9.818 9.818 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z" />
+                </svg>
+                <span>Enquire</span>
+              </a>
+
+              <button
+                onClick={handleQuickView}
+                className="text-[11px] text-[#7A6358] hover:text-[#1A1817] underline underline-offset-2 transition-colors sm:hidden"
+              >
+                Details
+              </button>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      {/* Internal Modal if no external handler provided */}
+      {!onQuickView && modalOpen && (
+        <QuickViewModal product={product} onClose={() => setModalOpen(false)} baseUrl={baseUrl} />
+      )}
+    </>
+  );
+}
